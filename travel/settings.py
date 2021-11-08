@@ -19,8 +19,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks',
+    'ckeditor',
+    'ckeditor_uploader',
 
     'pages',
+    'tours',
 ]
 
 MIDDLEWARE = [
@@ -101,3 +105,25 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
+}
+
+LOGIN_URL = '/'
+
+
+ACCOUNT_ACTIVATION_DAYS = 365
+REGISTRATION_AUTO_LOGIN = True
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+EMAIL_HOST_USER = 'burhonabdullaev727@gmail.com'
+EMAIL_HOST_PASSWORD = 'burik0112'
