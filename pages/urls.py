@@ -6,8 +6,6 @@ from pages.views import HomeView, DestinationView, DestinationDetailView, BlogVi
 app_name = 'pages'
 
 urlpatterns = [
-    path('destination/', DestinationView.as_view(), name='destination'),
-    path('destinationdetail/', DestinationDetailView.as_view(), name='destinationdetail'),
     path('blog/', BlogView.as_view(), name='blog'),
     path('blogdetail/', BlogDetailView.as_view(), name='blogdetail'),
     path('contact/', ContactView.as_view(), name='contact'),

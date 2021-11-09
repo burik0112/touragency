@@ -10,3 +10,8 @@ class TourModelAdmin(admin.ModelAdmin):
     search_fields = ['title', 'discount', 'message', 'created_at']
 
 
+# @admin.register(CategoryModel)
+# class CategoryModelAdmin(admin.ModelAdmin):
+#     list_display = ['title', 'created_at']
+#     search_fields = ['title']
+#     list_filter = ['created_at']
