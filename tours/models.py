@@ -2,6 +2,29 @@ from ckeditor_uploader.fields import RichTextUploadingField
 from django.db import models
 
 
+class TourTagModel(models.Model):
+    title = models.CharField(max_length=50)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'tour tag'
+        verbose_name_plural = 'tour tag'
+
+# class Category(models.Model):
+#     name = models.CharField(max_length=30)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#
+#     def __str__(self):
+#         return self.name
+#
+#     class Meta:
+#         verbose_name = 'category'
+#         verbose_name_plural = 'categories'
+
+
 class TourModel(models.Model):
     # id = models.IntegerField(primary_key=True)
     title = models.CharField(max_length=30)
@@ -20,13 +43,7 @@ class TourModel(models.Model):
         return self.title
 
 
-class Category(models.Model):
-    name = models.CharField(max_length=30)
-    created_at = models.DateTimeField(auto_now_add=True)
 
-    class Meta:
-        verbose_name = 'category'
-        verbose_name_plural = 'categories'
 
-    def __str__(self):
-        return self.name
+
+
