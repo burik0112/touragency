@@ -17,7 +17,6 @@ class PostTagModel(models.Model):
 
 
 class PostModel(models.Model):
-    object = None
     title = models.CharField(max_length=512)
     image = models.ImageField(upload_to='posts')
     banner = models.ImageField(upload_to='post banners')
@@ -33,7 +32,6 @@ class PostModel(models.Model):
     class Meta:
         verbose_name = 'post'
         verbose_name_plural = 'posts'
-        ordering = "-id",
 
 
 class CommentModel(models.Model):
