@@ -26,6 +26,8 @@ INSTALLED_APPS = [
     'pages',
     'tours',
     'posts',
+    'orders',
+    'users',
 ]
 
 MIDDLEWARE = [
