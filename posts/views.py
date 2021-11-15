@@ -7,7 +7,7 @@ from posts.models import PostModel
 
 
 class PostListView(ListView):
-    template_name = 'blog.html'
+    template_name = 'post.html'
     paginate_by = 3
 
     def get_queryset(self):

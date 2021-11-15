@@ -33,6 +33,9 @@ class TourModel(models.Model):
     price = models.IntegerField(default=0)
     discount = models.PositiveIntegerField(default=0, null=True)
     available = models.BooleanField('В наличии')
+    tags = models.ManyToManyField(TourTagModel,
+                                  related_name='tours',
+                                  verbose_name='tags')
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:

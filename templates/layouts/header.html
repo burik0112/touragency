@@ -20,33 +20,20 @@
                                             <a href="{% url 'pages:home' %}">Home</a>
                                         </li>
                                         <li class="{% if request.path == '/blog/' %}active{% endif %}">
-                                            <a href="{% url 'pages:about' %}">About</a>
+                                            <a href="{% url 'pages:about' %}">News</a>
+                                        </li>
+                                        <li class="{% if request.path == '/destinations/' %}active{% endif %}">
+                                            <a href="{% url 'tours:list' %}">Destinations</a>
                                         </li>
                                         <li>
-                                            <a class="" href="travel_destination.html">Destination</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">pages <i class="ti-angle-down"></i>
-                                            </a>
-                                        </li>
-                                            <ul class="submenu">
-                                                <li>
-                                                    <a href="destination_details.html">Destinations details</a>
-                                                </li>
-                                                <li>
-                                                    <a href="elements.html">elements</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">blog <i class="ti-angle-down"></i>
+                                            <a href="#">Pages <i class="ti-angle-down"></i>
                                             </a>
                                             <ul class="submenu">
+                                                <li>
+                                                    <a href="blog.html">About</a>
+                                                </li>
                                                 <li>
                                                     <a href="blog.html">blog</a>
-                                                </li>
-                                                <li>
-                                                    <a href="single-blog.html">single-blog</a>
                                                 </li>
                                             </ul>
                                         </li>
