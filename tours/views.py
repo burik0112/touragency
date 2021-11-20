@@ -17,7 +17,6 @@ class DestinationsListView(ListView):
         sort = self.request.GET.get('sort')
         price = self.request.GET.get('price')
 
-
         if q:
             qs = qs.filter(title__icontains=q)
 

@@ -93,10 +93,7 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
-
                         <div class="reset_btn">
                             <button class="boxed-btn4" type="submit">Reset</button>
                         </div>
@@ -105,25 +102,27 @@
             </div>
             <div class="col-lg-8">
                 <div class="row">
+                    {% for tours in object_list%}
                     <div class="col-lg-6 col-md-6">
                         <div class="single_place">
                             <div class="thumb">
-                                <img src="{% static 'img/place/1.png'%}" alt="">
+                                <img src="{{tours.images.url}}" alt="">
                                 <a href="#" class="prise">$500</a>
                             </div>
                             <div class="place_info">
-                                <a href="destination_details.html"><h3>California</h3></a>
-                                <p>United State of America</p>
+                                <a href="destination_details.html"><h3>{{tours.title}}</h3></a>
+                                <p>{{tours.long_description}}</p>
                                 <div class="rating_days d-flex justify-content-between">
 
                                     <div class="days">
-                                        <i class="fa fa-clock-o"></i>
-                                        <a href="#">5 Days</a>
+
+                                        <p>{{tours.created_at| date:'d F Y'}}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ from tours.models import TourModel, TourTagModel
 
 @admin.register(TourModel)
 class TourModelAdmin(admin.ModelAdmin):
-    list_display = ['title', 'long_description', 'img1', 'price', 'discount']
+    list_display = ['title', 'long_description', 'image', 'price', 'discount']
     list_filter = ['price']
     search_fields = ['title', 'discount', 'message', 'created_at']
 
