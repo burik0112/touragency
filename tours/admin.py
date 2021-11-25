@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from tours.models import TourModel, TourTagModel
+from tours.models import TourModel, TourTagModel, CityModel
 
 
 @admin.register(TourModel)
@@ -16,7 +16,13 @@ class ProductTagModelAdmin(admin.ModelAdmin):
     search_fields = ['title']
     list_filter = ['created_at']
 
+@admin.register(CityModel)
+class CityModelAdmin(admin.ModelAdmin):
+    list_display = ['title', 'created_at']
+    search_fields = ['title']
+    list_filter = ['created_at']
 
+#
 # @admin.register(CategoryModel)
 # class CategoryModelAdmin(admin.ModelAdmin):
 #     list_display = ['title', 'created_at']

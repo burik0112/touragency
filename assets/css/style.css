@@ -5609,8 +5609,8 @@ h6 {
 /* line 599, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
 .blog_item_img .blog_item_date {
   position: absolute;
-  bottom: -10px;
-  left: 10px;
+  bottom: -5px;
+  left: px;
   display: block;
   color: #fff;
   background-color: #FF4A52;
@@ -5673,9 +5673,10 @@ h6 {
 
 /* line 660, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
 .blog_right_sidebar .single_sidebar_widget {
-  background: #fbf9ff;
-  padding: 30px;
+  weight:200%
+  margin:0
   margin-bottom: 30px;
+  margin-left:200px;
 }
 
 /* line 664, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
@@ -5685,8 +5686,8 @@ h6 {
 
 /* line 672, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
 .blog_right_sidebar .search_widget .form-control {
-  height: 50px;
-  border-color: #f0e9ff;
+
+  weight:100%
   font-size: 13px;
   color: #999999;
   padding-left: 20px;
@@ -5696,7 +5697,7 @@ h6 {
 
 /* line 681, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
 .blog_right_sidebar .search_widget .form-control::placeholder {
-  color: #999999;
+  color:
 }
 
 /* line 685, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */

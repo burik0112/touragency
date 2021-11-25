@@ -22,10 +22,10 @@
                                         <li class="{% if request.path == '/destinations/' %}active{% endif %}">
                                             <a href="{% url 'destinations:list' %}">Destinations</a>
                                         </li>
-                                            <li>
+                                            <li class="{% if request.path == '/about/' %}active{% endif %}">
                                                 <a href="{% url 'pages:about' %}">About</a>
                                             </li>
-                                            <li>
+                                            <li class="{% if request.path == '/blog/' %}active{% endif %}">
                                                 <a href="{% url 'posts:list' %}">Blog</a>
                                             </li>
                                         <li class="{% if request.path == '/contact/' %}active{% endif %}">

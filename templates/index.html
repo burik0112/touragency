@@ -96,75 +96,18 @@
             </div>
         </div>
         <div class="row">
+            {% for home in object_list%}
             <div class="col-lg-4 col-md-6">
                 <div class="single_destination">
                     <div class="thumb">
-                        <img src="{% static 'img/destination/1.png'%}" alt="">
+                        <img src="{{ home.img.url }}" alt="">
                     </div>
                     <div class="content">
                         <p class="d-flex align-items-center">Italy <a href="travel_destination.html"> 07 Places</a></p>
-
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_destination">
-                    <div class="thumb">
-                        <img src="{% static 'img/destination/2.png'%}" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="d-flex align-items-center">Brazil <a href="travel_destination.html"> 03 Places</a></p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_destination">
-                    <div class="thumb">
-                        <img src="{% static 'img/destination/3.png'%}" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="d-flex align-items-center">America <a href="travel_destination.html"> 10 Places</a>
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_destination">
-                    <div class="thumb">
-                        <img src="{% static 'img/destination/4.png'%}" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="d-flex align-items-center">Nepal <a href="travel_destination.html"> 02 Places</a></p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_destination">
-                    <div class="thumb">
-                        <img src="{% static 'img/destination/5.png'%}" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="d-flex align-items-center">Maldives <a href="travel_destination.html"> 02 Places</a>
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_destination">
-                    <div class="thumb">
-                        <img src="{% static 'img/destination/6.png'%}" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="d-flex align-items-center">Indonesia <a href="travel_destination.html"> 05 Places</a>
-                        </p>
-
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
@@ -192,144 +135,6 @@
                         <a href="destination_details.html"><h3>California</h3></a>
                         <p>United State of America</p>
                         <div class="rating_days d-flex justify-content-between">
-                                <span class="d-flex justify-content-center align-items-center">
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <a href="#">(20 Review)</a>
-                                </span>
-                            <div class="days">
-                                <i class="fa fa-clock-o"></i>
-                                <a href="#">5 Days</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_place">
-                    <div class="thumb">
-                        <img src="{% static 'img/place/2.png'%}" alt="">
-                        <a href="#" class="prise">$500</a>
-                    </div>
-                    <div class="place_info">
-                        <a href="destination_details.html"><h3>Korola Megna</h3></a>
-                        <p>United State of America</p>
-                        <div class="rating_days d-flex justify-content-between">
-                                <span class="d-flex justify-content-center align-items-center">
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <a href="#">(20 Review)</a>
-                                </span>
-                            <div class="days">
-                                <i class="fa fa-clock-o"></i>
-                                <a href="#">5 Days</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_place">
-                    <div class="thumb">
-                        <img src="{% static 'img/place/3.png'%}" alt="">
-                        <a href="#" class="prise">$500</a>
-                    </div>
-                    <div class="place_info">
-                        <a href="destination_details.html"><h3>London</h3></a>
-                        <p>United State of America</p>
-                        <div class="rating_days d-flex justify-content-between">
-                                <span class="d-flex justify-content-center align-items-center">
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <a href="#">(20 Review)</a>
-                                </span>
-                            <div class="days">
-                                <i class="fa fa-clock-o"></i>
-                                <a href="#">5 Days</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_place">
-                    <div class="thumb">
-                        <img src="{% static 'img/place/4.png'%}" alt="">
-                        <a href="#" class="prise">$500</a>
-                    </div>
-                    <div class="place_info">
-                        <a href="destination_details.html"><h3>Miami Beach</h3></a>
-                        <p>United State of America</p>
-                        <div class="rating_days d-flex justify-content-between">
-                                <span class="d-flex justify-content-center align-items-center">
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <a href="#">(20 Review)</a>
-                                </span>
-                            <div class="days">
-                                <i class="fa fa-clock-o"></i>
-                                <a href="#">5 Days</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_place">
-                    <div class="thumb">
-                        <img src="{% static 'img/place/5.png'%}" alt="">
-                        <a href="#" class="prise">$500</a>
-                    </div>
-                    <div class="place_info">
-                        <a href="destination_details.html"><h3>California</h3></a>
-                        <p>United State of America</p>
-                        <div class="rating_days d-flex justify-content-between">
-                                <span class="d-flex justify-content-center align-items-center">
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <a href="#">(20 Review)</a>
-                                </span>
-                            <div class="days">
-                                <i class="fa fa-clock-o"></i>
-                                <a href="#">5 Days</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_place">
-                    <div class="thumb">
-                        <img src="{% static 'img/place/6.png'%}" alt="">
-                        <a href="#" class="prise">$500</a>
-                    </div>
-                    <div class="place_info">
-                        <a href="destination_details.html"><h3>Saintmartine Iceland</h3></a>
-                        <p>United State of America</p>
-                        <div class="rating_days d-flex justify-content-between">
-                                <span class="d-flex justify-content-center align-items-center">
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <a href="#">(20 Review)</a>
-                                </span>
                             <div class="days">
                                 <i class="fa fa-clock-o"></i>
                                 <a href="#">5 Days</a>

@@ -14,16 +14,29 @@ class TourTagModel(models.Model):
         verbose_name = _('tour tag')
         verbose_name_plural = _('tour tags')
 
-# class Category(models.Model):
-#     name = models.CharField(max_length=30)
-#     created_at = models.DateTimeField(auto_now_add=True)
-#
-#     def __str__(self):
-#         return self.name
-#
-#     class Meta:
-#         verbose_name = 'category'
-#         verbose_name_plural = 'categories'
+
+class CityModel(models.Model):
+    title = models.CharField(max_length=20)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'city'
+        verbose_name_plural = 'cities'
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=30)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'category'
+        verbose_name_plural = 'categories'
 
 
 class TourModel(models.Model):

@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'posts',
     'orders',
     'users',
+    'home',
 ]
 
 MIDDLEWARE = [
