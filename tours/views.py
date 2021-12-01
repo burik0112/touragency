@@ -40,6 +40,7 @@ class DestinationsListView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['brands'] = TourTagModel.objects.order_by('-pk')
+        context['brands'] = TourTagModel.objects.order_by('-pk')
         return context
 
 
