@@ -42,3 +42,16 @@ class PlaceModel(models.Model):
     class Meta:
         verbose_name = 'place'
         verbose_name_plural = 'places'
+
+
+class TripModel(models.Model):
+    title = models.CharField(max_length=100)
+    img = models.ImageField(upload_to='img')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'trip'
+        verbose_name_plural = 'trips'

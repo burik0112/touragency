@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from pages.models import ContactModel, HomeModel, PlaceModel
+from pages.models import ContactModel, HomeModel, PlaceModel, TripModel
 
 
 @admin.register(ContactModel)
@@ -21,3 +21,10 @@ class PlaceModelAdmin(admin.ModelAdmin):
     list_display = ['title', 'img', 'price', 'created_at']
     search_fields = ['title']
     list_filter = ['created_at', 'price']
+
+
+@admin.register(TripModel)
+class TripModelAdmin(admin.ModelAdmin):
+    list_display = ['title', 'img', 'created_at']
+    search_fields = ['title']
+    list_filter = ['created_at']

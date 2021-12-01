@@ -2566,7 +2566,7 @@ h3 {
 
 /* line 29, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_where_to_go.scss */
 .where_togo_area .search_wrap .input_field {
-  width: 220px;
+  width: 650px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

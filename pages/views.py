@@ -5,7 +5,7 @@ from django.urls import reverse
 from django.views.generic import TemplateView, CreateView
 
 from pages.forms import ContactModelForm
-from pages.models import HomeModel, ContactModel, PlaceModel
+from pages.models import HomeModel, ContactModel, PlaceModel, TripModel
 
 
 class HomeView(TemplateView):
@@ -15,7 +15,8 @@ class HomeView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['homes'] = HomeModel.objects.order_by('-pk')
         context['contacts'] = ContactModel.objects.order_by('-pk')
-        context['place'] = PlaceModel.objects.order_by('-pk')
+        context['places'] = PlaceModel.objects.order_by('-pk')
+        context['trips'] = TripModel.objects.order_by('-pk')
         return context
 
 
