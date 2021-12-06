@@ -1,14 +1,15 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
 {% block content %}
+{% load i18n %}
     <!-- bradcam_area  -->
     <div class="bradcam_area bradcam_bg_4">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
-                        <h3>blog</h3>
-                        <p>Pixel perfect design with awesome contents</p>
+                        <h3>{% trans 'Blog'%}</h3>
+                        <p>{% trans 'Pixel perfect design with awesome contents'%}</p>
                     </div>
                 </div>
             </div>
@@ -37,8 +38,7 @@
                                 <a class="d-inline-block" href="single-blog.html">
                                     <h2>{{post.title}}</h2>
                                 </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
+
                                 <ul class="blog-info-link">
                                     <li><a href="#"><i class="fa fa-user"></i> {{tag.title}}</a></li>
                                     <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
@@ -47,6 +47,31 @@
                         </article>
                     </div>
                      {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="testimonial_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testmonial_active owl-carousel">
+                            <div class="single_carousel">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <div class="single_testmonial text-center">
+                                            <div class="author_thumb">
+                                                <img src="{% static 'img/testmonial/author.png'%}" alt="">
+                                            </div>
+                                            <p>{% trans 'Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.'%}</p>
+                                            <div class="testmonial_author">
+                                                <h3>- Micky Mouse</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,6 +95,7 @@
                 </li>
             </ul>
         </nav>
+<!-- /testimonial_area  -->
     </section>
     <!--================Blog Area =================-->
 {% endblock %}

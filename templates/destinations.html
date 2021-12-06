@@ -1,14 +1,15 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
 {% block content %}
+{% load i18n %}
 <!-- bradcam_area  -->
 <div class="bradcam_area bradcam_bg_2">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
                 <div class="bradcam_text text-center">
-                    <h3>Destinations</h3>
-                    <p>Pixel perfect design with awesome contents</p>
+                    <h3>{% trans 'Destinations'%}</h3>
+                    <p>{% trans 'Pixel perfect design with awesome contents'%}</p>
                 </div>
             </div>
         </div>
@@ -22,27 +23,17 @@
         <div class="row align-items-center">
             <div class="col-lg-3">
                 <div class="form_area">
-                    <h3>Where you want to go?</h3>
+                    <h3>{% trans 'Where you want to go?'%}</h3>
                 </div>
             </div>
             <div class="col-lg-9">
                 <div class="search_wrap">
                     <form class="search_form" action="#">
                         <div class="input_field">
-                            <input type="text" placeholder="Where to go?">
-                        </div>
-                        <div class="input_field">
-                            <input id="datepicker" placeholder="Date">
-                        </div>
-                        <div class="input_field">
-                            <select>
-                                <option data-display="Travel type">Travel type</option>
-                                <option value="1">Some option</option>
-                                <option value="2">Another option</option>
-                            </select>
+                            <input type="text" placeholder="{% trans 'Where to go?'%}">
                         </div>
                         <div class="search_btn">
-                            <button class="boxed-btn4 " type="submit">Search</button>
+                            <button class="boxed-btn4 " type="submit">{% trans 'Search'%}</button>
                         </div>
                     </form>
                 </div>
@@ -58,33 +49,33 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="filter_result_wrap">
-                    <h3>Filter Result</h3>
+                    <h3>{% trans 'Filter Result'%}</h3>
                     <div class="filter_bordered">
                         <div class="filter_inner">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="single_select">
                                         <select>
-                                            <option data-display="Country">Country</option>
-                                            <option value="1">Africa</option>
-                                            <option value="2">canada</option>
-                                            <option value="4">USA</option>
+                                            <option data-display="">{% trans 'Country'%}</option>
+                                            <option value="1">{% trans 'Africa'%}</option>
+                                            <option value="2">{% trans 'Canada'%}</option>
+                                            <option value="4">{% trans 'USA'%}</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="single_select">
                                         <select>
-                                            <option data-display="Travel type">Travel type</option>
-                                            <option value="1">advance</option>
-                                            <option value="2">advance</option>
-                                            <option value="4">premium</option>
+                                            <option data-display="{% trans 'Travel type'%}">{% trans 'Travel type'%}</option>
+                                            <option value="1">{% trans 'advance'%}</option>
+                                            <option value="2">{% trans 'advance'%}</option>
+                                            <option value="4">{% trans 'premium'%}</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="range_slider_wrap">
-                                        <span class="range">Prise range</span>
+                                        <span class="range">{% trans 'Prise range'%}</span>
                                         <div id="slider-range"></div>
                                         <p>
                                             <input type="text" id="amount" readonly
@@ -95,7 +86,7 @@
                             </div>
                         </div>
                         <div class="reset_btn">
-                            <button class="boxed-btn4" type="submit">Reset</button>
+                            <button class="boxed-btn4" type="submit">{% trans 'Reset'%}</button>
                         </div>
                     </div>
                 </div>
@@ -133,7 +124,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section_title text-center mb_70">
-                    <h3>Recent Trips</h3>
+                    <h3>{% trans 'Recent Trips'%}</h3>
                 </div>
             </div>
         </div>
@@ -145,43 +136,10 @@
                     </div>
                     <div class="info">
                         <div class="date">
-                            <span>Oct 12, 2019</span>
+                            <span>{% trans 'Oct 12, 2019'%}</span>
                         </div>
                         <a href="#">
-                            <h3>Journeys Are Best Measured In
-                                New Friends</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_trip">
-                    <div class="thumb">
-                        <img src="{% static 'img/trip/2.png'%}" alt="">
-                    </div>
-                    <div class="info">
-                        <div class="date">
-                            <span>Oct 12, 2019</span>
-                        </div>
-                        <a href="#">
-                            <h3>Journeys Are Best Measured In
-                                New Friends</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_trip">
-                    <div class="thumb">
-                        <img src="{% static 'img/trip/3.png'%}" alt="">
-                    </div>
-                    <div class="info">
-                        <div class="date">
-                            <span>Oct 12, 2019</span>
-                        </div>
-                        <a href="#">
-                            <h3>Journeys Are Best Measured In
-                                New Friends</h3>
+                            <h3>{% trans 'Journeys Are Best Measured In New Friends'%}</h3>
                         </a>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
 {% block content %}
+{% load i18n %}
 <!-- slider_area_start -->
 <div class="slider_area">
     <div class="slider_active owl-carousel">
@@ -9,9 +10,9 @@
                 <div class="row align-items-center">
                     <div class="col-xl-12 col-md-12">
                         <div class="slider_text text-center">
-                            <h3>Indonesia</h3>
-                            <p>Pixel perfect design with awesome contents</p>
-                            <a href="{% url 'destinations:list' %}" class="boxed-btn3">Explore Now</a>
+                            <h3>{% trans 'Indonesia'%}</h3>
+                            <p>{% trans 'Pixel perfect design with awesome contents'%}</p>
+                            <a href="{% url 'destinations:list' %}" class="boxed-btn3">{% trans 'Explore Now'%}</a>
                         </div>
                     </div>
                 </div>
@@ -22,9 +23,9 @@
                 <div class="row align-items-center">
                     <div class="col-xl-12 col-md-12">
                         <div class="slider_text text-center">
-                            <h3>Australia</h3>
-                            <p>Pixel perfect design with awesome contents</p>
-                            <a href="{% url 'destinations:list' %}" class="boxed-btn3">Explore Now</a>
+                            <h3>{% trans 'Australia'%}</h3>
+                            <p>{% trans 'Pixel perfect design with awesome contents'%}</p>
+                            <a href="{% url 'destinations:list' %}" class="boxed-btn3">{% trans 'Explore Now'%}</a>
                         </div>
                     </div>
                 </div>
@@ -35,9 +36,9 @@
                 <div class="row align-items-center">
                     <div class="col-xl-12 col-md-12">
                         <div class="slider_text text-center">
-                            <h3>Switzerland</h3>
-                            <p>Pixel perfect design with awesome contents</p>
-                            <a href="{% url 'destinations:list' %}" class="boxed-btn3">Explore Now</a>
+                            <h3>{% trans 'Switzerland'%}</h3>
+                            <p>{% trans 'Pixel perfect design with awesome contents'%}</p>
+                            <a href="{% url 'destinations:list' %}" class="boxed-btn3">{% trans 'Explore Now'%}</a>
                         </div>
                     </div>
                 </div>
@@ -53,17 +54,17 @@
         <div class="row align-items-center">
             <div class="col-lg-3">
                 <div class="form_area">
-                    <h3>Where you want to go?</h3>
+                    <h3>{% trans 'Where you want to go?'%}</h3>
                 </div>
             </div>
             <div class="col-lg-9">
                 <div class="search_wrap">
                     <form class="search_form" action="#">
                         <div class="input_field">
-                            <input type="text" placeholder="Where to go?">
+                            <input type="text" placeholder="{% trans 'Where to go'%}?">
                         </div>
                         <div class="search_btn">
-                            <button class="boxed-btn4 " type="submit" style="margin-left: -70px">Search</button>
+                            <button class="boxed-btn4 " type="submit" style="margin-left: -70px">{% trans 'Search'%}</button>
                         </div>
                     </form>
                 </div>
@@ -79,9 +80,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section_title text-center mb_70">
-                    <h3>Popular Destination</h3>
-                    <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit
-                        hella wolf moon beard words.</p>
+                    <h3>{% trans 'Popular Destination'%}</h3>
                 </div>
             </div>
         </div>
@@ -108,9 +107,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section_title text-center mb_70">
-                    <h3>Popular Places</h3>
-                    <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit
-                        hella wolf moon beard words.</p>
+                    <h3>{% trans 'Popular Places'%}</h3>
                 </div>
             </div>
         </div>
@@ -138,7 +135,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="more_place_btn text-center">
-                    <a class="boxed-btn4" href="{% url 'destinations:list' %}">More Places</a>
+                    <a class="boxed-btn4" href="{% url 'destinations:list' %}">{% trans 'More Places'%}</a>
                 </div>
             </div>
         </div>
@@ -151,7 +148,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="video_wrap text-center">
-                    <h3>Enjoy Video</h3>
+                    <h3>{% trans 'Enjoy Video'%}</h3>
                     <div class="video_icon">
                         <a class="popup-video video_play_button" href="https://www.youtube.com/watch?v=f59dDEk57i0">
                             <i class="fa fa-play"></i>
@@ -172,8 +169,8 @@
                     <div class="icon">
                         <img src="{% static 'img/svg_icon/1.svg'%}" alt="">
                     </div>
-                    <h3>Comfortable Journey</h3>
-                    <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+                    <h3>{% trans 'Comfortable Journey'%}</h3>
+                    <p>{% trans 'A wonderful serenity has taken to the possession of my entire soul.'%}</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -181,8 +178,8 @@
                     <div class="icon">
                         <img src="{% static 'img/svg_icon/2.svg'%}" alt="">
                     </div>
-                    <h3>Luxuries Hotel</h3>
-                    <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+                    <h3>{% trans 'Luxuries Hotel'%}</h3>
+                    <p>{% trans 'A wonderful serenity has taken to the possession of my entire soul.'%}</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -190,8 +187,8 @@
                     <div class="icon">
                         <img src="{% static 'img/svg_icon/3.svg'%}" alt="">
                     </div>
-                    <h3>Travel Guide</h3>
-                    <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+                    <h3>{% trans 'Travel Guide'%}</h3>
+                    <p>{% trans 'A wonderful serenity has taken to the possession of my entire soul.'%}</p>
                 </div>
             </div>
         </div>
@@ -212,10 +209,9 @@
                                     <div class="author_thumb">
                                         <img src="{% static 'img/testmonial/author.png'%}" alt="">
                                     </div>
-                                    <p>"Working in conjunction with humanitarian aid agencies, we have supported
-                                        programmes to help alleviate human suffering.</p>
+                                    <p>{% trans 'Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.'%}</p>
                                     <div class="testmonial_author">
-                                        <h3>- Micky Mouse</h3>
+                                        <h3>{% trans '- Micky Mouse'%}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -228,10 +224,9 @@
                                     <div class="author_thumb">
                                         <img src="{% static 'img/testmonial/author.png'%}" alt="">
                                     </div>
-                                    <p>"Working in conjunction with humanitarian aid agencies, we have supported
-                                        programmes to help alleviate human suffering.</p>
+                                    <p>{% trans '"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.'%}</p>
                                     <div class="testmonial_author">
-                                        <h3>- Tom Mouse</h3>
+                                        <h3>- {% trans 'Tom Mouse'%}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -244,10 +239,9 @@
                                     <div class="author_thumb">
                                         <img src="{% static 'img/testmonial/author.png'%}" alt="">
                                     </div>
-                                    <p>"Working in conjunction with humanitarian aid agencies, we have supported
-                                        programmes to help alleviate human suffering.</p>
+                                    <p>{% trans '"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.'%}</p>
                                     <div class="testmonial_author">
-                                        <h3>- Jerry Mouse</h3>
+                                        <h3>{% trans '- Jerry Mouse'%}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +260,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section_title text-center mb_70">
-                    <h3>Recent Trips</h3>
+                    <h3>{% trans 'Recent Trips'%}</h3>
                 </div>
             </div>
         </div>
@@ -282,8 +276,7 @@
                             <span>{{trip.created_at| date:'d F Y'}}</span>
                         </div>
                         <a href="{% url 'posts:list' %}">
-                            <h3>Journeys Are Best Measured In
-                                New Friends</h3>
+                            <h3>{% trans 'Journeys Are Best Measured In New Friends'%}</h3>
                         </a>
                     </div>
                 </div>

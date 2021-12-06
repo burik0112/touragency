@@ -92,6 +92,7 @@ LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
     ('en', 'English'),
     ('ru', 'Russian'),
+    ('uz', 'Uzbek'),
 )
 LOCALE_PATHS = BASE_DIR / 'locale',
 

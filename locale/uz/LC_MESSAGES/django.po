@@ -1,0 +1,773 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 20:29+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\pages\models.py:6 .\posts\models.py:39
+msgid "name"
+msgstr "Ism"
+
+#: .\pages\models.py:7 .\posts\models.py:40
+msgid "email"
+msgstr ""
+
+#: .\pages\models.py:8
+msgid "message"
+msgstr "xabar"
+
+#: .\pages\models.py:9 .\posts\models.py:10 .\posts\models.py:28
+#: .\posts\models.py:51 .\tours\models.py:8 .\tours\models.py:53
+msgid "created_at"
+msgstr "ma'lumotlar sozlanishi"
+
+#: .\pages\models.py:15
+msgid "contact"
+msgstr "Kontakt"
+
+#: .\pages\models.py:16
+msgid "contacts"
+msgstr "kontaktlar"
+
+#: .\posts\models.py:9 .\posts\models.py:21 .\tours\models.py:7
+#: .\tours\models.py:44
+msgid "title"
+msgstr "sarlavha"
+
+#: .\posts\models.py:16
+msgid "post tag"
+msgstr "post teg"
+
+#: .\posts\models.py:17
+msgid "post tags"
+msgstr "post teglar"
+
+#: .\posts\models.py:22 .\tours\models.py:46
+msgid "image"
+msgstr "tasvir"
+
+#: .\posts\models.py:23
+msgid "banner"
+msgstr "banner"
+
+#: .\posts\models.py:26 .\tours\models.py:52
+#, fuzzy
+#| msgid "post tags"
+msgid "tags"
+msgstr "post teglar"
+
+#: .\posts\models.py:34 .\posts\models.py:48
+msgid "post"
+msgstr "post"
+
+#: .\posts\models.py:35
+msgid "posts"
+msgstr "postlar"
+
+#: .\posts\models.py:41
+msgid "phone"
+msgstr ""
+
+#: .\posts\models.py:42 .\posts\models.py:57
+msgid "comment"
+msgstr "kommentlar"
+
+#: .\posts\models.py:58
+msgid "comments"
+msgstr "komentlar"
+
+#: .\templates\about.html:11
+msgid "About Us"
+msgstr "Biz haqimizda"
+
+#: .\templates\about.html:12 .\templates\blog.html:12
+#: .\templates\contact.html:12 .\templates\destinations.html:12
+#: .\templates\index.html:14 .\templates\index.html:27
+#: .\templates\index.html:40
+msgid "Pixel perfect design with awesome contents"
+msgstr "Ajoyib tarkibga ega pikselli mukammal dizayn"
+
+#: .\templates\about.html:25
+msgid "Our Story"
+msgstr "Bizning Hikoya"
+
+#: .\templates\about.html:75 .\templates\index.html:151
+msgid "Enjoy Video"
+msgstr ""
+
+#: .\templates\about.html:96 .\templates\index.html:172
+msgid "Comfortable Journey"
+msgstr "Qulay sayohat"
+
+#: .\templates\about.html:97 .\templates\about.html:106
+#: .\templates\about.html:115 .\templates\index.html:173
+#: .\templates\index.html:182 .\templates\index.html:191
+msgid "A wonderful serenity has taken to the possession of my entire soul."
+msgstr "Ajoyib bir xotirjamlik butun qalbimni egallab oldi."
+
+#: .\templates\about.html:105 .\templates\index.html:181
+msgid "Luxuries Hotel"
+msgstr "Hashamatli mehmonxona"
+
+#: .\templates\about.html:114 .\templates\index.html:190
+msgid "Travel Guide"
+msgstr "Sayohat bo'yicha qo'llanma"
+
+#: .\templates\blog.html:11 .\templates\layouts\header.html:30
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\blog.html:65 .\templates\index.html:212
+#, fuzzy
+#| msgid ""
+#| "Working in conjunction with humanitarian aid agencies, we have supported "
+#| "programmes to help alleviate human suffering."
+msgid ""
+"Working in conjunction with humanitarian aid agencies, we have supported "
+"programmes to help alleviate human suffering."
+msgstr ""
+"Gumanitar yordam agentliklari bilan hamkorlikda ishlagan holda biz "
+"qo'llabquvvatladikodamlar azobini engillashtirishga yordam beradigan "
+"dasturlar."
+
+#: .\templates\contact.html:11
+#, fuzzy
+#| msgid "Contacts"
+msgid "Contact"
+msgstr "Kontaktlar"
+
+#: .\templates\contact.html:67
+msgid "Get in Touch"
+msgstr "Aloqa"
+
+#: .\templates\contact.html:74
+msgid "Enter Message"
+msgstr "Xabarni kiriting"
+
+#: .\templates\contact.html:79
+#, fuzzy
+#| msgid "Enter your name"
+msgid "Enter your name"
+msgstr "Ismingizni kiriting"
+
+#: .\templates\contact.html:84
+msgid "Email"
+msgstr ""
+
+#: .\templates\contact.html:89
+msgid "Enter Subject"
+msgstr "mavzuni kiriting"
+
+#: .\templates\contact.html:102
+msgid "Buttonwood, California"
+msgstr "Buttonwood, California"
+
+#: .\templates\contact.html:110
+msgid "Mon to Fri 9am to 6pm"
+msgstr "Dushanbadan Jumaga soat 9:00 dan 18:00 gacha"
+
+#: .\templates\contact.html:116
+msgid "support@colorlib.com"
+msgstr ""
+
+#: .\templates\contact.html:117
+msgid "Send us your query anytime!"
+msgstr "Istalgan vaqtda bizga so'rovingizni yuboring!"
+
+#: .\templates\destinations.html:11 .\templates\layouts\header.html:24
+#, fuzzy
+#| msgid "Popular Destination"
+msgid "Destinations"
+msgstr "Mashhur manzil"
+
+#: .\templates\destinations.html:26 .\templates\index.html:57
+msgid "Where you want to go?"
+msgstr "Qayerga bormoqchisiz?"
+
+#: .\templates\destinations.html:33
+#, fuzzy
+#| msgid "Where to go?"
+msgid "Where to go?"
+msgstr "Qayerga bormoqchisiz?"
+
+#: .\templates\destinations.html:36 .\templates\index.html:67
+#, fuzzy
+#| msgid "Search"
+msgid "Search"
+msgstr "Qidirmoq"
+
+#: .\templates\destinations.html:52
+msgid "Filter Result"
+msgstr ""
+
+#: .\templates\destinations.html:59
+msgid "Country"
+msgstr ""
+
+#: .\templates\destinations.html:60
+#, fuzzy
+#| msgid "America"
+msgid "Africa"
+msgstr "Amerika"
+
+#: .\templates\destinations.html:61
+msgid "Canada"
+msgstr ""
+
+#: .\templates\destinations.html:62
+msgid "USA"
+msgstr ""
+
+#: .\templates\destinations.html:69
+msgid "Travel type"
+msgstr "Sayohat turi"
+
+#: .\templates\destinations.html:70 .\templates\destinations.html:71
+msgid "advance"
+msgstr ""
+
+#: .\templates\destinations.html:72
+msgid "premium"
+msgstr ""
+
+#: .\templates\destinations.html:78
+msgid "Prise range"
+msgstr ""
+
+#: .\templates\destinations.html:89
+msgid "Reset"
+msgstr ""
+
+#: .\templates\destinations.html:127 .\templates\index.html:263
+#, fuzzy
+#| msgid "Recent Post"
+msgid "Recent Trips"
+msgstr "Oxirgi xabar"
+
+#: .\templates\destinations.html:139
+msgid "Oct 12, 2019"
+msgstr ""
+
+#: .\templates\destinations.html:142 .\templates\index.html:279
+msgid "Journeys Are Best Measured In New Friends"
+msgstr ""
+
+#: .\templates\index.html:13
+msgid "Indonesia"
+msgstr "Indonesia"
+
+#: .\templates\index.html:15 .\templates\index.html:28
+#: .\templates\index.html:41
+msgid "Explore Now"
+msgstr ""
+
+#: .\templates\index.html:26
+msgid "Australia"
+msgstr "Australia"
+
+#: .\templates\index.html:39
+msgid "Switzerland"
+msgstr "Shveytsariya"
+
+#: .\templates\index.html:64
+#, fuzzy
+#| msgid "Where to go?"
+msgid "Where to go"
+msgstr "Qayerga bormoqchisiz?"
+
+#: .\templates\index.html:83
+msgid "Popular Destination"
+msgstr "Mashhur manzil"
+
+#: .\templates\index.html:110
+msgid "Popular Places"
+msgstr "Mashhur joylar"
+
+#: .\templates\index.html:138
+msgid "More Places"
+msgstr "Boshqa joylar"
+
+#: .\templates\index.html:214
+msgid "- Micky Mouse"
+msgstr ""
+
+#: .\templates\index.html:227 .\templates\index.html:242
+#, fuzzy
+#| msgid ""
+#| "Working in conjunction with humanitarian aid agencies, we have supported "
+#| "programmes to help alleviate human suffering."
+msgid ""
+"\"Working in conjunction with humanitarian aid agencies, we have supported "
+"programmes to help alleviate human suffering."
+msgstr ""
+"Gumanitar yordam agentliklari bilan hamkorlikda ishlagan holda biz "
+"qo'llabquvvatladikodamlar azobini engillashtirishga yordam beradigan "
+"dasturlar."
+
+#: .\templates\index.html:229
+msgid "Tom Mouse"
+msgstr ""
+
+#: .\templates\index.html:244
+msgid "- Jerry Mouse"
+msgstr ""
+
+#: .\templates\layouts\header.html:21
+msgid "Home"
+msgstr "Bosh Sahifa"
+
+#: .\templates\layouts\header.html:27
+msgid "About"
+msgstr "Biz haqimizda"
+
+#: .\templates\layouts\header.html:33
+msgid "Contacts"
+msgstr "Kontaktlar"
+
+#: .\tours\models.py:14
+msgid "tour tag"
+msgstr "tur teg"
+
+#: .\tours\models.py:15
+msgid "tour tags"
+msgstr "tur teglari"
+
+#: .\tours\models.py:45
+msgid "long_description"
+msgstr ""
+
+#: .\tours\models.py:47
+msgid "price"
+msgstr "narx"
+
+#: .\tours\models.py:48
+msgid "discount"
+msgstr "chegirma"
+
+#: .\tours\models.py:59
+msgid "tour"
+msgstr "tur"
+
+#: .\tours\models.py:60
+msgid "tours"
+msgstr "turlar"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "Search files"
+#~ msgstr "Qidirmoq"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Messages"
+#~ msgstr "xabar"
+
+#, fuzzy
+#~| msgid "Inspiration"
+#~ msgid "Syndication"
+#~ msgstr "Mashhur manzilфк"
+
+#, fuzzy
+#~| msgid "Enter your name"
+#~ msgid "Enter a number."
+#~ msgstr "Ismingizni kiriting"
+
+#, fuzzy
+#~| msgid "Jan"
+#~ msgid "and"
+#~ msgstr "Yan"
+
+#, fuzzy
+#~| msgid "illustration"
+#~ msgid "Duration"
+#~ msgstr "Mashhur manzilar"
+
+#, fuzzy
+#~| msgid "image"
+#~ msgid "Image"
+#~ msgstr "tasvir"
+
+#, fuzzy
+#~| msgid "Enter your name"
+#~ msgid "Enter a whole number."
+#~ msgstr "Ismingizni kiriting"
+
+#, fuzzy
+#~| msgid "January 12, 2019"
+#~ msgid "January"
+#~ msgstr "2019 yil 12 yanvar"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "March"
+#~ msgstr "Qidirmoq"
+
+#, fuzzy
+#~| msgid "Jan"
+#~ msgid "jan"
+#~ msgstr "Yan"
+
+#, fuzzy
+#~| msgid "contact"
+#~ msgid "oct"
+#~ msgstr "Kontakt"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgctxt "abbrev. month"
+#~ msgid "March"
+#~ msgstr "Qidirmoq"
+
+#, fuzzy
+#~| msgid "January 12, 2019"
+#~ msgctxt "alt. month"
+#~ msgid "January"
+#~ msgstr "2019 yil 12 yanvar"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgctxt "alt. month"
+#~ msgid "March"
+#~ msgstr "Qidirmoq"
+
+#, fuzzy
+#~| msgid "tour"
+#~ msgid "or"
+#~ msgstr "tur"
+
+#, fuzzy
+#~| msgid ""
+#~| "Consulting represents success at realizing the company is going in the "
+#~| "wrongdirection. The only time the company fails is when it is not "
+#~| "possible to do aturnaround anymore. We help companies pivot into more "
+#~| "profitable directionswhere they can expand and grow. It is inevitable "
+#~| "that companies will end upmaking a few mistakes; we help them correct "
+#~| "these mistakes.Consulting represents success at realizing the company is "
+#~| "going in the wrongdirection. The only time the company fails is when it "
+#~| "is not possible to do aturnaround anymore. We help companies pivot into "
+#~| "more profitable directionswhere they can expand and grow. It is "
+#~| "inevitable that companies will end upmaking a few mistakes. we help them "
+#~| "correct these mistakes."
+#~ msgid ""
+#~ "\n"
+#~ "                                        Consulting represents success at "
+#~ "realizing the company is going in the wrong\n"
+#~ "                                        direction. The only time the "
+#~ "company fails is when it is not possible to do a\n"
+#~ "                                        turnaround anymore. We help "
+#~ "companies pivot into more profitable directions\n"
+#~ "                                        where they can expand and grow. "
+#~ "It is inevitable that companies will end up\n"
+#~ "                                        making a few mistakes; we help "
+#~ "them correct these mistakes.\n"
+#~ "                                        Consulting represents success at "
+#~ "realizing the company is going in the wrong\n"
+#~ "                                        direction. The only time the "
+#~ "company fails is when it is not possible to do a\n"
+#~ "                                        turnaround anymore. We help "
+#~ "companies pivot into more profitable directions\n"
+#~ "                                        where they can expand and grow. "
+#~ "It is inevitable that companies will end up\n"
+#~ "                                        making a few mistakes. we help "
+#~ "them correct these mistakes.\n"
+#~ "                                        "
+#~ msgstr ""
+#~ "Konsalting kompaniya noto'g'ri yo'nalishda ketayotganini "
+#~ "tushunishdagimuvaffaqiyatni anglatadi. Kompaniya muvaffaqiyatsizlikka "
+#~ "uchragan yagonavaqt - bu endi o'zgarishlarni amalga oshirish mumkin "
+#~ "bo'lmaganda. Bizkompaniyalarga kengayishi va o'sishi mumkin bo'lgan "
+#~ "yanada foydaliyo'nalishlarga aylanishlariga yordam beramiz. Kompaniyalar "
+#~ "bir nechtaxatolarga yo'l qo'yishlari muqarrar; biz ularga bu xatolarni "
+#~ "tuzatishgayordam beramiz. Konsalting kompaniya noto'g'ri yo'nalishda "
+#~ "ketayotganinitushunishdagi muvaffaqiyatni anglatadi. Kompaniya "
+#~ "muvaffaqiyatsizlikkauchragan yagona vaqt - bu endi o'zgarishlarni amalga "
+#~ "oshirish mumkinbo'lmaganda. Biz kompaniyalarga kengayishi va o'sishi "
+#~ "mumkin bo'lgan yanadafoydali yo'nalishlarga aylanishlariga yordam "
+#~ "beramiz. Oxir oqibat,kompaniyalar bir nechta xatolarga yo'l qo'yishi "
+#~ "muqarrar. biz ularga buxatolarni tuzatishga yordam beramiz."
+
+#, fuzzy
+#~| msgid ""
+#~| "There are many variations of passages of Lorem Ipsum available, but the "
+#~| "majority have sufferedalteration in some form, by injected humour, or "
+#~| "randomised words which don't look even slightlybelievable. If you are "
+#~| "going to use a passage of Lorem Ipsum, you need to be sure there "
+#~| "isn'tanything embarrassing."
+#~ msgid ""
+#~ "\n"
+#~ "                                'That dominion stars lights dominion "
+#~ "divide years for fourth have don't stars is that\n"
+#~ "                                he earth it first without heaven in place "
+#~ "seed it second morning saying.'\n"
+#~ "                                "
+#~ msgstr ""
+#~ "Lorem Ipsum parchalarining ko'plab variantlari mavjud, ammo ularning "
+#~ "aksariyatibiron bir shaklda, in'ektsion hazil yoki tasodifiy so'zlar "
+#~ "bilan o'zgartirilgan, ular hattobiroz ishonarli ko'rinmaydi. Agar siz "
+#~ "Lorem Ipsum parchasidan foydalanmoqchi bo'lsangiz,unda hech qanday "
+#~ "noqulay narsa yo'qligiga ishonch hosil qilishingiz kerak."
+
+#, fuzzy
+#~| msgid "Travel type"
+#~ msgid "Travel, Lifestyle"
+#~ msgstr "Sayohat turi"
+
+#~| msgid "comments"
+#~ msgid "03 Comments"
+#~ msgstr "komentlar"
+
+#~ msgid "Category"
+#~ msgstr "Turkum"
+
+#~| msgid "Travel type"
+#~ msgid "Travel news"
+#~ msgstr "Sayohat turi"
+
+#~ msgid "Modern technology"
+#~ msgstr "Zamonaviy texnologiya"
+
+#~ msgid "Product"
+#~ msgstr "Mahsulot"
+
+#~ msgid "Health Care"
+#~ msgstr "Sog'liqni saqlash"
+
+#~ msgid "From life was you fish..."
+#~ msgstr "Siz hayotdan baliq edingiz ..."
+
+#~ msgid "The Amazing Hubble"
+#~ msgstr "Ajoyib Hubble"
+
+#~ msgid "02 Hours ago"
+#~ msgstr "02 soat oldin"
+
+#~ msgid "Astronomy Or Astrology"
+#~ msgstr "Astronomiya yoki astrologiya"
+
+#~ msgid "03 Hours ago"
+#~ msgstr "03 soat oldin"
+
+#~ msgid "Asteroids telescope"
+#~ msgstr "Asteroid teleskopi"
+
+#~ msgid "01 Hours ago"
+#~ msgstr "01 soat oldin"
+
+#~ msgid "Tag Clouds"
+#~ msgstr "Teg bulutlari"
+
+#~ msgid "project"
+#~ msgstr "Proekt"
+
+#~ msgid "love"
+#~ msgstr "sevgi"
+
+#~ msgid "technology"
+#~ msgstr "texnologiya"
+
+#~ msgid "travel"
+#~ msgstr "sayohat"
+
+#~ msgid "restaurant"
+#~ msgstr "restoran"
+
+#~ msgid "life style"
+#~ msgstr "hayot tarzi"
+
+#~ msgid "design"
+#~ msgstr "dizayn"
+
+#~ msgid "Instagram Feeds"
+#~ msgstr "Instagram tasmalari"
+
+#~ msgid "Newsletter"
+#~ msgstr "Axborot byulleteni"
+
+#~ msgid "Subscribe"
+#~ msgstr "Obuna bo'ling"
+
+#~ msgid "Saintmartine Iceland"
+#~ msgstr "Saintmartine Islandiya"
+
+#, fuzzy
+#~| msgid ""
+#~| "There are many variations of passages of Lorem Ipsum available, but the "
+#~| "majority have sufferedalteration in some form, by injected humour, or "
+#~| "randomised words which don't look even slightlybelievable. If you are "
+#~| "going to use a passage of Lorem Ipsum, you need to be sure there "
+#~| "isn'tanything embarrassing."
+#~ msgid ""
+#~ "\n"
+#~ "                        There are many variations of passages of Lorem "
+#~ "Ipsum available, but the majority have suffered\n"
+#~ "                        alteration in some form, by injected humour, or "
+#~ "randomised words which don't look even slightly\n"
+#~ "                        believable. If you are going to use a passage of "
+#~ "Lorem Ipsum, you need to be sure there isn't\n"
+#~ "                        anything embarrassing.\n"
+#~ "                        "
+#~ msgstr ""
+#~ "Lorem Ipsum parchalarining ko'plab variantlari mavjud, ammo ularning "
+#~ "aksariyatibiron bir shaklda, in'ektsion hazil yoki tasodifiy so'zlar "
+#~ "bilan o'zgartirilgan, ular hattobiroz ishonarli ko'rinmaydi. Agar siz "
+#~ "Lorem Ipsum parchasidan foydalanmoqchi bo'lsangiz,unda hech qanday "
+#~ "noqulay narsa yo'qligiga ishonch hosil qilishingiz kerak."
+
+#, fuzzy
+#~| msgid ""
+#~| "Variations of passages of lorem Ipsum available, but the majority have "
+#~| "suffered alteration insome form, by injected humour, or randomised words "
+#~| "which don't look even slightly believable. Ifyou are going to use a "
+#~| "passage of Lorem Ipsum, you need to be sure there isn't "
+#~| "anythingembarrassing."
+#~ msgid ""
+#~ "\n"
+#~ "                        Variations of passages of lorem Ipsum available, "
+#~ "but the majority have suffered alteration in\n"
+#~ "                        some form, by injected humour, or randomised "
+#~ "words which don't look even slightly believable. If\n"
+#~ "                        you are going to use a passage of Lorem Ipsum, "
+#~ "you need to be sure there isn't anything\n"
+#~ "                        embarrassing.\n"
+#~ "                        "
+#~ msgstr ""
+#~ "Lorem Ipsum parchalarining ko'plab variantlari mavjud, ammo ularning "
+#~ "aksariyatibiron bir shaklda, in'ektsion hazil yoki tasodifiy so'zlar "
+#~ "bilan o'zgartirilgan, ular hattobiroz ishonarli ko'rinmaydi. Agar siz "
+#~ "Lorem Ipsum parchasidan foydalanmoqchi bo'lsangiz,unda hech qanday "
+#~ "noqulay narsa yo'qligiga ishonch hosil qilishingiz kerak."
+
+#~ msgid "Day-01"
+#~ msgstr "Kun - 01"
+
+#, fuzzy
+#~| msgid ""
+#~| "There are many variations of passages of Lorem Ipsum available, but the "
+#~| "majority have sufferedalteration in some form, by injected humour, or "
+#~| "randomised words which don't look even slightlybelievable. If you are "
+#~| "going to use a passage of Lorem Ipsum, you need to be sure there "
+#~| "isn'tanything embarrassing."
+#~ msgid ""
+#~ "\n"
+#~ "                            There are many variations of passages of "
+#~ "Lorem Ipsum available, but the majority have\n"
+#~ "                            suffered alteration in some form, by injected "
+#~ "humour, or randomised words.\n"
+#~ "                            "
+#~ msgstr ""
+#~ "Lorem Ipsum parchalarining ko'plab variantlari mavjud, ammo ularning "
+#~ "aksariyatibiron bir shaklda, in'ektsion hazil yoki tasodifiy so'zlar "
+#~ "bilan o'zgartirilgan, ular hattobiroz ishonarli ko'rinmaydi. Agar siz "
+#~ "Lorem Ipsum parchasidan foydalanmoqchi bo'lsangiz,unda hech qanday "
+#~ "noqulay narsa yo'qligiga ishonch hosil qilishingiz kerak."
+
+#~ msgid "Day-02"
+#~ msgstr "Kun - 02"
+
+#~ msgid "Day-03"
+#~ msgstr "Kun - 03"
+
+#~ msgid "Contact for join"
+#~ msgstr "Qo'shilish uchun murojaat qiling"
+
+#~ msgid "Your Name"
+#~ msgstr "Ismingiz"
+
+#~ msgid "Phone no."
+#~ msgstr "Telefon raqami"
+
+#~ msgid "submit"
+#~ msgstr "jonatish"
+
+#~ msgid "Subscribe Our Newsletter"
+#~ msgstr "Bizning xabarnomamizga obuna bo'ling"
+
+#~ msgid "Your mail"
+#~ msgstr "Sizning pochtangiz"
+
+#~ msgid "California"
+#~ msgstr "Buttonwood, California"
+
+#~ msgid "United State of America"
+#~ msgstr "Amerika Qo'shma Shtatlari"
+
+#~ msgid "5 Days"
+#~ msgstr "5 Kun"
+
+#~ msgid "Korola Megna"
+#~ msgstr "Korola orrolari"
+
+#~ msgid "London"
+#~ msgstr "London"
+
+#~ msgid "Date"
+#~ msgstr "Sana"
+
+#~ msgid "Some option"
+#~ msgstr "Ba'zi variant"
+
+#~ msgid "Another option"
+#~ msgstr "Another option"
+
+#~ msgid "Italy"
+#~ msgstr "Italiya"
+
+#~ msgid "Brazil"
+#~ msgstr "Braziliya"
+
+#~ msgid "Nepal"
+#~ msgstr "Nepal"
+
+#~ msgid "Maldives"
+#~ msgstr "Maldiv orollari"
+
+#~ msgid "Miami Beach"
+#~ msgstr "Mayami"
+
+#~ msgid "English"
+#~ msgstr "Ingliz tili"
+
+#~ msgid "Russian"
+#~ msgstr "Russ tili"
+
+#~ msgid "Uzbek"
+#~ msgstr "Uzbek tili"
+
+#~ msgid "create_at"
+#~ msgstr "yaratilgan sana"
+
+#~ msgid "images"
+#~ msgstr "tasvirlar"
+
+#~ msgid ""
+#~ "Lorem Ipsum parchalarining ko'plab variantlari mavjud, ammo ularning "
+#~ "aksariyati mavjudu qandaydir shaklda o'zgartirilgan, hazil yoki tasodifiy "
+#~ "so'zlar bilan.There are many variations of passages of Lorem Ipsum "
+#~ "available, but the majority havesuffered alteration in some form, by "
+#~ "injected humour, or randomised words."
+#~ msgstr ""
+#~ "Lorem Ipsum parchalarining ko'plab variantlari mavjud, ammo ularning "
+#~ "aksariyatiqandaydir shaklda, in'ektsion hazil yoki tasodifiy so'zlar "
+#~ "bilan o'zgartirilgan."
+
+#~ msgid " Subscribe newsletter to get offers and aboutnew places to discover."
+#~ msgstr ""
+#~ "Takliflar olish va kashf qilinadigan yangi joylar haqida axborot "
+#~ "byulleteniga obuna bo'ling."
+
+#~ msgid "blog"
+#~ msgstr "blog"
