@@ -9,6 +9,7 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
+    path('accounts/', include('registration.backends.default.urls')),
     path('admin/', admin.site.urls),
     path('destinations/', include('tours.urls', namespace='destinations')),
     path('posts/', include('posts.urls', namespace='posts')),

@@ -36,28 +36,22 @@
                                 </nav>
                             </div>
                         </div>
+                        <div class="row"></div>
                         <div class="col-xl-4 col-lg-4 d-none d-lg-block">
-                            <div class="social_wrap d-flex align-items-center justify-content-end">
-                                <div class="number">
-                                    <p><i class="fa fa-phone"></i> 10(256)-928 256</p>
-                                </div>
-                                <div class="social_links d-none d-xl-block">
+                            <div class="social_wrap">
+                                <div  style="margin-right: -100px " class="social_links  d-xl-block">
                                     <ul>
                                         <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
                                         <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
                                         <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
+                                        <li><a href="{% url 'pages:login'%}"> <i class="fa fa-google-plus"></i> </a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="seach_icon">
-                            <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+                        <form action="{% url 'destinations:list' %}">
+                            <input name="q" style="margin-left: -200px ;width: auto" class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        </form>
                         </div>
                     </div>
                 </div>

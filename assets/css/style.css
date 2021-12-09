@@ -195,20 +195,7 @@ h3 {
   background: #f5f5f5;
 }
 
-/* line 131, ../../Arafath/CL/December/231. Travel-02/HTML/scss/theme-default.scss */
-.bg-img-1 {
-  background-image: url(../img/slider/slider-img-1.jpg);
-}
 
-/* line 134, ../../Arafath/CL/December/231. Travel-02/HTML/scss/theme-default.scss */
-.bg-img-2 {
-  background-image: url(../img/background-img/bg-img-2.jpg);
-}
-
-/* line 137, ../../Arafath/CL/December/231. Travel-02/HTML/scss/theme-default.scss */
-.cta-bg-1 {
-  background-image: url(../img/background-img/bg-img-3.jpg);
-}
 
 /* line 142, ../../Arafath/CL/December/231. Travel-02/HTML/scss/theme-default.scss */
 .overlay {
@@ -1432,10 +1419,7 @@ h3 {
   border: none;
 }
 
-/* line 105, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slider.scss */
-.property_bg {
-  background-image: url(../img/banner/property.png);
-}
+
 
 /* line 1, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_about.scss */
 .about_story {
@@ -2554,7 +2538,6 @@ h3 {
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  -ms-flex-pack: space-between;
 }
 
 @media (max-width: 767px) {
@@ -3857,7 +3840,7 @@ h6 {
 
 /* line 188, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_elements.scss */
 .genric-btn.arrow {
-  display: -webkit-inline-box;
+
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
@@ -4068,7 +4051,7 @@ h6 {
 
 /* line 339, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_elements.scss */
 .genric-btn.disable {
-  color: #222222, 0.3;
+
   background: #f9f9ff;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -5610,7 +5593,7 @@ h6 {
 .blog_item_img .blog_item_date {
   position: absolute;
   bottom: -5px;
-  left: px;
+
   display: block;
   color: #fff;
   background-color: #FF4A52;
@@ -5673,8 +5656,8 @@ h6 {
 
 /* line 660, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
 .blog_right_sidebar .single_sidebar_widget {
-  weight:200%
-  margin:0
+
+
   margin-bottom: 30px;
   margin-left:200px;
 }
@@ -5687,7 +5670,7 @@ h6 {
 /* line 672, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
 .blog_right_sidebar .search_widget .form-control {
 
-  weight:100%
+
   font-size: 13px;
   color: #999999;
   padding-left: 20px;
@@ -5697,7 +5680,7 @@ h6 {
 
 /* line 681, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
 .blog_right_sidebar .search_widget .form-control::placeholder {
-  color:
+
 }
 
 /* line 685, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
@@ -6680,6 +6663,55 @@ h6 {
 .blog_part .single-home-blog .card ul li span {
   margin-right: 10px;
   font-size: 12px;
+}
+.search-model {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #000;
+	z-index: 99999;
+}
+
+.search-model-form {
+	padding: 0 15px;
+}
+
+.search-model-form input {
+	width: 500px;
+	font-size: 40px;
+	border: none;
+	border-bottom: 2px solid #333;
+	background: 0 0;
+	color: #999;
+}
+
+.search-close-switch {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 28px;
+	line-height: 28px;
+	top: 30px;
+	cursor: pointer;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
