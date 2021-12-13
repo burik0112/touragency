@@ -1,3 +1,7 @@
+from datetime import datetime
+
+import pytz
+
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.db import models
 from django.utils.translation import gettext_lazy as _
@@ -51,6 +55,18 @@ class TourModel(models.Model):
                                   related_name='tours',
                                   verbose_name=_('tags'))
     created_at = models.DateTimeField(auto_now_add=True, verbose_name=_('created_at'))
+
+    def is_discount(self):
+        return self.is_discount != 0
+
+    def get_price(self):
+        if self.is_discount():
+            return self.price - self.price * self.discount / 100
+        return self.price
+
+    def is_new(self):
+        diff = datetime.now(pytz.timezone('Asia/Tashkent')) - self.created_at
+        return diff.days <= 3
 
     def __str__(self):
         return self.title

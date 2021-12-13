@@ -13,6 +13,7 @@ urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path('destinations/', include('tours.urls', namespace='destinations')),
     path('posts/', include('posts.urls', namespace='posts')),
+    path('input/', include('tours.urls', namespace='input')),
     path('', include('pages.urls')),
 )
 

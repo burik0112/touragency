@@ -69,7 +69,7 @@
                         <img src="{{ home.img.url }}" alt="">
                     </div>
                     <div class="content">
-                        <p class="d-flex align-items-center">{{home.title}} <a href=""> 07 Places</a></p>
+                        <p class="d-flex align-items-center">{{home.title}} <a href=""> {{ home.place}} Places</a></p>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                 <div class="single_place">
                     <div class="thumb">
                         <img src="{{place.img.url}}" alt="">
-                        <a href="#" class="prise">$500</a>
+                        <a href="#" class="prise">${{place.price}}</a>
                     </div>
                     <div class="place_info">
                         <a href="destination_details.html"><h3>{{place.title}}</h3></a>

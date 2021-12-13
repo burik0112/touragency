@@ -44,6 +44,11 @@ class AboutView(TemplateView):
 
 class LoginView(TemplateView):
     template_name = 'login.html.'
+#
+#
+# class InputView(TemplateView):
+#     template_name = 'input.html.'
+
 
 
 

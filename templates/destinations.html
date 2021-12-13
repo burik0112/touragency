@@ -8,8 +8,12 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="bradcam_text text-center">
-                    <h3>{% trans 'Destinations'%}</h3>
-                    <p>{% trans 'Pixel perfect design with awesome contents'%}</p>
+                    <h3>
+                        {% trans 'Destinations'%}
+                    </h3>
+                    <p>
+                        {% trans 'Pixel perfect design with awesome contents'%}
+                    </p>
                 </div>
             </div>
         </div>
@@ -33,7 +37,7 @@
                                 <input name="q" value="{{request.GET.q}}" type="text" placeholder="Where to go?">
                             </div>
                             <div class="search_btn">
-                                <button class="boxed-btn4 " type="submit" >Search</button>
+                                <button  class="boxed-btn4 " type="submit" >Search</button>
                             </div>
                         </form>
                     </div>
@@ -99,7 +103,7 @@
                         <div class="single_place">
                             <div class="thumb">
                                 <img src="{{tours.image.url}}" alt="">
-                                <a href="" class="prise">$500</a>
+                                <a href="{% url 'destinations:detail' pk=destination.pk %}" class="prise">${{tours.price }}</a>
                             </div>
                             <div class="place_info">
                                 <a href=""><h3>{{tours.title}}</h3></a>

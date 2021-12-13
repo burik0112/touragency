@@ -1,0 +1,71 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+
+<!-- where_togo_area_start  -->
+
+
+<!-- where_togo_area_end  -->
+    <div class="popular_places_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        {% for tours in object_list %}
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_place">
+                                    <div class="thumb">
+                                        <img src="{{ tours.image.url }}" alt="">
+                                        <a href="{{ pk.destinations.pk }}" class="prise">$500</a>
+                                    </div>
+                                    <div class="place_info">
+                                        <a href=""><h3>{{ tours.title }}</h3></a>
+
+                                        <div class="rating_days d-flex justify-content-between">
+
+                                            <div class="days">
+
+                                                <p>{{ tours.created_at| date:'d F Y' }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="recent_trip_area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section_title text-center mb_70">
+                    <h3>{% trans 'Recent Trips'%}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single_trip">
+                    <div class="thumb">
+                        <img src="{% static 'img/trip/1.png'%}" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="date">
+                            <span>{% trans 'Oct 12, 2019'%}</span>
+                        </div>
+                        <a href="#">
+                            <h3>{% trans 'Journeys Are Best Measured In New Friends'%}</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

@@ -19,8 +19,17 @@ class ContactModel(models.Model):
 class HomeModel(models.Model):
     title = models.CharField(max_length=50)
     img = models.ImageField(upload_to='images')
+    price = models.IntegerField(default=0, verbose_name=_('price'))
     created_at = models.DateTimeField(auto_now_add=True)
     place = models.IntegerField()
+
+    def is_discount(self):
+        return self.is_discount != 0
+
+    def get_price(self):
+        if self.is_discount():
+            return self.price - self.price * self.discount / 100
+        return self.price
 
     def __str__(self):
         return self.title
@@ -33,8 +42,16 @@ class HomeModel(models.Model):
 class PlaceModel(models.Model):
     title = models.TextField(max_length=40)
     img = models.ImageField(upload_to='images')
-    price = models.FloatField(null=True)
+    price = models.IntegerField(default=0, verbose_name=_('price'))
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def is_discount(self):
+        return self.is_discount != 0
+
+    def get_price(self):
+        if self.is_discount():
+            return self.price - self.price * self.discount / 100
+        return self.price
 
     def __str__(self):
         return self.title

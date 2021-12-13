@@ -40,16 +40,11 @@
                         <div class="col-xl-4 col-lg-4 d-none d-lg-block">
                             <div class="social_wrap">
                                 <div  style="margin-right: -100px " class="social_links  d-xl-block">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="{% url 'pages:login'%}"> <i class="fa fa-google-plus"></i> </a></li>
-                                    </ul>
                                 </div>
+
                             </div>
                         </div>
-                        <form action="{% url 'destinations:list' %}">
+                        <form action="{% url 'destinations:input' %}">
                             <input name="q" style="margin-left: -200px ;width: auto" class="form-control" type="text" placeholder="Search" aria-label="Search">
                         </form>
                         </div>
