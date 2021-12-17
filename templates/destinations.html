@@ -27,17 +27,17 @@
             <div class="row align-items-center">
                 <div class="col-lg-3">
                     <div class="form_area">
-                        <h3>Where you want to go?</h3>
+                        <h3>{% trans 'Where you want to go?' %}</h3>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <div class="search_wrap">
                         <form class="search_form" action="#">
                             <div class="input_field">
-                                <input name="q" value="{{request.GET.q}}" type="text" placeholder="Where to go?">
+                                <input name="q" value="{{request.GET.q}}" type="text" placeholder="{% trans 'Where to go?' %}">
                             </div>
                             <div class="search_btn">
-                                <button  class="boxed-btn4 " type="submit" >Search</button>
+                                <button  class="boxed-btn4 " type="submit" >{% trans 'Search' %}</button>
                             </div>
                         </form>
                     </div>
@@ -98,26 +98,23 @@
             </div>
             <div class="col-lg-8">
                 <div class="row">
-                    {% for tours in object_list%}
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single_place">
-                            <div class="thumb">
-                                <img src="{{tours.image.url}}" alt="">
-                                <a href="{% url 'destinations:detail' pk=destination.pk %}" class="prise">${{tours.price }}</a>
-                            </div>
-                            <div class="place_info">
-                                <a href=""><h3>{{tours.title}}</h3></a>
-
-                                <div class="rating_days d-flex justify-content-between">
-
-                                    <div class="days">
-
-                                        <p>{{tours.created_at| date:'d F Y'}}</p>
+                    {% for tours in object_list %}
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single_place">
+                                <div class="thumb">
+                                    <img src="{{ tours.image.url }}" alt="">
+                                    <a href="" class="prise">${{ tours.price }}</a>
+                                </div>
+                                <div class="place_info">
+                                    <a href="{% url 'destinations:detail' tours.id %}"><h3>{{ tours.title }}</h3></a>
+                                     <div class="rating_days d-flex justify-content-between">
+                                        <div class="days">
+                                            <p>{{ tours.created_at| date:'d F Y' }}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     {% endfor %}
                 </div>
             </div>

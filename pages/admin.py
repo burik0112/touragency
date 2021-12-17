@@ -12,9 +12,9 @@ class ContactModelAdmin(admin.ModelAdmin):
 
 @admin.register(HomeModel)
 class HomeModelAdmin(admin.ModelAdmin):
-    list_display = ['title', 'img', 'place', 'price', 'created_at']
-    search_fields = ['title', 'place']
-    list_filter = ['created_at', 'price']
+    list_display = ['title', 'remains', 'place', 'img', 'created_at']
+    search_fields = ['title', 'remains']
+    list_filter = ['created_at', 'place', 'remains']
 
 
 @admin.register(PlaceModel)

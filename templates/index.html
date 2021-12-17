@@ -11,7 +11,7 @@
                     <div class="col-xl-12 col-md-12">
                         <div class="slider_text text-center">
                             <h3>{% trans 'Indonesia'%}</h3>
-                            <p>{% trans 'Pixel perfect design with awesome contents'%}</p>
+                            <p class="mt-3">{% trans 'Pixel perfect design with awesome contents'%}</p>
                             <a href="{% url 'destinations:list' %}" class="boxed-btn3">{% trans 'Explore Now'%}</a>
                         </div>
                     </div>
@@ -70,6 +70,9 @@
                     </div>
                     <div class="content">
                         <p class="d-flex align-items-center">{{home.title}} <a href=""> {{ home.place}} Places</a></p>
+                        <div class="place">
+                            <h6 style="color: #fff0ff" ;>{{ home.remains }}</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,12 +99,13 @@
                         <img src="{{place.img.url}}" alt="">
                         <a href="#" class="prise">${{place.price}}</a>
                     </div>
+
                     <div class="place_info">
                         <a href="destination_details.html"><h3>{{place.title}}</h3></a>
                         <div class="rating_days d-flex justify-content-between">
                             <div class="days">
                                 <i class="fa fa-clock-o"></i>
-                                <a href="#">{{place.created_at| date:'d. M Y'}}</a>
+                                <a href="#">{{place.created_at| date:'d F Y'}}</a>
                             </div>
                         </div>
                     </div>

@@ -325,6 +325,7 @@ h3 {
 .owl-carousel .owl-nav div.owl-next {
   left: auto;
   right: 150px;
+  display: none;
 }
 
 /* line 254, ../../Arafath/CL/December/231. Travel-02/HTML/scss/theme-default.scss */
@@ -1388,35 +1389,18 @@ h3 {
 
 /* line 79, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slider.scss */
 .slider_area .owl-carousel .owl-nav div {
-  height: 120px;
-  left: 0px;
-  width: 50px;
-  color: #fff;
-  background-color: transparent;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  left: 50px;
-  font-size: 14px;
-  border: none;
-  left: 150px;
-  line-height: 120px;
-  background: rgba(255, 255, 255, 0.2);
   left: 0;
-  border: none !important;
+
 }
 
 /* line 94, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slider.scss */
 .slider_area .owl-carousel .owl-nav div.owl-next {
-  right: 0;
-  left: auto;
+
 }
 
 /* line 98, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slider.scss */
 .slider_area .owl-carousel .owl-nav div:hover {
-  background: white;
-  color: #001D38;
-  border: none;
+
 }
 
 
@@ -3116,6 +3100,7 @@ h3 {
 /* line 36, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_popular_place.scss */
 .popular_places_area .single_place .place_info h3 {
   font-size: 22px;
+  --button-hover-bg:200px;
   font-weight: 400;
   color: #040E27;
   margin-bottom: 0;

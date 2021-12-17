@@ -1,0 +1,54 @@
+{% extends 'registration/registration_base.html' %}
+{% load i18n %}
+
+{% block content %}
+    <form method="post">
+        <div class="text-center" style="padding-top: 12%; padding-left: 2%;">
+            <h2 class="text-uppercase" style="color:#ffffff">{% trans 'Login' %}</h2>
+        </div>
+    </form>
+    <form class="offset-2" style="padding-top: 0%; padding-right: 5%;" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}"/>
+        <div class="form-group col-5 offset-4" style="color:#ffffff">
+            <label for="username">{% trans 'Username' %}</label>
+            <input name="username" style="width:50%" type="text" class="form-control" placeholder="Username"
+                   id="username"
+                   required>
+        </div>
+        <div class="row">
+
+        </div>
+        <div class="form-group col-5 offset-4" style="color:#ffffff">
+            <label for="password">{% trans 'Password' %}</label>
+            <input name="password" style="width:50%" type="password" class="form-control" placeholder="Password"
+                   id="password"
+                   required>
+        </div>
+
+        <div class="offset-4" style="margin-left:35%; color:#ffffff">
+            <label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">{% trans 'Remember me' %}</span>
+                <input type="checkbox" checked="checked"/>
+                <div class="control__indicator"></div>
+            </label>
+            <span class="">
+                    <a href="{% url 'auth_password_reset' %}" class="forgot-pass">
+                        {% trans 'Forgot Password' %}
+                    </a>
+                </span>
+        </div>
+        <div class="row  offset-1" style="margin-left:14%">
+            <div class="col-3">
+                <a href="{% url 'registration_register' %}">
+                    <div class="offset-11" style="margin-left: 95%">
+                        <button type="button" class="btn btn-secondary"
+                                style="width:140px">{% trans 'Sign Up' %}</button>
+                    </div>
+                </a>
+            </div>
+            <div class="offset-1" style="margin-left: 10%">
+                <button type="submit" class="btn btn-dark" style="width:160px">{% trans 'Sign In' %}</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

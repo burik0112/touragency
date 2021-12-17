@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 15:38+0500\n"
+"POT-Creation-Date: 2021-12-16 17:05+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgid "message"
 msgstr ""
 
 #: .\pages\models.py:9 .\posts\models.py:10 .\posts\models.py:28
-#: .\posts\models.py:51 .\tours\models.py:8 .\tours\models.py:53
+#: .\posts\models.py:51 .\tours\models.py:12 .\tours\models.py:57
 msgid "created_at"
 msgstr ""
 
@@ -43,8 +43,12 @@ msgstr ""
 msgid "contacts"
 msgstr ""
 
-#: .\posts\models.py:9 .\posts\models.py:21 .\tours\models.py:7
-#: .\tours\models.py:44
+#: .\pages\models.py:22 .\pages\models.py:45 .\tours\models.py:51
+msgid "price"
+msgstr ""
+
+#: .\posts\models.py:9 .\posts\models.py:21 .\tours\models.py:11
+#: .\tours\models.py:48
 msgid "title"
 msgstr ""
 
@@ -56,7 +60,7 @@ msgstr ""
 msgid "post tags"
 msgstr ""
 
-#: .\posts\models.py:22 .\tours\models.py:46
+#: .\posts\models.py:22 .\tours\models.py:50
 msgid "image"
 msgstr ""
 
@@ -64,7 +68,7 @@ msgstr ""
 msgid "banner"
 msgstr ""
 
-#: .\posts\models.py:26 .\tours\models.py:52
+#: .\posts\models.py:26 .\tours\models.py:56
 msgid "tags"
 msgstr ""
 
@@ -93,7 +97,7 @@ msgid "About Us"
 msgstr ""
 
 #: .\templates\about.html:12 .\templates\blog.html:12
-#: .\templates\contact.html:12 .\templates\destinations.html:12
+#: .\templates\contact.html:12 .\templates\destinations.html:15
 #: .\templates\index.html:14 .\templates\index.html:27
 #: .\templates\index.html:40
 msgid "Pixel perfect design with awesome contents"
@@ -129,25 +133,25 @@ msgid ""
 "                                        "
 msgstr ""
 
-#: .\templates\about.html:79 .\templates\index.html:151
+#: .\templates\about.html:79 .\templates\index.html:129
 msgid "Enjoy Video"
 msgstr ""
 
-#: .\templates\about.html:100 .\templates\index.html:172
+#: .\templates\about.html:100 .\templates\index.html:150
 msgid "Comfortable Journey"
 msgstr ""
 
 #: .\templates\about.html:101 .\templates\about.html:110
-#: .\templates\about.html:119 .\templates\index.html:173
-#: .\templates\index.html:182 .\templates\index.html:191
+#: .\templates\about.html:119 .\templates\index.html:151
+#: .\templates\index.html:160 .\templates\index.html:169
 msgid "A wonderful serenity has taken to the possession of my entire soul."
 msgstr ""
 
-#: .\templates\about.html:109 .\templates\index.html:181
+#: .\templates\about.html:109 .\templates\index.html:159
 msgid "Luxuries Hotel"
 msgstr ""
 
-#: .\templates\about.html:118 .\templates\index.html:190
+#: .\templates\about.html:118 .\templates\index.html:168
 msgid "Travel Guide"
 msgstr ""
 
@@ -155,13 +159,13 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: .\templates\blog.html:65 .\templates\index.html:212
+#: .\templates\blog.html:65 .\templates\index.html:190
 msgid ""
 "Working in conjunction with humanitarian aid agencies, we have supported "
 "programmes to help alleviate human suffering."
 msgstr ""
 
-#: .\templates\contact.html:11
+#: .\templates\contact.html:11 .\templates\layouts\footer.html:49
 msgid "Contact"
 msgstr ""
 
@@ -169,107 +173,109 @@ msgstr ""
 msgid "Get in Touch"
 msgstr ""
 
-#: .\templates\contact.html:74
+#: .\templates\contact.html:75
 msgid "Enter Message"
 msgstr ""
 
-#: .\templates\contact.html:79
+#: .\templates\contact.html:80
 msgid "Enter your name"
 msgstr ""
 
-#: .\templates\contact.html:84
+#: .\templates\contact.html:85
 msgid "Email"
 msgstr ""
 
-#: .\templates\contact.html:89
+#: .\templates\contact.html:90
 msgid "Enter Subject"
 msgstr ""
 
-#: .\templates\contact.html:102
+#: .\templates\contact.html:103
 msgid "Buttonwood, California"
 msgstr ""
 
-#: .\templates\contact.html:110
+#: .\templates\contact.html:111
 msgid "Mon to Fri 9am to 6pm"
 msgstr ""
 
-#: .\templates\contact.html:116
+#: .\templates\contact.html:117
 msgid "support@colorlib.com"
 msgstr ""
 
-#: .\templates\contact.html:117
+#: .\templates\contact.html:118
 msgid "Send us your query anytime!"
 msgstr ""
 
-#: .\templates\destinations.html:11 .\templates\layouts\header.html:24
+#: .\templates\destinations.html:12 .\templates\layouts\header.html:24
 msgid "Destinations"
 msgstr ""
 
-#: .\templates\destinations.html:26 .\templates\index.html:57
+#: .\templates\destinations.html:30
 msgid "Where you want to go?"
 msgstr ""
 
-#: .\templates\destinations.html:33
+#: .\templates\destinations.html:37
 msgid "Where to go?"
 msgstr ""
 
-#: .\templates\destinations.html:36 .\templates\index.html:67
+#: .\templates\destinations.html:40 .\templates\layouts\header.html:75
 msgid "Search"
 msgstr ""
 
-#: .\templates\destinations.html:52
+#: .\templates\destinations.html:57
 msgid "Filter Result"
 msgstr ""
 
-#: .\templates\destinations.html:59
+#: .\templates\destinations.html:64
 msgid "Country"
 msgstr ""
 
-#: .\templates\destinations.html:60
+#: .\templates\destinations.html:65
 msgid "Africa"
 msgstr ""
 
-#: .\templates\destinations.html:61
+#: .\templates\destinations.html:66 .\templates\layouts\footer.html:64
 msgid "Canada"
 msgstr ""
 
-#: .\templates\destinations.html:62
+#: .\templates\destinations.html:67
 msgid "USA"
 msgstr ""
 
-#: .\templates\destinations.html:69
+#: .\templates\destinations.html:74
 msgid "Travel type"
 msgstr ""
 
-#: .\templates\destinations.html:70 .\templates\destinations.html:71
+#: .\templates\destinations.html:75 .\templates\destinations.html:76
 msgid "advance"
 msgstr ""
 
-#: .\templates\destinations.html:72
+#: .\templates\destinations.html:77
 msgid "premium"
 msgstr ""
 
-#: .\templates\destinations.html:78
+#: .\templates\destinations.html:83
 msgid "Prise range"
 msgstr ""
 
-#: .\templates\destinations.html:89
+#: .\templates\destinations.html:94
 msgid "Reset"
 msgstr ""
 
-#: .\templates\destinations.html:127 .\templates\index.html:263
+#: .\templates\destinations.html:129 .\templates\index.html:241
+#: .\templates\input.html:48
 msgid "Recent Trips"
 msgstr ""
 
-#: .\templates\destinations.html:139
+#: .\templates\destinations.html:141 .\templates\input.html:60
 msgid "Oct 12, 2019"
 msgstr ""
 
-#: .\templates\destinations.html:142 .\templates\index.html:279
+#: .\templates\destinations.html:144 .\templates\index.html:257
+#: .\templates\input.html:63
 msgid "Journeys Are Best Measured In New Friends"
 msgstr ""
 
-#: .\templates\index.html:13
+#: .\templates\index.html:13 .\templates\layouts\footer.html:59
 msgid "Indonesia"
 msgstr ""
 
@@ -282,54 +288,134 @@ msgstr ""
 msgid "Australia"
 msgstr ""
 
-#: .\templates\index.html:39
+#: .\templates\index.html:39 .\templates\layouts\footer.html:62
 msgid "Switzerland"
 msgstr ""
 
-#: .\templates\index.html:64
-msgid "Where to go"
-msgstr ""
-
-#: .\templates\index.html:83
+#: .\templates\index.html:60
 msgid "Popular Destination"
 msgstr ""
 
-#: .\templates\index.html:110
+#: .\templates\index.html:87
 msgid "Popular Places"
 msgstr ""
 
-#: .\templates\index.html:138
+#: .\templates\index.html:116
 msgid "More Places"
 msgstr ""
 
-#: .\templates\index.html:214
+#: .\templates\index.html:192
 msgid "- Micky Mouse"
 msgstr ""
 
-#: .\templates\index.html:227 .\templates\index.html:242
+#: .\templates\index.html:205 .\templates\index.html:220
 msgid ""
 "\"Working in conjunction with humanitarian aid agencies, we have supported "
 "programmes to help alleviate human suffering."
 msgstr ""
 
-#: .\templates\index.html:229
+#: .\templates\index.html:207
 msgid "Tom Mouse"
 msgstr ""
 
-#: .\templates\index.html:244
+#: .\templates\index.html:222
 msgid "- Jerry Mouse"
+msgstr ""
+
+#: .\templates\layouts\footer.html:14
+msgid "5th flora, 700/D kings road, green <br> lane New York-1782"
+msgstr ""
+
+#: .\templates\layouts\footer.html:43
+msgid "Company"
+msgstr ""
+
+#: .\templates\layouts\footer.html:46
+msgid "Pricing"
+msgstr ""
+
+#: .\templates\layouts\footer.html:47 .\templates\layouts\header.html:27
+msgid "About"
+msgstr ""
+
+#: .\templates\layouts\footer.html:48
+msgid "Gallery"
+msgstr ""
+
+#: .\templates\layouts\footer.html:56
+msgid "Destination"
+msgstr ""
+
+#: .\templates\layouts\footer.html:60
+msgid "America"
+msgstr ""
+
+#: .\templates\layouts\footer.html:61
+msgid "India"
+msgstr ""
+
+#: .\templates\layouts\footer.html:63
+msgid "Italy"
+msgstr ""
+
+#: .\templates\layouts\footer.html:65
+msgid "France"
+msgstr ""
+
+#: .\templates\layouts\footer.html:66
+msgid "England"
+msgstr ""
+
+#: .\templates\layouts\footer.html:73
+msgid "Instagram"
 msgstr ""
 
 #: .\templates\layouts\header.html:21
 msgid "Home"
 msgstr ""
 
-#: .\templates\layouts\header.html:27
-msgid "About"
-msgstr ""
-
 #: .\templates\layouts\header.html:33
 msgid "Contacts"
+msgstr ""
+
+#: .\templates\layouts\header.html:66
+msgid "Log out"
+msgstr ""
+
+#: .\templates\layouts\header.html:70
+msgid "Sign in"
+msgstr ""
+
+#: .\templates\login.html:7 .\templates\registration\login.html:7
+msgid "Login"
+msgstr ""
+
+#: .\templates\login.html:14 .\templates\registration\login.html:14
+#: .\templates\registration\registration_form.html:15
+msgid "Username"
+msgstr ""
+
+#: .\templates\login.html:23 .\templates\registration\login.html:23
+#: .\templates\registration\registration_form.html:23
+msgid "Password"
+msgstr ""
+
+#: .\templates\login.html:30 .\templates\registration\login.html:30
+msgid "Remember me"
+msgstr ""
+
+#: .\templates\login.html:36 .\templates\registration\login.html:36
+msgid "Forgot Password"
+msgstr ""
+
+#: .\templates\login.html:45 .\templates\registration\login.html:45
+#: .\templates\registration\password_change_form.html:13
+msgid "Sign Up"
+msgstr ""
+
+#: .\templates\login.html:50 .\templates\registration\login.html:50
+#: .\templates\registration\password_change_form.html:18
+msgid "Sign In"
 msgstr ""
 
 #: .\templates\registration\activate.html:4
@@ -499,36 +585,6 @@ msgstr ""
 msgid "Account approval on"
 msgstr ""
 
-#: .\templates\registration\login.html:7
-msgid "Login"
-msgstr ""
-
-#: .\templates\registration\login.html:13
-#: .\templates\registration\registration_form.html:13
-msgid "Username"
-msgstr ""
-
-#: .\templates\registration\login.html:17
-#: .\templates\registration\registration_form.html:21
-msgid "Password"
-msgstr ""
-
-#: .\templates\registration\login.html:22
-msgid "Remember me"
-msgstr ""
-
-#: .\templates\registration\login.html:28
-msgid "Forgot Password"
-msgstr ""
-
-#: .\templates\registration\login.html:36
-msgid "Sign Up"
-msgstr ""
-
-#: .\templates\registration\login.html:40
-msgid "Sign In"
-msgstr ""
-
 #: .\templates\registration\logout.html:4
 msgid "Logged out"
 msgstr ""
@@ -645,7 +701,7 @@ msgstr ""
 msgid "Activation email sent"
 msgstr ""
 
-#: .\templates\registration\registration_complete.html:7
+#: .\templates\registration\registration_complete.html:8
 msgid "Please check your email to complete the registration process."
 msgstr ""
 
@@ -653,11 +709,11 @@ msgstr ""
 msgid "Registration"
 msgstr ""
 
-#: .\templates\registration\registration_form.html:17
+#: .\templates\registration\registration_form.html:19
 msgid "E-mail"
 msgstr ""
 
-#: .\templates\registration\registration_form.html:25
+#: .\templates\registration\registration_form.html:27
 msgid "Confirm Password"
 msgstr ""
 
@@ -681,30 +737,26 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: .\tours\models.py:14
+#: .\tours\models.py:18
 msgid "tour tag"
 msgstr ""
 
-#: .\tours\models.py:15
+#: .\tours\models.py:19
 msgid "tour tags"
 msgstr ""
 
-#: .\tours\models.py:45
+#: .\tours\models.py:49
 msgid "long_description"
 msgstr ""
 
-#: .\tours\models.py:47
-msgid "price"
-msgstr ""
-
-#: .\tours\models.py:48
+#: .\tours\models.py:52
 msgid "discount"
 msgstr ""
 
-#: .\tours\models.py:59
+#: .\tours\models.py:75
 msgid "tour"
 msgstr ""
 
-#: .\tours\models.py:60
+#: .\tours\models.py:76
 msgid "tours"
 msgstr ""

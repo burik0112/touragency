@@ -13,6 +13,7 @@ ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'registration',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -124,17 +125,15 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-LOGIN_URL = '/'
-
-
-ACCOUNT_ACTIVATION_DAYS = 365
-REGISTRATION_AUTO_LOGIN = True
-
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/accounts/profile'
+LOGOUT_REDIRECT_URL = '/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'utepbergenovaman@gmail.com'
+EMAIL_HOST_PASSWORD = 'ezppuqgtkrkvqfmc'
+EMAIL_PORT = 587
 
-EMAIL_HOST_USER = 'burhonabdullaev727@gmail.com'
-EMAIL_HOST_PASSWORD = 'burik0112'
+ACCOUNT_ACTIVATION_DAYS = 30

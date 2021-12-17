@@ -1,0 +1,45 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block content %}
+<form method="post">
+    <div class="text-center" style="padding-top: 10%; padding-left: 2%;">
+        <h2 class="text-uppercase" style="color:#ffffff">{% trans 'Registration' %}</h2>
+    </div>
+</form>
+
+<div style="padding-left: 9%">
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group first col-3 offset-4" style="color:#ffffff">
+            <label for="username">{% trans 'Username' %}</label>
+            <input name="username" type="text" class="form-control" placeholder="Username" id="username1">
+        </div>
+        <div class="form-group first col-3 offset-4" style="color:#ffffff">
+            <label for="username">{% trans 'E-mail' %}</label>
+            <input name="email" type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
+        </div>
+        <div class="form-group last col-3 offset-4" style="color:#ffffff">
+            <label for="password">{% trans 'Password' %}</label>
+            <input name="password1" type="password" class="form-control" placeholder="Password" id="password1">
+        </div>
+        <div class="form-group last col-3 offset-4" style="color:#ffffff">
+            <label for="password">{% trans 'Confirm Password' %}</label>
+            <input name="password2" type="password" class="form-control" placeholder="Confirm Password" id="password">
+        </div>
+        <div class="col-4 offset-4">
+            <div class="d-flex">
+                <a href="{% url 'auth_login' %}">
+                    <button type="submit" class="btn btn-dark ml-5" style="width:300px">Sign up</button>
+                </a>
+            </div>
+            <div class="col-4 offset-4">
+                <a href="{% url 'pages:home' %}">
+                    Back To Website
+                </a>
+            </div>
+        </div>
+    </form>
+
+</div>
+{% endblock %}

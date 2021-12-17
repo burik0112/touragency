@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 15:38+0500\n"
+"POT-Creation-Date: 2021-12-16 17:05+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "message"
 msgstr "Сообщение"
 
 #: .\pages\models.py:9 .\posts\models.py:10 .\posts\models.py:28
-#: .\posts\models.py:51 .\tours\models.py:8 .\tours\models.py:53
+#: .\posts\models.py:51 .\tours\models.py:12 .\tours\models.py:57
 msgid "created_at"
 msgstr "Дата создания"
 
@@ -47,8 +47,12 @@ msgstr "контакты"
 msgid "contacts"
 msgstr "контакты"
 
-#: .\posts\models.py:9 .\posts\models.py:21 .\tours\models.py:7
-#: .\tours\models.py:44
+#: .\pages\models.py:22 .\pages\models.py:45 .\tours\models.py:51
+msgid "price"
+msgstr "цена"
+
+#: .\posts\models.py:9 .\posts\models.py:21 .\tours\models.py:11
+#: .\tours\models.py:48
 msgid "title"
 msgstr "заголовок"
 
@@ -60,7 +64,7 @@ msgstr "пост тег"
 msgid "post tags"
 msgstr "пост теги"
 
-#: .\posts\models.py:22 .\tours\models.py:46
+#: .\posts\models.py:22 .\tours\models.py:50
 msgid "image"
 msgstr "изображение"
 
@@ -68,7 +72,7 @@ msgstr "изображение"
 msgid "banner"
 msgstr "баннер"
 
-#: .\posts\models.py:26 .\tours\models.py:52
+#: .\posts\models.py:26 .\tours\models.py:56
 #, fuzzy
 #| msgid "post tags"
 msgid "tags"
@@ -99,7 +103,7 @@ msgid "About Us"
 msgstr "О нас"
 
 #: .\templates\about.html:12 .\templates\blog.html:12
-#: .\templates\contact.html:12 .\templates\destinations.html:12
+#: .\templates\contact.html:12 .\templates\destinations.html:15
 #: .\templates\index.html:14 .\templates\index.html:27
 #: .\templates\index.html:40
 msgid "Pixel perfect design with awesome contents"
@@ -147,25 +151,25 @@ msgstr ""
 "Компании неизбежно совершают несколько ошибок; мы помогаем им исправить эти "
 "ошибки"
 
-#: .\templates\about.html:79 .\templates\index.html:151
+#: .\templates\about.html:79 .\templates\index.html:129
 msgid "Enjoy Video"
 msgstr "Наслаждайтесь видео"
 
-#: .\templates\about.html:100 .\templates\index.html:172
+#: .\templates\about.html:100 .\templates\index.html:150
 msgid "Comfortable Journey"
 msgstr "Комфортное путешествие"
 
 #: .\templates\about.html:101 .\templates\about.html:110
-#: .\templates\about.html:119 .\templates\index.html:173
-#: .\templates\index.html:182 .\templates\index.html:191
+#: .\templates\about.html:119 .\templates\index.html:151
+#: .\templates\index.html:160 .\templates\index.html:169
 msgid "A wonderful serenity has taken to the possession of my entire soul."
 msgstr "Чудесная безмятежность овладела всей моей душой."
 
-#: .\templates\about.html:109 .\templates\index.html:181
+#: .\templates\about.html:109 .\templates\index.html:159
 msgid "Luxuries Hotel"
 msgstr "Роскошный отель"
 
-#: .\templates\about.html:118 .\templates\index.html:190
+#: .\templates\about.html:118 .\templates\index.html:168
 msgid "Travel Guide"
 msgstr "Путеводитель"
 
@@ -173,7 +177,7 @@ msgstr "Путеводитель"
 msgid "Blog"
 msgstr "Блог"
 
-#: .\templates\blog.html:65 .\templates\index.html:212
+#: .\templates\blog.html:65 .\templates\index.html:190
 msgid ""
 "Working in conjunction with humanitarian aid agencies, we have supported "
 "programmes to help alleviate human suffering."
@@ -181,7 +185,7 @@ msgstr ""
 "Результаты переводаРаботая совместно с агентствами по оказанию гуманитарной "
 "помощи, мы поддержалипрограммы, помогающие облегчить человеческие страдания"
 
-#: .\templates\contact.html:11
+#: .\templates\contact.html:11 .\templates\layouts\footer.html:49
 #, fuzzy
 #| msgid "Contacts"
 msgid "Contact"
@@ -191,115 +195,113 @@ msgstr "Контакты"
 msgid "Get in Touch"
 msgstr "Связаться"
 
-#: .\templates\contact.html:74
+#: .\templates\contact.html:75
 msgid "Enter Message"
 msgstr "Введите сообщение"
 
-#: .\templates\contact.html:79
+#: .\templates\contact.html:80
 #, fuzzy
 #| msgid "Enter your name"
 msgid "Enter your name"
 msgstr "Введите ваше имя"
 
-#: .\templates\contact.html:84
+#: .\templates\contact.html:85
 msgid "Email"
 msgstr ""
 
-#: .\templates\contact.html:89
+#: .\templates\contact.html:90
 msgid "Enter Subject"
 msgstr "Введите тему"
 
-#: .\templates\contact.html:102
+#: .\templates\contact.html:103
 msgid "Buttonwood, California"
 msgstr "Баттонвуд, Калифорния"
 
-#: .\templates\contact.html:110
+#: .\templates\contact.html:111
 msgid "Mon to Fri 9am to 6pm"
 msgstr "С пн по пт с 9:00 до 18:00"
 
-#: .\templates\contact.html:116
+#: .\templates\contact.html:117
 msgid "support@colorlib.com"
 msgstr ""
 
-#: .\templates\contact.html:117
+#: .\templates\contact.html:118
 msgid "Send us your query anytime!"
 msgstr "Отправьте нам свой запрос в любое время!"
 
-#: .\templates\destinations.html:11 .\templates\layouts\header.html:24
+#: .\templates\destinations.html:12 .\templates\layouts\header.html:24
 msgid "Destinations"
 msgstr "Направления"
 
-#: .\templates\destinations.html:26 .\templates\index.html:57
+#: .\templates\destinations.html:30
 msgid "Where you want to go?"
 msgstr "Куда хотите отправится"
 
-#: .\templates\destinations.html:33
-#, fuzzy
-#| msgid "Where to go?"
+#: .\templates\destinations.html:37
 msgid "Where to go?"
 msgstr "Куда идти?"
 
-#: .\templates\destinations.html:36 .\templates\index.html:67
-#, fuzzy
-#| msgid "Search"
+#: .\templates\destinations.html:40 .\templates\layouts\header.html:75
 msgid "Search"
 msgstr "Поиск"
 
-#: .\templates\destinations.html:52
+#: .\templates\destinations.html:57
 msgid "Filter Result"
 msgstr "Результат фильтрации"
 
-#: .\templates\destinations.html:59
+#: .\templates\destinations.html:64
 msgid "Country"
 msgstr "Страна"
 
-#: .\templates\destinations.html:60
+#: .\templates\destinations.html:65
 #, fuzzy
 #| msgid "America"
 msgid "Africa"
 msgstr "Африка"
 
-#: .\templates\destinations.html:61
+#: .\templates\destinations.html:66 .\templates\layouts\footer.html:64
 msgid "Canada"
 msgstr "Канада"
 
-#: .\templates\destinations.html:62
+#: .\templates\destinations.html:67
 msgid "USA"
 msgstr "США"
 
-#: .\templates\destinations.html:69
+#: .\templates\destinations.html:74
 msgid "Travel type"
 msgstr "Тип путешествия"
 
-#: .\templates\destinations.html:70 .\templates\destinations.html:71
+#: .\templates\destinations.html:75 .\templates\destinations.html:76
 msgid "advance"
 msgstr "продвигать"
 
-#: .\templates\destinations.html:72
+#: .\templates\destinations.html:77
 msgid "premium"
 msgstr "премия"
 
-#: .\templates\destinations.html:78
+#: .\templates\destinations.html:83
 msgid "Prise range"
 msgstr "Призовой диапазон"
 
-#: .\templates\destinations.html:89
+#: .\templates\destinations.html:94
 msgid "Reset"
 msgstr "Сбросить"
 
-#: .\templates\destinations.html:127 .\templates\index.html:263
+#: .\templates\destinations.html:129 .\templates\index.html:241
+#: .\templates\input.html:48
 msgid "Recent Trips"
 msgstr "Недавние поездки"
 
-#: .\templates\destinations.html:139
+#: .\templates\destinations.html:141 .\templates\input.html:60
 msgid "Oct 12, 2019"
 msgstr "12 октября 2019 г."
 
-#: .\templates\destinations.html:142 .\templates\index.html:279
+#: .\templates\destinations.html:144 .\templates\index.html:257
+#: .\templates\input.html:63
 msgid "Journeys Are Best Measured In New Friends"
 msgstr "Путешествие лучше всего измерять в новых друзьях"
 
-#: .\templates\index.html:13
+#: .\templates\index.html:13 .\templates\layouts\footer.html:59
 msgid "Indonesia"
 msgstr "Индонезия"
 
@@ -312,33 +314,27 @@ msgstr "Исследуй сейчас"
 msgid "Australia"
 msgstr "Австралия"
 
-#: .\templates\index.html:39
+#: .\templates\index.html:39 .\templates\layouts\footer.html:62
 msgid "Switzerland"
 msgstr "Швейцария"
 
-#: .\templates\index.html:64
-#, fuzzy
-#| msgid "Where to go?"
-msgid "Where to go"
-msgstr "Куда идти?"
-
-#: .\templates\index.html:83
+#: .\templates\index.html:60
 msgid "Popular Destination"
 msgstr "Популярные Направления"
 
-#: .\templates\index.html:110
+#: .\templates\index.html:87
 msgid "Popular Places"
 msgstr "Популярные Места"
 
-#: .\templates\index.html:138
+#: .\templates\index.html:116
 msgid "More Places"
 msgstr "Больше мест"
 
-#: .\templates\index.html:214
+#: .\templates\index.html:192
 msgid "- Micky Mouse"
 msgstr ""
 
-#: .\templates\index.html:227 .\templates\index.html:242
+#: .\templates\index.html:205 .\templates\index.html:220
 msgid ""
 "\"Working in conjunction with humanitarian aid agencies, we have supported "
 "programmes to help alleviate human suffering."
@@ -346,25 +342,113 @@ msgstr ""
 "Работая совместно с агентствами по оказанию гуманитарной помощи, мы "
 "поддержалипрограммы, помогающие облегчить человеческие страдания"
 
-#: .\templates\index.html:229
+#: .\templates\index.html:207
 msgid "Tom Mouse"
 msgstr ""
 
-#: .\templates\index.html:244
+#: .\templates\index.html:222
 msgid "- Jerry Mouse"
 msgstr ""
+
+#: .\templates\layouts\footer.html:14
+msgid "5th flora, 700/D kings road, green <br> lane New York-1782"
+msgstr ""
+
+#: .\templates\layouts\footer.html:43
+msgid "Company"
+msgstr "Компания"
+
+#: .\templates\layouts\footer.html:46
+msgid "Pricing"
+msgstr "Цена"
+
+#: .\templates\layouts\footer.html:47 .\templates\layouts\header.html:27
+msgid "About"
+msgstr "О нас"
+
+#: .\templates\layouts\footer.html:48
+msgid "Gallery"
+msgstr "Галерея"
+
+#: .\templates\layouts\footer.html:56
+msgid "Destination"
+msgstr "Направления"
+
+#: .\templates\layouts\footer.html:60
+#, fuzzy
+#| msgid "America"
+msgid "America"
+msgstr "Африка"
+
+#: .\templates\layouts\footer.html:61
+msgid "India"
+msgstr "Индия"
+
+#: .\templates\layouts\footer.html:63
+msgid "Italy"
+msgstr "Италия"
+
+#: .\templates\layouts\footer.html:65
+msgid "France"
+msgstr "Франция"
+
+#: .\templates\layouts\footer.html:66
+msgid "England"
+msgstr "Англия"
+
+#: .\templates\layouts\footer.html:73
+msgid "Instagram"
+msgstr "Instagram"
 
 #: .\templates\layouts\header.html:21
 msgid "Home"
 msgstr "Главная"
 
-#: .\templates\layouts\header.html:27
-msgid "About"
-msgstr "О нас"
-
 #: .\templates\layouts\header.html:33
 msgid "Contacts"
 msgstr "Контакты"
+
+#: .\templates\layouts\header.html:66
+msgid "Log out"
+msgstr ""
+
+#: .\templates\layouts\header.html:70
+msgid "Sign in"
+msgstr "Войти"
+
+#: .\templates\login.html:7 .\templates\registration\login.html:7
+msgid "Login"
+msgstr "Авторизоваться"
+
+#: .\templates\login.html:14 .\templates\registration\login.html:14
+#: .\templates\registration\registration_form.html:15
+#, fuzzy
+#| msgid "name"
+msgid "Username"
+msgstr "Имя"
+
+#: .\templates\login.html:23 .\templates\registration\login.html:23
+#: .\templates\registration\registration_form.html:23
+msgid "Password"
+msgstr ""
+
+#: .\templates\login.html:30 .\templates\registration\login.html:30
+msgid "Remember me"
+msgstr ""
+
+#: .\templates\login.html:36 .\templates\registration\login.html:36
+msgid "Forgot Password"
+msgstr ""
+
+#: .\templates\login.html:45 .\templates\registration\login.html:45
+#: .\templates\registration\password_change_form.html:13
+msgid "Sign Up"
+msgstr ""
+
+#: .\templates\login.html:50 .\templates\registration\login.html:50
+#: .\templates\registration\password_change_form.html:18
+msgid "Sign In"
+msgstr ""
 
 #: .\templates\registration\activate.html:4
 msgid "Activation Failure"
@@ -535,38 +619,6 @@ msgstr ""
 msgid "Account approval on"
 msgstr ""
 
-#: .\templates\registration\login.html:7
-msgid "Login"
-msgstr ""
-
-#: .\templates\registration\login.html:13
-#: .\templates\registration\registration_form.html:13
-#, fuzzy
-#| msgid "name"
-msgid "Username"
-msgstr "Имя"
-
-#: .\templates\registration\login.html:17
-#: .\templates\registration\registration_form.html:21
-msgid "Password"
-msgstr ""
-
-#: .\templates\registration\login.html:22
-msgid "Remember me"
-msgstr ""
-
-#: .\templates\registration\login.html:28
-msgid "Forgot Password"
-msgstr ""
-
-#: .\templates\registration\login.html:36
-msgid "Sign Up"
-msgstr ""
-
-#: .\templates\registration\login.html:40
-msgid "Sign In"
-msgstr ""
-
 #: .\templates\registration\logout.html:4
 msgid "Logged out"
 msgstr ""
@@ -683,7 +735,7 @@ msgstr ""
 msgid "Activation email sent"
 msgstr ""
 
-#: .\templates\registration\registration_complete.html:7
+#: .\templates\registration\registration_complete.html:8
 msgid "Please check your email to complete the registration process."
 msgstr ""
 
@@ -693,11 +745,11 @@ msgstr ""
 msgid "Registration"
 msgstr "Направления"
 
-#: .\templates\registration\registration_form.html:17
+#: .\templates\registration\registration_form.html:19
 msgid "E-mail"
 msgstr ""
 
-#: .\templates\registration\registration_form.html:25
+#: .\templates\registration\registration_form.html:27
 msgid "Confirm Password"
 msgstr ""
 
@@ -723,33 +775,38 @@ msgstr ""
 msgid "Submit"
 msgstr "Отправить"
 
-#: .\tours\models.py:14
+#: .\tours\models.py:18
 msgid "tour tag"
 msgstr "тур тег"
 
-#: .\tours\models.py:15
+#: .\tours\models.py:19
 msgid "tour tags"
 msgstr "тур теги"
 
-#: .\tours\models.py:45
+#: .\tours\models.py:49
 msgid "long_description"
 msgstr ""
 
-#: .\tours\models.py:47
-msgid "price"
-msgstr "цена"
-
-#: .\tours\models.py:48
+#: .\tours\models.py:52
 msgid "discount"
 msgstr "скидка"
 
-#: .\tours\models.py:59
+#: .\tours\models.py:75
 msgid "tour"
 msgstr "тур"
 
-#: .\tours\models.py:60
+#: .\tours\models.py:76
 msgid "tours"
 msgstr "туры"
+
+#, fuzzy
+#~ msgid "Popular destination"
+#~ msgstr "Популярные Направления"
+
+#, fuzzy
+#~| msgid "Where to go?"
+#~ msgid "Where to go"
+#~ msgstr "Куда идти?"
 
 #~ msgid "Message"
 #~ msgstr "Сообщение"
@@ -868,9 +925,6 @@ msgstr "туры"
 
 #~ msgid "design"
 #~ msgstr "дизайн"
-
-#~ msgid "Instagram Feeds"
-#~ msgstr "Ленты Instagram"
 
 #~ msgid "Newsletter"
 #~ msgstr "Новостная рассылка"

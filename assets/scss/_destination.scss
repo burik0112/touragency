@@ -10,7 +10,7 @@
         margin-bottom: 30px;
         border-radius: 5px;
         overflow: hidden;
-        @include transition(.3s);
+        @include transition(.7s);
         &:before{
             /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#040e27+0,040e27+100&0+0,0.7+100 */
             background: -moz-linear-gradient(top,  rgba(4,14,39,0) 0%, rgba(4,14,39,0.7) 100%); /* FF3.6-15 */
@@ -147,9 +147,6 @@
             h4{
                 font-size: 16px;
                 font-weight: 500;
-            }
-            p{
-
             }
         }
     }

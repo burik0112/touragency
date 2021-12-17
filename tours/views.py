@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from django.views.generic import DetailView, ListView, TemplateView
+from django.urls import reverse
+from django.views.generic import DetailView, ListView, TemplateView, CreateView
 
+from tours.forms import OrderModelForm
 from tours.models import TourTagModel, TourModel
 
 
@@ -36,11 +38,12 @@ class InputListView(ListView):
         return qs
 
 
-class DestinationDetailView(DetailView):
-    templates_name = 'destination_details.html'
+class DestinationCreateView(DetailView):
+    template_name = 'destination_details.html'
     model = TourModel
+    # form_class = OrderModelForm
 
-    def get_context_data(self, **kwargs):
+    def get_context_data(self, pk, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['related'] = self.object.category.products.exclude(pk=self.object.pk)[:4]
+        context['related'] = TourModel.objects.filter(id=pk)
         return context

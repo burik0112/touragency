@@ -40,13 +40,44 @@
                         <div class="col-xl-4 col-lg-4 d-none d-lg-block">
                             <div class="social_wrap">
                                 <div  style="margin-right: -100px " class="social_links  d-xl-block">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.instagram.com/burik0112/?hl=ru">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.google.com/">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        </li>
+                                        {% if request.user.is_authenticated %}
+                                        <li>
+                                            <a href="{% url 'auth_logout' %}">{% trans 'Log out' %}</a>
+                                        </li>
+                                        {% else %}
+                                        <li>
+                                            <a href="{% url 'auth_login' %}">{% trans 'Sign in' %}</a>
+                                            {% endif %}
+                                        </li>
+                                    <li>
+                                        <form action="{% url 'destinations:input' %}">
+                                            <input name="q" style="width: auto" class="form-control" type="text" placeholder="{% trans 'Search' %}" aria-label="Search">
+                                        </form>
+                                    </li>
+                                    </ul>
                                 </div>
-
                             </div>
-                        </div>
-                        <form action="{% url 'destinations:input' %}">
-                            <input name="q" style="margin-left: -200px ;width: auto" class="form-control" type="text" placeholder="Search" aria-label="Search">
-                        </form>
                         </div>
                     </div>
                 </div>
