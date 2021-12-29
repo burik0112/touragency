@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 17:05+0500\n"
+"POT-Creation-Date: 2021-12-20 16:51+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,11 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\pages\models.py:6 .\posts\models.py:39
+#: .\pages\models.py:6 .\posts\models.py:42
 msgid "name"
 msgstr "Имя"
 
-#: .\pages\models.py:7 .\posts\models.py:40
+#: .\pages\models.py:7 .\posts\models.py:43
 msgid "email"
 msgstr ""
 
@@ -33,7 +33,7 @@ msgid "message"
 msgstr "Сообщение"
 
 #: .\pages\models.py:9 .\posts\models.py:10 .\posts\models.py:28
-#: .\posts\models.py:51 .\tours\models.py:12 .\tours\models.py:57
+#: .\posts\models.py:54 .\tours\models.py:12 .\tours\models.py:57
 msgid "created_at"
 msgstr "Дата создания"
 
@@ -47,7 +47,7 @@ msgstr "контакты"
 msgid "contacts"
 msgstr "контакты"
 
-#: .\pages\models.py:22 .\pages\models.py:45 .\tours\models.py:51
+#: .\pages\models.py:38 .\tours\models.py:51
 msgid "price"
 msgstr "цена"
 
@@ -78,23 +78,23 @@ msgstr "баннер"
 msgid "tags"
 msgstr "пост теги"
 
-#: .\posts\models.py:34 .\posts\models.py:48
+#: .\posts\models.py:37 .\posts\models.py:51
 msgid "post"
 msgstr "пост"
 
-#: .\posts\models.py:35
+#: .\posts\models.py:38
 msgid "posts"
 msgstr "посты"
 
-#: .\posts\models.py:41
+#: .\posts\models.py:44
 msgid "phone"
 msgstr ""
 
-#: .\posts\models.py:42 .\posts\models.py:57
+#: .\posts\models.py:45 .\posts\models.py:60
 msgid "comment"
 msgstr "комментарий"
 
-#: .\posts\models.py:58
+#: .\posts\models.py:61
 msgid "comments"
 msgstr "комментарии"
 
@@ -103,7 +103,8 @@ msgid "About Us"
 msgstr "О нас"
 
 #: .\templates\about.html:12 .\templates\blog.html:12
-#: .\templates\contact.html:12 .\templates\destinations.html:15
+#: .\templates\blog_detail.html:12 .\templates\contact.html:12
+#: .\templates\destination_details.html:8 .\templates\destinations.html:15
 #: .\templates\index.html:14 .\templates\index.html:27
 #: .\templates\index.html:40
 msgid "Pixel perfect design with awesome contents"
@@ -151,25 +152,25 @@ msgstr ""
 "Компании неизбежно совершают несколько ошибок; мы помогаем им исправить эти "
 "ошибки"
 
-#: .\templates\about.html:79 .\templates\index.html:129
+#: .\templates\about.html:79 .\templates\index.html:139
 msgid "Enjoy Video"
 msgstr "Наслаждайтесь видео"
 
-#: .\templates\about.html:100 .\templates\index.html:150
+#: .\templates\about.html:100 .\templates\index.html:160
 msgid "Comfortable Journey"
 msgstr "Комфортное путешествие"
 
 #: .\templates\about.html:101 .\templates\about.html:110
-#: .\templates\about.html:119 .\templates\index.html:151
-#: .\templates\index.html:160 .\templates\index.html:169
+#: .\templates\about.html:119 .\templates\index.html:161
+#: .\templates\index.html:170 .\templates\index.html:179
 msgid "A wonderful serenity has taken to the possession of my entire soul."
 msgstr "Чудесная безмятежность овладела всей моей душой."
 
-#: .\templates\about.html:109 .\templates\index.html:159
+#: .\templates\about.html:109 .\templates\index.html:169
 msgid "Luxuries Hotel"
 msgstr "Роскошный отель"
 
-#: .\templates\about.html:118 .\templates\index.html:168
+#: .\templates\about.html:118 .\templates\index.html:178
 msgid "Travel Guide"
 msgstr "Путеводитель"
 
@@ -177,7 +178,7 @@ msgstr "Путеводитель"
 msgid "Blog"
 msgstr "Блог"
 
-#: .\templates\blog.html:65 .\templates\index.html:190
+#: .\templates\blog.html:65 .\templates\index.html:200
 msgid ""
 "Working in conjunction with humanitarian aid agencies, we have supported "
 "programmes to help alleviate human suffering."
@@ -185,9 +186,77 @@ msgstr ""
 "Результаты переводаРаботая совместно с агентствами по оказанию гуманитарной "
 "помощи, мы поддержалипрограммы, помогающие облегчить человеческие страдания"
 
+#: .\templates\blog_detail.html:11
+msgid "News"
+msgstr "Новости"
+
+#: .\templates\blog_detail.html:31
+msgid ""
+"Second divided from form fish beast made every of seasall gathered us saying "
+"he our"
+msgstr ""
+"Второй разделенный на форму рыбный зверь, сделанный каждым из морей, собрал "
+"нас, говоря, что он наш"
+
+#: .\templates\blog_detail.html:39
+msgid ""
+"\n"
+"                          MCSE boot camps have its supporters and its "
+"detractors. Some people do not understand why you\n"
+"                          should have to spend money on boot camp when you "
+"can get the MCSE study materials yourself at a\n"
+"                          fraction of the camp price. However, who has the "
+"willpower\n"
+"                         "
+msgstr ""
+"\n"
+"У учебных лагерей MCSE есть как сторонникитак и противники. Некоторые люди "
+"не понимают, почему вам нужно тратить деньги на учебный лагерь, если вы "
+"можете получить часть стоимости лагеря. Однако у кого есть сила волиучебные "
+"материалы MCSE самостоятельно в учебном лагере."
+
+#: .\templates\blog_detail.html:54
+msgid ""
+"\n"
+"                         MCSE boot camps have its supporters and its "
+"detractors. Some people do not understand why you\n"
+"                         should have to spend money on boot camp when you "
+"can get the MCSE study materials yourself at a\n"
+"                         fraction of the camp price. However, who has the "
+"willpower\n"
+"                         "
+msgstr ""
+"\n"
+"У учебных лагерей MCSE есть как сторонникитак и противники. Некоторые люди "
+"не понимают, почему вам нужно тратить деньги на учебный лагерь, если вы "
+"можете получить часть стоимости лагеря. Однако у кого есть сила волиучебные "
+"материалы MCSE самостоятельно в учебном лагере."
+
+#: .\templates\blog_detail.html:100
+msgid "Prev Post"
+msgstr ""
+
+#: .\templates\blog_detail.html:102
+msgid "Space The Final Frontier"
+msgstr ""
+
+#: .\templates\blog_detail.html:109
+msgid "Next Post"
+msgstr ""
+
+#: .\templates\blog_detail.html:111
+msgid "Telescopes 101"
+msgstr ""
+
+#: .\templates\blog_detail.html:135
+msgid ""
+"Second divided from form fish beast made. Every of seas all gathered use "
+"saying youre, heour dominion twon Second divided from"
+msgstr ""
+"Второй разделенный из формы рыбный зверь.Каждое из морей собралось, говоря, "
+"что ты, твое владычество, второй, разделенный от"
+
 #: .\templates\contact.html:11 .\templates\layouts\footer.html:49
-#, fuzzy
-#| msgid "Contacts"
 msgid "Contact"
 msgstr "Контакты"
 
@@ -200,8 +269,6 @@ msgid "Enter Message"
 msgstr "Введите сообщение"
 
 #: .\templates\contact.html:80
-#, fuzzy
-#| msgid "Enter your name"
 msgid "Enter your name"
 msgstr "Введите ваше имя"
 
@@ -229,6 +296,125 @@ msgstr ""
 msgid "Send us your query anytime!"
 msgstr "Отправьте нам свой запрос в любое время!"
 
+#: .\templates\destination_details.html:7
+msgid "Saintmartine Iceland"
+msgstr "Остров Святого Мартина"
+
+#: .\templates\destination_details.html:17
+msgid "Description"
+msgstr "Описание"
+
+#: .\templates\destination_details.html:19
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                        Variations of passages of lorem Ipsum available, "
+#| "but the majority have suffered alteration in\n"
+#| "                        some form, by injected humour, or randomised "
+#| "words which don't look even slightly believable. If\n"
+#| "                        you are going to use a passage of Lorem Ipsum, "
+#| "you need to be sure there isn't anything\n"
+#| "                        embarrassing.\n"
+#| "                        "
+msgid ""
+"\n"
+"                        There are many variations of passages of Lorem Ipsum "
+"available, but the majority have suffered\n"
+"                        alteration in some form, by injected humour, or "
+"randomised words which don't look even slightly\n"
+"                        believable. If you are going to use a passage of "
+"Lorem Ipsum, you need to be sure there isn't\n"
+"                        anything embarrassing.\n"
+"                        "
+msgstr ""
+"\n"
+"Доступны вариации отрывков lorem Ipsum, но большинство претерпело изменения "
+"в той или иной форме из-за введенного юмора или случайных слов, которые даже "
+"немного не выглядят правдоподобными. Если вы собираетесь использовать "
+"отрывок из Lorem Ipsum, вы должны быть уверены, что в нем нет ничего "
+"смущающего."
+
+#: .\templates\destination_details.html:27
+msgid ""
+"\n"
+"                        Variations of passages of lorem Ipsum available, but "
+"the majority have suffered alteration in\n"
+"                        some form, by injected humour, or randomised words "
+"which don't look even slightly believable. If\n"
+"                        you are going to use a passage of Lorem Ipsum, you "
+"need to be sure there isn't anything\n"
+"                        embarrassing.\n"
+"                        "
+msgstr ""
+"\n"
+"Доступны вариации отрывков lorem Ipsum, но большинство претерпело изменения "
+"в той или иной форме из-за введенного юмора или случайных слов, которые даже "
+"немного не выглядят правдоподобными. Если вы собираетесь использовать "
+"отрывок из Lorem Ipsum, вы должны быть уверены, что в нем нет ничего "
+"смущающего."
+
+#: .\templates\destination_details.html:35
+msgid "Day-01"
+msgstr "День-01"
+
+#: .\templates\destination_details.html:37
+#: .\templates\destination_details.html:46
+#: .\templates\destination_details.html:55
+msgid ""
+"\n"
+"                            There are many variations of passages of Lorem "
+"Ipsum available, but the majority have\n"
+"                            suffered alteration in some form, by injected "
+"humour, or randomised words.\n"
+"                            "
+msgstr ""
+"\n"
+"Доступно множество вариаций отрывков Lorem Ipsum, но большинство из них "
+"претерпели изменения в той или иной форме из-за добавленного юмора или "
+"случайных слов, которые даже немного не выглядят правдоподобными. Если вы "
+"собираетесь использовать отрывок из Lorem Ipsum, вы должны быть уверены, что "
+"в нем нет ничего смущающего."
+
+#: .\templates\destination_details.html:44
+msgid "Day-02"
+msgstr "День-02"
+
+#: .\templates\destination_details.html:53
+msgid "Day-03"
+msgstr "День-03"
+
+#: .\templates\destination_details.html:65
+msgid "Apply"
+msgstr "подать заявку "
+
+#: .\templates\destination_details.html:82 .\templates\index.html:126
+msgid "More Places"
+msgstr "Больше мест"
+
+#: .\templates\destination_details.html:94
+msgid "California"
+msgstr "Калифорния"
+
+#: .\templates\destination_details.html:95
+#: .\templates\destination_details.html:121
+#: .\templates\destination_details.html:147
+msgid "United State of America"
+msgstr "Соединенные Штаты Америки"
+
+#: .\templates\destination_details.html:107
+#: .\templates\destination_details.html:133
+#: .\templates\destination_details.html:159
+msgid "5 Days"
+msgstr "5 Дней"
+
+#: .\templates\destination_details.html:120
+msgid "Korola Megna"
+msgstr "Остров Корола"
+
+#: .\templates\destination_details.html:146
+msgid "London"
+msgstr "Лондон"
+
 #: .\templates\destinations.html:12 .\templates\layouts\header.html:24
 msgid "Destinations"
 msgstr "Направления"
@@ -237,67 +423,67 @@ msgstr "Направления"
 msgid "Where you want to go?"
 msgstr "Куда хотите отправится"
 
-#: .\templates\destinations.html:37
+#: .\templates\destinations.html:38
 msgid "Where to go?"
 msgstr "Куда идти?"
 
-#: .\templates\destinations.html:40 .\templates\layouts\header.html:75
+#: .\templates\destinations.html:41 .\templates\layouts\header.html:75
 msgid "Search"
 msgstr "Поиск"
 
-#: .\templates\destinations.html:57
+#: .\templates\destinations.html:58
 msgid "Filter Result"
 msgstr "Результат фильтрации"
 
-#: .\templates\destinations.html:64
+#: .\templates\destinations.html:65
 msgid "Country"
 msgstr "Страна"
 
-#: .\templates\destinations.html:65
+#: .\templates\destinations.html:66
 #, fuzzy
 #| msgid "America"
 msgid "Africa"
 msgstr "Африка"
 
-#: .\templates\destinations.html:66 .\templates\layouts\footer.html:64
+#: .\templates\destinations.html:67 .\templates\layouts\footer.html:64
 msgid "Canada"
 msgstr "Канада"
 
-#: .\templates\destinations.html:67
+#: .\templates\destinations.html:68
 msgid "USA"
 msgstr "США"
 
-#: .\templates\destinations.html:74
+#: .\templates\destinations.html:73
 msgid "Travel type"
 msgstr "Тип путешествия"
 
-#: .\templates\destinations.html:75 .\templates\destinations.html:76
+#: .\templates\destinations.html:74 .\templates\destinations.html:75
 msgid "advance"
 msgstr "продвигать"
 
-#: .\templates\destinations.html:77
+#: .\templates\destinations.html:76
 msgid "premium"
 msgstr "премия"
 
-#: .\templates\destinations.html:83
+#: .\templates\destinations.html:80
 msgid "Prise range"
 msgstr "Призовой диапазон"
 
-#: .\templates\destinations.html:94
+#: .\templates\destinations.html:88
 msgid "Reset"
 msgstr "Сбросить"
 
-#: .\templates\destinations.html:129 .\templates\index.html:241
-#: .\templates\input.html:48
+#: .\templates\destinations.html:132 .\templates\index.html:251
+#: .\templates\input.html:42
 msgid "Recent Trips"
 msgstr "Недавние поездки"
 
-#: .\templates\destinations.html:141 .\templates\input.html:60
+#: .\templates\destinations.html:144 .\templates\input.html:54
 msgid "Oct 12, 2019"
 msgstr "12 октября 2019 г."
 
-#: .\templates\destinations.html:144 .\templates\index.html:257
-#: .\templates\input.html:63
+#: .\templates\destinations.html:147 .\templates\index.html:267
+#: .\templates\input.html:57
 msgid "Journeys Are Best Measured In New Friends"
 msgstr "Путешествие лучше всего измерять в новых друзьях"
 
@@ -322,19 +508,19 @@ msgstr "Швейцария"
 msgid "Popular Destination"
 msgstr "Популярные Направления"
 
-#: .\templates\index.html:87
+#: .\templates\index.html:72
+msgid "Places"
+msgstr "Мест"
+
+#: .\templates\index.html:90
 msgid "Popular Places"
 msgstr "Популярные Места"
 
-#: .\templates\index.html:116
-msgid "More Places"
-msgstr "Больше мест"
-
-#: .\templates\index.html:192
+#: .\templates\index.html:202
 msgid "- Micky Mouse"
 msgstr ""
 
-#: .\templates\index.html:205 .\templates\index.html:220
+#: .\templates\index.html:215 .\templates\index.html:230
 msgid ""
 "\"Working in conjunction with humanitarian aid agencies, we have supported "
 "programmes to help alleviate human suffering."
@@ -342,11 +528,11 @@ msgstr ""
 "Работая совместно с агентствами по оказанию гуманитарной помощи, мы "
 "поддержалипрограммы, помогающие облегчить человеческие страдания"
 
-#: .\templates\index.html:207
+#: .\templates\index.html:217
 msgid "Tom Mouse"
 msgstr ""
 
-#: .\templates\index.html:222
+#: .\templates\index.html:232
 msgid "- Jerry Mouse"
 msgstr ""
 
@@ -416,39 +602,27 @@ msgstr ""
 msgid "Sign in"
 msgstr "Войти"
 
-#: .\templates\login.html:7 .\templates\registration\login.html:7
-msgid "Login"
-msgstr "Авторизоваться"
+#: .\templates\orders.html:10
+msgid "Contact for join"
+msgstr "Связаться для присоединения"
 
-#: .\templates\login.html:14 .\templates\registration\login.html:14
-#: .\templates\registration\registration_form.html:15
+#: .\templates\orders.html:16
+msgid "Name"
+msgstr "Ваше Имя"
+
+#: .\templates\orders.html:21
+msgid "Phone"
+msgstr "Номер Телефона"
+
+#: .\templates\orders.html:27
+msgid "Message"
+msgstr "Сообщение"
+
+#: .\templates\orders.html:32
+#: .\templates\registration\resend_activation_form.html:10
 #, fuzzy
-#| msgid "name"
-msgid "Username"
-msgstr "Имя"
-
-#: .\templates\login.html:23 .\templates\registration\login.html:23
-#: .\templates\registration\registration_form.html:23
-msgid "Password"
-msgstr ""
-
-#: .\templates\login.html:30 .\templates\registration\login.html:30
-msgid "Remember me"
-msgstr ""
-
-#: .\templates\login.html:36 .\templates\registration\login.html:36
-msgid "Forgot Password"
-msgstr ""
-
-#: .\templates\login.html:45 .\templates\registration\login.html:45
-#: .\templates\registration\password_change_form.html:13
-msgid "Sign Up"
-msgstr ""
-
-#: .\templates\login.html:50 .\templates\registration\login.html:50
-#: .\templates\registration\password_change_form.html:18
-msgid "Sign In"
-msgstr ""
+msgid "Submit"
+msgstr "Отправить"
 
 #: .\templates\registration\activate.html:4
 msgid "Activation Failure"
@@ -619,6 +793,40 @@ msgstr ""
 msgid "Account approval on"
 msgstr ""
 
+#: .\templates\registration\login.html:7
+msgid "Login"
+msgstr "Авторизоваться"
+
+#: .\templates\registration\login.html:14
+#: .\templates\registration\registration_form.html:15
+#, fuzzy
+#| msgid "name"
+msgid "Username"
+msgstr "Имя"
+
+#: .\templates\registration\login.html:23
+#: .\templates\registration\registration_form.html:23
+msgid "Password"
+msgstr ""
+
+#: .\templates\registration\login.html:30
+msgid "Remember me"
+msgstr ""
+
+#: .\templates\registration\login.html:36
+msgid "Forgot Password"
+msgstr ""
+
+#: .\templates\registration\login.html:45
+#: .\templates\registration\password_change_form.html:13
+msgid "Sign Up"
+msgstr ""
+
+#: .\templates\registration\login.html:50
+#: .\templates\registration\password_change_form.html:18
+msgid "Sign In"
+msgstr ""
+
 #: .\templates\registration\logout.html:4
 msgid "Logged out"
 msgstr ""
@@ -769,12 +977,6 @@ msgstr ""
 msgid "Resend Activation Email"
 msgstr ""
 
-#: .\templates\registration\resend_activation_form.html:10
-#, fuzzy
-#| msgid "submit"
-msgid "Submit"
-msgstr "Отправить"
-
 #: .\tours\models.py:18
 msgid "tour tag"
 msgstr "тур тег"
@@ -799,6 +1001,70 @@ msgstr "тур"
 msgid "tours"
 msgstr "туры"
 
+#: .\travel\settings.py:94
+msgid "English"
+msgstr ""
+
+#: .\travel\settings.py:95
+msgid "Russian"
+msgstr "Русский"
+
+#: .\travel\settings.py:96
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#~ msgid ""
+#~ "\n"
+#~ "                          MCSE boot camps have its supporters and its "
+#~ "detractors. Some people do not understand why you\n"
+#~ "                          should have to spend money on boot camp when "
+#~ "you can get the MCSE study materials yourself at a\n"
+#~ "                          fraction of the camp price. However, who has "
+#~ "the willpower to actually sit through a\n"
+#~ "                          self-imposed MCSE training. who has the "
+#~ "willpower to actually                                    "
+#~ msgstr ""
+#~ "/nУ учебных лагерей MCSE есть как сторонники, так и противники.Некоторые "
+#~ "люди не понимают, почему вам нужно тратить деньги на учебный лагерь,если "
+#~ "вы можете получить учебные материалы MCSE самостоятельно за небольшую "
+#~ "частьстоимости лагеря. Тем не менее, у кого есть сила воли, чтобы пройти "
+#~ "добровольное обучение MCSE. у кого есть сила воли на самом деле"
+
+#~ msgid ""
+#~ "\n"
+#~ "                         MCSE boot camps have its supporters and its "
+#~ "detractors. Some people do not understand why you\n"
+#~ "                         should have to spend money on boot camp when you "
+#~ "can get the MCSE study materials yourself at a\n"
+#~ "                         fraction of the camp price. However, who has the "
+#~ "willpower to actually sit through a\n"
+#~ "                         self-imposed MCSE training. who has the "
+#~ "willpower to actually a\n"
+#~ "                         "
+#~ msgstr ""
+#~ "/nУ учебных лагерей MCSE есть как сторонники, так и противники. Некоторые "
+#~ "люди не понимают, почему вам нужно тратить деньги на учебный лагерь, если "
+#~ "вы можете получить учебные материалы MCSE самостоятельно за небольшую "
+#~ "часть стоимости лагеря. Тем не менее, у кого есть сила воли,чтобы пройти "
+#~ "добровольное обучение MCSE. у кого есть сила воли на самом деле"
+
+#, fuzzy
+#~| msgid "03 Comments"
+#~ msgid "05 Comments"
+#~ msgstr "5 комментарии"
+
+#~ msgid ""
+#~ "Multiply sea night grass fourth day sea lesser rule open subdue female "
+#~ "fill which them Blessed, give fill lesser bearing multiply sea night "
+#~ "grass fourth day sea lesser"
+#~ msgstr ""
+#~ "Размножение море ночь трава четвертый день море меньшее правило "
+#~ "открытьпокорить самку наполнить, которые им Благословенны, дать наполнить "
+#~ "меньший подшипник умножить море ночь трава четвертый день море меньшее"
+
+#~ msgid "submit"
+#~ msgstr "Отправить"
+
 #, fuzzy
 #~ msgid "Popular destination"
 #~ msgstr "Популярные Направления"
@@ -807,9 +1073,6 @@ msgstr "туры"
 #~| msgid "Where to go?"
 #~ msgid "Where to go"
 #~ msgstr "Куда идти?"
-
-#~ msgid "Message"
-#~ msgstr "Сообщение"
 
 #~| msgid "Inspiration"
 #~ msgid "Syndication"
@@ -859,9 +1122,6 @@ msgstr "туры"
 
 #~ msgid "Travel, Lifestyle"
 #~ msgstr "Тип путешествия"
-
-#~ msgid "03 Comments"
-#~ msgstr "комментарии"
 
 #~ msgid "Category"
 #~ msgstr "Категория"
@@ -932,11 +1192,8 @@ msgstr "туры"
 #~ msgid "Subscribe"
 #~ msgstr "Подпишись"
 
-#~ msgid "Saintmartine Iceland"
-#~ msgstr "Остров Святого Мартина"
-
-#, fuzzy
 #~ msgid ""
+#~ "\n"
 #~ "There are many variations of passages of Lorem Ipsum available, but the "
 #~ "majority have sufferedalteration in some form, by injected humour, or "
 #~ "randomised words which don't look even slightly believable. If you are "
@@ -951,85 +1208,18 @@ msgstr "туры"
 #~ "                        anything embarrassing.\n"
 #~ "                        "
 #~ msgstr ""
+#~ "\n"
 #~ "Доступно множество вариаций отрывков Lorem Ipsum, но большинство из них "
 #~ "претерпели изменения в той или иной форме из-за добавленного юмора или "
 #~ "случайных слов, которые даже немного не выглядят правдоподобными. Если вы "
 #~ "собираетесь использовать отрывок из Lorem Ipsum, вы должны быть уверены, "
 #~ "что в нем нет ничего смущающего."
-
-#~ msgid ""
-#~ "Variations of passages of lorem Ipsum available, but the majority have "
-#~ "suffered alteration in some form, by injected humour, or randomised words "
-#~ "which don't look even slightly believable. If you are going to use a "
-#~ "passage of Lorem Ipsum, you need to be sure there isn't anything "
-#~ "embarrassing.\n"
-#~ "                        Variations of passages of lorem Ipsum available, "
-#~ "but the majority have suffered alteration in\n"
-#~ "                        some form, by injected humour, or randomised "
-#~ "words which don't look even slightly believable. If\n"
-#~ "                        you are going to use a passage of Lorem Ipsum, "
-#~ "you need to be sure there isn't anything\n"
-#~ "                        embarrassing.\n"
-#~ "                        "
-#~ msgstr ""
-#~ "Доступны вариации отрывков lorem Ipsum, но большинство претерпело "
-#~ "изменения в той или иной форме из-за введенного юмора или случайных слов, "
-#~ "которые даже немного не выглядят правдоподобными. Если вы собираетесь "
-#~ "использовать отрывок из Lorem Ipsum, вы должны быть уверены, что в нем "
-#~ "нет ничего смущающего."
-
-#~ msgid "Day-01"
-#~ msgstr "День-01"
-
-#~ msgid ""
-#~ "                            There are many variations of passages of "
-#~ "Lorem Ipsum available, but the majority have                            "
-#~ "suffered alteration in some form, by injected humour, or randomised "
-#~ "words.\n"
-#~ "                            There are many variations of passages of "
-#~ "Lorem Ipsum available, but the majority have\n"
-#~ "                            suffered alteration in some form, by injected "
-#~ "humour, or randomised words.\n"
-#~ "                            "
-#~ msgstr ""
-#~ "Доступно множество вариаций отрывков Lorem Ipsum, но большинство из них "
-#~ "претерпели изменения в той или иной форме из-за добавленного юмора или "
-#~ "случайных слов, которые даже немного не выглядят правдоподобными. Если вы "
-#~ "собираетесь использовать отрывок из Lorem Ipsum, вы должны быть уверены, "
-#~ "что в нем нет ничего смущающего."
-
-#~ msgid "Day-03"
-#~ msgstr "День-03"
-
-#~ msgid "Contact for join"
-#~ msgstr "Связаться для присоединения"
-
-#~ msgid "Your Name"
-#~ msgstr "Ваше Имя"
-
-#~ msgid "Phone no."
-#~ msgstr "Номер Телефона"
 
 #~ msgid "Subscribe Our Newsletter"
 #~ msgstr "Подпишитесь на нашу рассылку новостей"
 
 #~ msgid "Your mail"
 #~ msgstr "Ваш Mail"
-
-#~ msgid "California"
-#~ msgstr "Калифорния"
-
-#~ msgid "United State of America"
-#~ msgstr "Соединенные Штаты Америки"
-
-#~ msgid "5 Days"
-#~ msgstr "5 Дней"
-
-#~ msgid "Korola Megna"
-#~ msgstr "Остров Корола"
-
-#~ msgid "London"
-#~ msgstr "Лондон"
 
 #~ msgid "Date"
 #~ msgstr "Дата"
@@ -1051,12 +1241,6 @@ msgstr "туры"
 
 #~ msgid "Miami Beach"
 #~ msgstr "Майами"
-
-#~ msgid "Russian"
-#~ msgstr "Русский"
-
-#~ msgid "Uzbek"
-#~ msgstr "Узбекский"
 
 #~ msgid "create_at"
 #~ msgstr "Дата создания"

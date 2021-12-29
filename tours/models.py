@@ -76,18 +76,6 @@ class TourModel(models.Model):
         verbose_name_plural = _('tours')
 
 
-class OrderModel(models.Model):
-    name = models.CharField(max_length=30)
-    phone = models.CharField(max_length=30)
-    email = models.EmailField(null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return f'{self.first_name} {self.last_name}'
-
-    class Meta:
-        verbose_name = 'order'
-        verbose_name_plural = 'orders'
 
 
 

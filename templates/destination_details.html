@@ -1,10 +1,11 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
 {% block content %}
+{% load i18n %}
 <div class="destination_banner_wrap overlay">
     <div class="destination_text text-center">
-        <h3>Saintmartine Iceland</h3>
-        <p>Pixel perfect design with awesome contents</p>
+        <h3>{% trans 'Saintmartine Iceland' %}</h3>
+        <p>{% trans 'Pixel perfect design with awesome contents' %}</p>
     </div>
 </div>
 
@@ -13,71 +14,72 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-9">
                 <div class="destination_info">
-                    <h3>Description</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    <h3>{% trans 'Description' %}</h3>
+                    <p>
+                        {% blocktrans %}
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                        anything embarrassing.</p>
-                    <p>Variations of passages of lorem Ipsum available, but the majority have suffered alteration in
+                        anything embarrassing.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                        Variations of passages of lorem Ipsum available, but the majority have suffered alteration in
                         some form, by injected humour, or randomised words which don't look even slightly believable. If
                         you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                        embarrassing.</p>
+                        embarrassing.
+                        {% endblocktrans %}
+                    </p>
                     <div class="single_destination">
-                        <h4>Day-01</h4>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour, or randomised words.</p>
+                        <h4>{% trans 'Day-01' %}</h4>
+                        <p>
+                            {% blocktrans%}
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words.
+                            {% endblocktrans %}
+                        </p>
                     </div>
                     <div class="single_destination">
-                        <h4>Day-02</h4>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour, or randomised words.</p>
+                        <h4>{% trans 'Day-02' %}</h4>
+                        <p>
+                            {% blocktrans %}
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words.
+                            {% endblocktrans %}
+                        </p>
                     </div>
                     <div class="single_destination">
-                        <h4>Day-03</h4>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour, or randomised words.</p>
+                        <h4>{% trans 'Day-03' %}</h4>
+                        <p>
+                            {% blocktrans %}
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words.
+                            {% endblocktrans %}
+                        </p>
                     </div>
                 </div>
-                <div class="bordered_1px"></div>
-                <div class="contact_join">
-                    <h3>Contact for join</h3>
-                    <form method="post">
-                        {% csrf_token %}
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="single_input">
-                                    <input name="name" type="text" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="single_input">
-                                    <input name="name" type="text" placeholder="Phone no.">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="single_input">
-                                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="submit_btn">
-                                    <button class="boxed-btn4" type="submit">submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-lg-12">
+                    <div class="submit_btn" style="margin-left: 250px">
+                        <a href="{% url 'pages:order' %}">
+                            <button class="boxed-btn4" type="submit">{% trans 'Apply' %}</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<!-- newletter_area_start  -->
+<!-- newletter_area_end  -->
+
 <div class="popular_places_area">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section_title text-center mb_70">
-                    <h3>More Places</h3>
+                    <h3>{% trans 'More Places' %}</h3>
                 </div>
             </div>
         </div>
@@ -89,11 +91,72 @@
                         <a href="#" class="prise">$500</a>
                     </div>
                     <div class="place_info">
-                        <a href="#"><h3>California</h3></a>
-                        <p>United State of America</p>
+                        <a href="#"><h3>{% trans 'California' %}</h3></a>
+                        <p>{% trans 'United State of America' %}</p>
+                        <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
                             <div class="days">
                                 <i class="fa fa-clock-o"></i>
-                                <a href="#">5 Days</a>
+                                <a href="#">{% trans '5 Days' %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_place">
+                    <div class="thumb">
+                        <img src="{% static 'img/place/2.png'%}" alt="">
+                        <a href="#" class="prise">$500</a>
+                    </div>
+                    <div class="place_info">
+                        <a href="#"><h3>{% trans 'Korola Megna' %}</h3></a>
+                        <p>{% trans 'United State of America' %}</p>
+                        <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                            <div class="days">
+                                <i class="fa fa-clock-o"></i>
+                                <a href="#">{% trans '5 Days' %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_place">
+                    <div class="thumb">
+                        <img src="{% static 'img/place/3.png'%}" alt="">
+                        <a href="#" class="prise">$500</a>
+                    </div>
+                    <div class="place_info">
+                        <a href="#"><h3>{% trans 'London' %}</h3></a>
+                        <p>{% trans 'United State of America' %}</p>
+                        <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                            <div class="days">
+                                <i class="fa fa-clock-o"></i>
+                                <a href="#">{% trans '5 Days' %}</a>
                             </div>
                         </div>
                     </div>
@@ -102,6 +165,4 @@
         </div>
     </div>
 </div>
-
-
-{% endblock%}
+{% endblock %}

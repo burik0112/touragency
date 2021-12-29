@@ -11,7 +11,7 @@
                     <div class="col-xl-12 col-md-12">
                         <div class="slider_text text-center">
                             <h3>{% trans 'Indonesia'%}</h3>
-                            <p class="mt-3">{% trans 'Pixel perfect design with awesome contents'%}</p>
+                            <p class="mt-5">{% trans 'Pixel perfect design with awesome contents'%}</p>
                             <a href="{% url 'destinations:list' %}" class="boxed-btn3">{% trans 'Explore Now'%}</a>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                     <div class="col-xl-12 col-md-12">
                         <div class="slider_text text-center">
                             <h3>{% trans 'Australia'%}</h3>
-                            <p>{% trans 'Pixel perfect design with awesome contents'%}</p>
+                            <p class="mt-5">{% trans 'Pixel perfect design with awesome contents'%}</p>
                             <a href="{% url 'destinations:list' %}" class="boxed-btn3">{% trans 'Explore Now'%}</a>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                     <div class="col-xl-12 col-md-12">
                         <div class="slider_text text-center">
                             <h3>{% trans 'Switzerland'%}</h3>
-                            <p>{% trans 'Pixel perfect design with awesome contents'%}</p>
+                            <p class="mt-5">{% trans 'Pixel perfect design with awesome contents'%}</p>
                             <a href="{% url 'destinations:list' %}" class="boxed-btn3">{% trans 'Explore Now'%}</a>
                         </div>
                     </div>
@@ -63,13 +63,13 @@
         </div>
         <div class="row">
             {% for home in homes %}
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg- col-md-6">
                 <div class="single_destination">
                     <div class="thumb">
                         <img src="{{ home.img.url }}" alt="">
                     </div>
                     <div class="content">
-                        <p class="d-flex align-items-center">{{home.title}} <a href=""> {{ home.place}} Places</a></p>
+                        <p class="d-flex align-items-center">{{home.title}} <a href="{% url 'destinations:list' %}"> {{ home.place}} {% trans 'Places' %}</a></p>
                         <div class="place">
                             <h6 style="color: #fff0ff" ;>{{ home.remains }}</h6>
                         </div>
@@ -93,11 +93,18 @@
         </div>
         <div class="row">
             {% for place in places%}
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-4">
                 <div class="single_place">
                     <div class="thumb">
-                        <img src="{{place.img.url}}" alt="">
-                        <a href="#" class="prise">${{place.price}}</a>
+                        <div>
+                            <a href="">
+                               <img src="{{place.img.url}}" alt="">
+                            </a>
+                        </div>
+
+                        <a href="#" class="prise">
+                            ${{place.price}}
+                        </a>
                     </div>
 
                     <div class="place_info">
@@ -114,7 +121,7 @@
             {% endfor %}
         </div>
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12" style="padding-bottom: 100px">
                 <div class="more_place_btn text-center">
                     <a class="boxed-btn4" href="{% url 'destinations:list' %}">{% trans 'More Places'%}</a>
                 </div>
@@ -127,7 +134,7 @@
 <div class="video_area video_bg overlay">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 mt-3">
                 <div class="video_wrap text-center">
                     <h3>{% trans 'Enjoy Video'%}</h3>
                     <div class="video_icon">
@@ -145,7 +152,7 @@
 <div class="travel_variation_area">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-">
                 <div class="single_travel text-center">
                     <div class="icon">
                         <img src="{% static 'img/svg_icon/1.svg'%}" alt="">
@@ -187,7 +194,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="single_testmonial text-center">
-                                    <div class="author_thumb">
+                                    <div class="thumb">
                                         <img src="{% static 'img/testmonial/author.png'%}" alt="">
                                     </div>
                                     <p>{% trans 'Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.'%}</p>
@@ -202,7 +209,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="single_testmonial text-center">
-                                    <div class="author_thumb">
+                                    <div class="thumb">
                                         <img src="{% static 'img/testmonial/author.png'%}" alt="">
                                     </div>
                                     <p>{% trans '"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.'%}</p>
@@ -217,7 +224,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="single_testmonial text-center">
-                                    <div class="author_thumb">
+                                    <div class="thumb">
                                         <img src="{% static 'img/testmonial/author.png'%}" alt="">
                                     </div>
                                     <p>{% trans '"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.'%}</p>
@@ -247,7 +254,7 @@
         </div>
         <div class="row">
             {% for trip in trips%}
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-4">
                 <div class="single_trip">
                     <div class="thumb">
                         <img src="{{trip.img.url}}" alt="">

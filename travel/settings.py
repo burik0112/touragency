@@ -1,6 +1,5 @@
-
-
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -14,13 +13,15 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'modeltranslation',
-    'registration',
     'django.contrib.admin',
+    'registration',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'rest_framework',
     'widget_tweaks',
     'ckeditor',
     'ckeditor_uploader',
@@ -29,6 +30,7 @@ INSTALLED_APPS = [
     'tours',
     'posts',
     'orders',
+    'api',
     'users',
 ]
 
@@ -92,9 +94,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
-    ('en', 'English'),
-    ('ru', 'Russian'),
-    ('uz', 'Uzbek'),
+    ('en', _('English')),
+    ('ru', _('Russian')),
+    ('uz', _('Uzbek')),
 )
 LOCALE_PATHS = BASE_DIR / 'locale',
 
@@ -137,3 +139,12 @@ EMAIL_HOST_PASSWORD = 'ezppuqgtkrkvqfmc'
 EMAIL_PORT = 587
 
 ACCOUNT_ACTIVATION_DAYS = 30
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny'
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 9
+}

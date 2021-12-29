@@ -21,6 +21,7 @@ class HomeModel(models.Model):
     img = models.ImageField(upload_to='images')
     remains = models.TextField(max_length=50)
     place = models.IntegerField()
+
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -64,3 +65,17 @@ class TripModel(models.Model):
     class Meta:
         verbose_name = 'trip'
         verbose_name_plural = 'trips'
+
+
+class OrderModel(models.Model):
+    name = models.CharField(max_length=30)
+    phone_number = models.CharField(max_length=30)
+    messages = models.TextField(null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'order'
+        verbose_name_plural = 'orders'

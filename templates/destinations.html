@@ -1,28 +1,28 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
 {% block content %}
-{% load i18n %}
-<!-- bradcam_area  -->
-<div class="bradcam_area bradcam_bg_2">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="bradcam_text text-center">
-                    <h3>
-                        {% trans 'Destinations'%}
-                    </h3>
-                    <p>
-                        {% trans 'Pixel perfect design with awesome contents'%}
-                    </p>
+    {% load i18n %}
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>
+                            {% trans 'Destinations' %}
+                        </h3>
+                        <p>
+                            {% trans 'Pixel perfect design with awesome contents' %}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--/ bradcam_area  -->
+    <!--/ bradcam_area  -->
 
-<!-- where_togo_area_start  -->
-<div class="where_togo_area">
+    <!-- where_togo_area_start  -->
+    <div class="where_togo_area">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3">
@@ -34,10 +34,11 @@
                     <div class="search_wrap">
                         <form class="search_form" action="#">
                             <div class="input_field">
-                                <input name="q" value="{{request.GET.q}}" type="text" placeholder="{% trans 'Where to go?' %}">
+                                <input name="q" value="{{ request.GET.q }}" type="text"
+                                       placeholder="{% trans 'Where to go?' %}">
                             </div>
                             <div class="search_btn">
-                                <button  class="boxed-btn4 " type="submit" >{% trans 'Search' %}</button>
+                                <button class="boxed-btn4 " type="submit">{% trans 'Search' %}</button>
                             </div>
                         </form>
                     </div>
@@ -46,107 +47,109 @@
         </div>
     </div>
 
-<!-- where_togo_area_end  -->
+    <!-- where_togo_area_end  -->
 
 
-<div class="popular_places_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="filter_result_wrap">
-                    <h3>{% trans 'Filter Result'%}</h3>
-                    <div class="filter_bordered">
-                        <div class="filter_inner">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="single_select">
-                                        <select>
-                                            <option data-display="">{% trans 'Country'%}</option>
-                                            <option value="1">{% trans 'Africa'%}</option>
-                                            <option value="2">{% trans 'Canada'%}</option>
-                                            <option value="4">{% trans 'USA'%}</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="single_select">
-                                        <select>
-                                            <option data-display="{% trans 'Travel type'%}">{% trans 'Travel type'%}</option>
-                                            <option value="1">{% trans 'advance'%}</option>
-                                            <option value="2">{% trans 'advance'%}</option>
-                                            <option value="4">{% trans 'premium'%}</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="range_slider_wrap">
-                                        <span class="range">{% trans 'Prise range'%}</span>
-                                        <div id="slider-range"></div>
-                                        <p>
-                                            <input type="text" id="amount" readonly
-                                                   style="border:0; color:#7A838B; font-weight:400;">
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reset_btn">
-                            <button class="boxed-btn4" type="submit">{% trans 'Reset'%}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="row">
-                    {% for tours in object_list %}
-                        <div class="col-lg-6 col-md-6">
-                            <div class="single_place">
-                                <div class="thumb">
-                                    <img src="{{ tours.image.url }}" alt="">
-                                    <a href="" class="prise">${{ tours.price }}</a>
-                                </div>
-                                <div class="place_info">
-                                    <a href="{% url 'destinations:detail' tours.id %}"><h3>{{ tours.title }}</h3></a>
-                                     <div class="rating_days d-flex justify-content-between">
-                                        <div class="days">
-                                            <p>{{ tours.created_at| date:'d F Y' }}</p>
+    <div class="popular_places_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mt-5 ">
+                    <div class="filter_result_wrap">
+                        <h3>{% trans 'Filter Result' %}</h3>
+                        <div class="row">
+                            <div class="col-md-4 mt5">
+                                <div class="filter_bordered">
+                                    <div class="filter_inner">
+                                        <div class="single_select">
+                                            <select>
+                                                <option data-display="">{% trans 'Country' %}</option>
+                                                <option value="1">{% trans 'Africa' %}</option>
+                                                <option value="2">{% trans 'Canada' %}</option>
+                                                <option value="4">{% trans 'USA' %}</option>
+                                            </select>
+                                        </div>
+                                        <div class="single_select">
+                                            <select>
+                                                <option data-display="{% trans 'Travel type' %}">{% trans 'Travel type' %}</option>
+                                                <option value="1">{% trans 'advance' %}</option>
+                                                <option value="2">{% trans 'advance' %}</option>
+                                                <option value="4">{% trans 'premium' %}</option>
+                                            </select>
+                                        </div>
+                                        <div class="range_slider_wrap">
+                                            <span class="range">{% trans 'Prise range' %}</span>
+                                            <div id="slider-range"></div>
+                                            <p>
+                                                <input type="text" id="amount" readonly
+                                                       style="border:0; color:#7A838B; font-weight:400;">
+                                            </p>
+                                        </div>
+                                        <div class="reset_btn">
+                                            <button class="boxed-btn4" type="submit">{% trans 'Reset' %}</button>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    {% for tours in object_list %}
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single_place">
+                                                <div class="thumb">
+                                                    <a href="{% url 'destinations:detail' tours.id %}">
+                                                        <img src="{{ tours.image.url }}" alt="">
+                                                    </a>
+                                                    <a href="" class="prise">${{ tours.price }}</a>
+                                                </div>
+                                                <div class="place_info">
+                                                    <a href="{% url 'destinations:detail' tours.id %}">
+                                                        <h3>{{ tours.title }}</h3></a>
+                                                    <div class="rating_days d-flex justify-content-between">
+                                                        <div class="days">
+                                                            <p>{{ tours.created_at| date:'d F Y' }}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
                         </div>
-                    {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="recent_trip_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb_70">
+                        <h3>{% trans 'Recent Trips' %}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="single_trip">
+                        <div class="thumb">
+                            <img src="{% static 'img/trip/1.png' %}" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="date">
+                                <span>{% trans 'Oct 12, 2019' %}</span>
+                            </div>
+                            <a href="#">
+                                <h3>{% trans 'Journeys Are Best Measured In New Friends' %}</h3>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="recent_trip_area">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="section_title text-center mb_70">
-                    <h3>{% trans 'Recent Trips'%}</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single_trip">
-                    <div class="thumb">
-                        <img src="{% static 'img/trip/1.png'%}" alt="">
-                    </div>
-                    <div class="info">
-                        <div class="date">
-                            <span>{% trans 'Oct 12, 2019'%}</span>
-                        </div>
-                        <a href="#">
-                            <h3>{% trans 'Journeys Are Best Measured In New Friends'%}</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-{% endblock%}
+{% endblock %}

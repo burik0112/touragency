@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.urls import reverse
 from django.views.generic import TemplateView, CreateView
 
-from pages.forms import ContactModelForm
+from pages.forms import ContactModelForm, OrderModelForm
 from pages.models import HomeModel, ContactModel, PlaceModel, TripModel
 
 
@@ -48,11 +48,16 @@ class LoginView(TemplateView):
 
 class RegisterView(TemplateView):
     template_name = 'register.html'
-#
+
+
+class OrderView(CreateView):
+    template_name = 'orders.html'
+    form_class = OrderModelForm
+
+    def get_success_url(self):
+        return reverse('pages:order')
+
+
 #
 # class InputView(TemplateView):
 #     template_name = 'input.html.'
-
-
-
-

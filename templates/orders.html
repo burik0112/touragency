@@ -1,0 +1,43 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<div class="destination_details_info">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-9">
+                <div class="contact_join">
+                    <h3>{% trans 'Contact for join'%}</h3>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_input">
+                                    <input name="name" type="text" placeholder="{% trans 'Name' %}">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_input">
+                                    <input name="phone_number" type="text" placeholder="{% trans 'Phone' %}">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="single_input">
+                                    <textarea name="messages" id="" cols="30" rows="10" placeholder="{% trans 'Message' %}"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="submit_btn">
+                                    <button class="boxed-btn4" type="submit">{% trans 'Submit' %}</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

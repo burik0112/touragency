@@ -35,7 +35,7 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
+                                <a class="d-inline-block" href="{% url 'posts:detail' pk=post.pk%}">
                                     <h2>{{post.title}}</h2>
                                 </a>
 

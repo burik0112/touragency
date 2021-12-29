@@ -19,20 +19,22 @@
             margin: 34px 0 10px 0;
 
         }
-        .author_thumb{
+        .thumb{
             width: 106px;
             height: 106px;
             @include border-radius(50%);
             margin: auto;
             margin: auto auto 15px auto;
-            position: relative;
+
             &::before{
+                display:none !important;
+                opacity: 0 !important;
                 position: absolute;
                 right: -15px;
                 bottom: -12px;
-                width: 50px;
-                height: 50px;
-                content: "\f100"; 
+                width: 0px !important;
+                height: 0px !important;
+                content: "";
                 font-family: "Flaticon";
                 text-align: center;
                 line-height: 50px;
@@ -41,6 +43,9 @@
                 color: #fff;
                 font-size: 17px;
             }
+        }
+        .author_thumb:before{
+            display: none!important;
         }
         .testmonial_author{
             h3{

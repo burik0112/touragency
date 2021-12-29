@@ -9,11 +9,12 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    path('accounts/', include('registration.backends.default.urls')),
     path('admin/', admin.site.urls),
-    path('destinations/', include('tours.urls', namespace='destinations')),
+    path('accounts/', include('registration.backends.default.urls')),
+    path('api/', include('api.urls')),
+    path('destinations/', include('tours.urls', namespace='tours')),
     path('posts/', include('posts.urls', namespace='posts')),
-    path('input/', include('tours.urls', namespace='input')),
+    path('request/', include('tours.urls', namespace='input')),
     path('', include('pages.urls')),
 )
 
