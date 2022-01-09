@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-20 16:51+0500\n"
+"POT-Creation-Date: 2022-01-01 22:32+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -279,6 +279,10 @@ msgstr ""
 #: .\templates\contact.html:90
 msgid "Enter Subject"
 msgstr "Введите тему"
+
+#: .\templates\contact.html:95
+msgid "Send"
+msgstr "Отправлять"
 
 #: .\templates\contact.html:103
 msgid "Buttonwood, California"
@@ -1001,15 +1005,15 @@ msgstr "тур"
 msgid "tours"
 msgstr "туры"
 
-#: .\travel\settings.py:94
+#: .\travel\settings.py:97
 msgid "English"
 msgstr ""
 
-#: .\travel\settings.py:95
+#: .\travel\settings.py:98
 msgid "Russian"
 msgstr "Русский"
 
-#: .\travel\settings.py:96
+#: .\travel\settings.py:99
 msgid "Uzbek"
 msgstr "Узбекский"
 

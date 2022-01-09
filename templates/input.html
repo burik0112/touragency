@@ -15,7 +15,7 @@
                                         <a href="{{ pk.destinations.pk }}" class="prise">$500</a>
                                     </div>
                                     <div class="place_info">
-                                        <a href=""><h3>{{ tours.title }}</h3></a>
+                                        <a href="{% url 'destinations:detail' tours.id %}"><h3>{{ tours.title }}</h3></a>
 
                                         <div class="rating_days d-flex justify-content-between">
 

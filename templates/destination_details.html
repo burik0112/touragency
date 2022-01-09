@@ -16,29 +16,30 @@
                 <div class="destination_info">
                     <h3>{% trans 'Description' %}</h3>
                     <p>
-                        {% blocktrans %}
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised words which don't look even slightly
-                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                        anything embarrassing.
-                        {% endblocktrans %}
+                        {{ object.long_description|safe }}
+{#                        {% blocktrans %}#}
+{#                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered#}
+{#                        alteration in some form, by injected humour, or randomised words which don't look even slightly#}
+{#                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't#}
+{#                        anything embarrassing.#}
+{#                        {% endblocktrans %}#}
                     </p>
-                    <p>
-                        {% blocktrans %}
-                        Variations of passages of lorem Ipsum available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomised words which don't look even slightly believable. If
-                        you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                        embarrassing.
-                        {% endblocktrans %}
-                    </p>
-                    <div class="single_destination">
-                        <h4>{% trans 'Day-01' %}</h4>
-                        <p>
-                            {% blocktrans%}
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour, or randomised words.
-                            {% endblocktrans %}
-                        </p>
+{#                    <p>#}
+{#                        {% blocktrans %}#}
+{#                        Variations of passages of lorem Ipsum available, but the majority have suffered alteration in#}
+{#                        some form, by injected humour, or randomised words which don't look even slightly believable. If#}
+{#                        you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything#}
+{#                        embarrassing.#}
+{#                        {% endblocktrans %}#}
+{#                    </p>#}
+{#                    <div class="single_destination">#}
+{#                        <h4>{% trans 'Day-01' %}</h4>#}
+{#                        <p>#}
+{#                            {% blocktrans%}#}
+{#                            There are many variations of passages of Lorem Ipsum available, but the majority have#}
+{#                            suffered alteration in some form, by injected humour, or randomised words.#}
+{#                            {% endblocktrans %}#}
+{#                        </p>#}
                     </div>
                     <div class="single_destination">
                         <h4>{% trans 'Day-02' %}</h4>
@@ -59,8 +60,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <div class="submit_btn" style="margin-left: 250px">
+                <div class="col-md-12 mt-5">
+                    <div class="submit_btn"  style="display:flex; justify-content: center;">
                         <a href="{% url 'pages:order' %}">
                             <button class="boxed-btn4" type="submit">{% trans 'Apply' %}</button>
                         </a>

@@ -3,7 +3,7 @@
 {% block content %}
 {% load i18n %}
      <!-- bradcam_area  -->
-     <div class="bradcam_area bradcam_bg_4">
+     <div class="bradcam_area bradcam_bg_4" >
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -18,7 +18,7 @@
     <!--/ bradcam_area  -->
 
     <!-- ================ contact section start ================= -->
-    <section class="contact-section">
+    <section class="contact-section" >
             <div class="container">
                 <div class="d-none d-sm-block mb-5 pb-4">
                     <div id="map" style="height: 480px; position: relative; overflow: hidden;"> </div>
@@ -62,12 +62,12 @@
                 </div>
 
 
-                <div class="row">
-                    <div class="col-12">
+                <div class="row" >
+                    <div class="col-12" id="contact-section">
                         <h2 class="contact-title">{% trans 'Get in Touch' %}</h2>
                     </div>
-                    <div class="col-lg-8">
-                        <form method="post">
+                    <div class="col-lg-8" >
+                        <form method="post" action="#contact-section" >
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-12">
@@ -91,9 +91,12 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                                <button onclick="alertFunction()"
+                                        type="submit" class="button button-contactForm boxed-btn">{% trans 'Send' %}</button>
                             </div>
+                            <p id="demo" style="display:none;">Send successfully</p>
                         </form>
                     </div>
                     <div class="col-lg-3 offset-lg-1">
@@ -124,4 +127,9 @@
         </section>
     <!-- ================ contact section end ================= -->
 {% endblock%}
- 
+$('button').click(function() {
+  $(this).toggleClass('clicked');
+  $('button').text(function(i, text) {
+    return text === "Отправлено!" ? "Отправлено" : "Отправлено!";
+  });
+});

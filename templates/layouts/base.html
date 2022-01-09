@@ -93,6 +93,19 @@
 
     <script src="{% static 'js/main.js'%}"></script>
     <script>
+         function alertFunction(){
+             return alert("Отправлено")
+         }
+    </script>
+    <script>
+        $('button').click(function () {
+            $(this).toggleClass('clicked');
+            $('button').text(function (i, text) {
+                return text === "Отправлено!" ? "Отправлено" : "Отправлено!";
+            });
+        });
+    </script>
+    <script>
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',
             icons: {

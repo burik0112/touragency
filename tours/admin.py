@@ -1,7 +1,8 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
 
-from tours.models import TourModel, TourTagModel, CityModel
+from tours.models import TourModel, TourTagModel, CityModel, Category, TourHotelModel
+
 
 class MyTranslationAdmin(TranslationAdmin):
     class Media:
@@ -17,7 +18,7 @@ class MyTranslationAdmin(TranslationAdmin):
 
 @admin.register(TourModel)
 class TourModelAdmin(MyTranslationAdmin):
-    list_display = ['id', 'title', 'long_description', 'image', 'price', 'discount']
+    list_display = ['id', 'title', 'short_description', 'image', 'price', 'discount']
     list_filter = ['price']
     search_fields = ['title', 'discount', 'message', 'created_at']
 
@@ -28,15 +29,23 @@ class ProductTagModelAdmin(admin.ModelAdmin):
     search_fields = ['title']
     list_filter = ['created_at']
 
+
 @admin.register(CityModel)
 class CityModelAdmin(admin.ModelAdmin):
     list_display = ['title', 'created_at']
     search_fields = ['title']
     list_filter = ['created_at']
 
-#
-# @admin.register(CategoryModel)
-# class CategoryModelAdmin(admin.ModelAdmin):
-#     list_display = ['title', 'created_at']
-#     search_fields = ['title']
-#     list_filter = ['created_at']
+
+@admin.register(Category)
+class CategoryModelAdmin(admin.ModelAdmin):
+    list_display = ['title', 'created_at']
+    search_fields = ['title']
+    list_filter = ['created_at']
+
+
+@admin.register(TourHotelModel)
+class TourHotelModelAdmin(admin.ModelAdmin):
+    list_display = ['title', 'short_descriptions', 'image', 'category']
+    search_fields = ['title', 'category']
+    list_filter = ['created_at', 'category']

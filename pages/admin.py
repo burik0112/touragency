@@ -18,7 +18,7 @@ class MyTranslationAdmin(TranslationAdmin):
 
 @admin.register(ContactModel)
 class ContactModelAdmin(admin.ModelAdmin):
-    list_display = ['name', 'email']
+    list_display = ['name', 'email', 'created_at']
     list_filter = ['created_at']
     search_fields = ['name', 'email', 'message']
 
