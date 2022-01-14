@@ -1,5 +1,6 @@
 {% load static %}
 {% load i18n %}
+{% load mytags %}
 <header>
     <div class="header-area ">
         <div id="sticky-header" class="main-header-area">
@@ -14,23 +15,23 @@
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6">
-                            <div class="main-menu  d-none d-lg-block">
+                            <div class="main-menu d-lg-block">
                                 <nav>
                                     <ul id="navigation">
                                         <li class="{% if request.path == '/' %}active{% endif %}">
-                                            <a href="{% url 'pages:home' %}">{% trans 'Home'%}</a>
+                                            <a href="{% url 'pages:home' %}">{% trans 'Home' %}</a>
                                         </li>
                                         <li class="{% if request.path == '/destinations/' %}active{% endif %}">
-                                            <a href="{% url 'destinations:list' %}">{% trans 'Destinations'%}</a>
+                                            <a href="{% url 'destinations:list' %}">{% trans 'Destinations' %}</a>
                                         </li>
-                                            <li class="{% if request.path == '/about/' %}active{% endif %}">
-                                                <a href="{% url 'pages:about' %}">{% trans 'About'%}</a>
-                                            </li>
-                                            <li class="{% if request.path == '/blog/' %}active{% endif %}">
-                                                <a href="{% url 'posts:list' %}">{% trans 'Blog'%}</a>
-                                            </li>
+                                        <li class="{% if request.path == '/about/' %}active{% endif %}">
+                                            <a href="{% url 'pages:about' %}">{% trans 'About' %}</a>
+                                        </li>
+                                        <li class="{% if request.path == '/blog/' %}active{% endif %}">
+                                            <a href="{% url 'posts:list' %}">{% trans 'Blog' %}</a>
+                                        </li>
                                         <li class="{% if request.path == '/contact/' %}active{% endif %}">
-                                            <a href="{% url 'pages:contact' %}">{% trans 'Contacts'%}</a>
+                                            <a href="{% url 'pages:contact' %}">{% trans 'Contacts' %}</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -39,7 +40,7 @@
                         <div class="row"></div>
                         <div class="col-xl-4 col-lg-4 d-none d-lg-block">
                             <div class="social_wrap">
-                                <div  style="margin-right: -100px " class="social_links  d-xl-block">
+                                <div style="margin-right: -100px " class="social_links  d-xl-block">
                                     <ul>
                                         <li>
                                             <a href="https://www.instagram.com/burik0112/?hl=ru">
@@ -62,19 +63,39 @@
                                             </a>
                                         </li>
                                         {% if request.user.is_authenticated %}
-                                        <li>
-                                            <a href="{% url 'auth_logout' %}">{% trans 'Log out' %}</a>
-                                        </li>
+                                            <li>
+                                                <a href="{% url 'auth_logout' %}">{% trans 'Log out' %}</a>
+                                            </li>
                                         {% else %}
-                                        <li>
+                                            <li>
                                             <a href="{% url 'auth_login' %}">{% trans 'Sign in' %}</a>
-                                            {% endif %}
+                                        {% endif %}
                                         </li>
-                                    <li>
-                                        <form action="{% url 'destinations:input' %}">
-                                            <input name="q" style="width: auto" class="form-control" type="text" placeholder="{% trans 'Search' %}" aria-label="Search">
-                                        </form>
-                                    </li>
+                                        <li>
+                                            <form action="{% url 'destinations:input' %}">
+                                                <input name="q" style="width: auto" class="form-control" type="text"
+                                                       placeholder="{% trans 'Search' %}" aria-label="Search">
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                {% get_current_language as lang %}
+                                                {% get_available_languages as langs %}
+                                                <button class="btn btn-primary dropdown-toggle" type="button"
+                                                        id="dropdownMenuButton" data-toggle="dropdown"
+                                                        aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                    {{ lang|upper }}
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    {% for l in langs %}
+                                                        {% if l.0 != lang %}
+                                                            <a class="dropdown-item" href="{% get_url_lang request l.0 %}">{{ l.0|upper }}</a>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

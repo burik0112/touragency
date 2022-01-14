@@ -1,4 +1,4 @@
-from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView
 
 from api.serializers import TourSerializer, TourHotelSerializer, ApplicationSerializer
 from orders.models import ApplicationModel
@@ -22,5 +22,9 @@ class TourHotelListAPIView(ListAPIView):
 
 
 class ApplicationListAPIView(ListAPIView):
+    serializer_class = ApplicationSerializer
+    queryset = ApplicationModel.objects.all()
+
+class ApplicationCreateAPIView(CreateAPIView):
     serializer_class = ApplicationSerializer
     queryset = ApplicationModel.objects.all()

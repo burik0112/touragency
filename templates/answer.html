@@ -1,0 +1,11 @@
+{% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li onclick="alertFunction()">
+                {% if message.tag == "SUCCESS" %}
+                    {{ message }}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

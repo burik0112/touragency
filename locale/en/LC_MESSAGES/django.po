@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-01 22:32+0500\n"
+"POT-Creation-Date: 2022-01-13 11:38+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\pages\models.py:6 .\posts\models.py:42
+#: .\pages\models.py:6 .\posts\models.py:43
 msgid "name"
 msgstr ""
 
-#: .\pages\models.py:7 .\posts\models.py:43
+#: .\pages\models.py:7 .\posts\models.py:44
 msgid "email"
 msgstr ""
 
@@ -30,8 +30,8 @@ msgstr ""
 msgid "message"
 msgstr ""
 
-#: .\pages\models.py:9 .\posts\models.py:10 .\posts\models.py:28
-#: .\posts\models.py:54 .\tours\models.py:12 .\tours\models.py:57
+#: .\pages\models.py:9 .\posts\models.py:10 .\posts\models.py:29
+#: .\posts\models.py:55 .\tours\models.py:12 .\tours\models.py:57
 msgid "created_at"
 msgstr ""
 
@@ -48,7 +48,7 @@ msgid "price"
 msgstr ""
 
 #: .\posts\models.py:9 .\posts\models.py:21 .\tours\models.py:11
-#: .\tours\models.py:48
+#: .\tours\models.py:48 .\tours\models.py:80
 msgid "title"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "post tags"
 msgstr ""
 
-#: .\posts\models.py:22 .\tours\models.py:50
+#: .\posts\models.py:22 .\tours\models.py:50 .\tours\models.py:81
 msgid "image"
 msgstr ""
 
@@ -68,27 +68,27 @@ msgstr ""
 msgid "banner"
 msgstr ""
 
-#: .\posts\models.py:26 .\tours\models.py:56
+#: .\posts\models.py:27 .\tours\models.py:56
 msgid "tags"
 msgstr ""
 
-#: .\posts\models.py:37 .\posts\models.py:51
+#: .\posts\models.py:38 .\posts\models.py:52
 msgid "post"
 msgstr ""
 
-#: .\posts\models.py:38
+#: .\posts\models.py:39
 msgid "posts"
 msgstr ""
 
-#: .\posts\models.py:44
+#: .\posts\models.py:45
 msgid "phone"
 msgstr ""
 
-#: .\posts\models.py:45 .\posts\models.py:60
+#: .\posts\models.py:46 .\posts\models.py:61
 msgid "comment"
 msgstr ""
 
-#: .\posts\models.py:61
+#: .\posts\models.py:62
 msgid "comments"
 msgstr ""
 
@@ -156,7 +156,7 @@ msgstr ""
 msgid "Travel Guide"
 msgstr ""
 
-#: .\templates\blog.html:11 .\templates\layouts\header.html:30
+#: .\templates\blog.html:11 .\templates\layouts\header.html:31
 msgid "Blog"
 msgstr ""
 
@@ -170,56 +170,58 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: .\templates\blog_detail.html:31
-msgid ""
-"Second divided from form fish beast made every of seasall gathered us saying "
-"he our"
+#: .\templates\blog_detail.html:47
+msgid "Lily and 4 people like this"
 msgstr ""
 
-#: .\templates\blog_detail.html:39
-msgid ""
-"\n"
-"                          MCSE boot camps have its supporters and its "
-"detractors. Some people do not understand why you\n"
-"                          should have to spend money on boot camp when you "
-"can get the MCSE study materials yourself at a\n"
-"                          fraction of the camp price. However, who has the "
-"willpower\n"
-"                         "
-msgstr ""
-
-#: .\templates\blog_detail.html:54
-msgid ""
-"\n"
-"                         MCSE boot camps have its supporters and its "
-"detractors. Some people do not understand why you\n"
-"                         should have to spend money on boot camp when you "
-"can get the MCSE study materials yourself at a\n"
-"                         fraction of the camp price. However, who has the "
-"willpower\n"
-"                         "
-msgstr ""
-
-#: .\templates\blog_detail.html:100
+#: .\templates\blog_detail.html:72
 msgid "Prev Post"
 msgstr ""
 
-#: .\templates\blog_detail.html:102
+#: .\templates\blog_detail.html:74
 msgid "Space The Final Frontier"
 msgstr ""
 
-#: .\templates\blog_detail.html:109
+#: .\templates\blog_detail.html:81
 msgid "Next Post"
 msgstr ""
 
-#: .\templates\blog_detail.html:111
+#: .\templates\blog_detail.html:83
 msgid "Telescopes 101"
 msgstr ""
 
-#: .\templates\blog_detail.html:135
+#: .\templates\blog_detail.html:105
+msgid "Harvard milan"
+msgstr ""
+
+#: .\templates\blog_detail.html:107
 msgid ""
 "Second divided from form fish beast made. Every of seas all gathered use "
 "saying youre, heour dominion twon Second divided from"
+msgstr ""
+
+#: .\templates\blog_detail.html:142
+msgid "Leave a Reply"
+msgstr ""
+
+#: .\templates\blog_detail.html:149
+msgid "Comment"
+msgstr ""
+
+#: .\templates\blog_detail.html:154 .\templates\orders.html:16
+msgid "Name"
+msgstr ""
+
+#: .\templates\blog_detail.html:159 .\templates\orders.html:21
+msgid "Phone"
+msgstr ""
+
+#: .\templates\blog_detail.html:164 .\templates\contact.html:85
+msgid "Email"
+msgstr ""
+
+#: .\templates\blog_detail.html:169
+msgid "Send Message"
 msgstr ""
 
 #: .\templates\contact.html:11 .\templates\layouts\footer.html:49
@@ -238,31 +240,27 @@ msgstr ""
 msgid "Enter your name"
 msgstr ""
 
-#: .\templates\contact.html:85
-msgid "Email"
-msgstr ""
-
 #: .\templates\contact.html:90
 msgid "Enter Subject"
 msgstr ""
 
-#: .\templates\contact.html:95
+#: .\templates\contact.html:97
 msgid "Send"
 msgstr ""
 
-#: .\templates\contact.html:103
+#: .\templates\contact.html:106
 msgid "Buttonwood, California"
 msgstr ""
 
-#: .\templates\contact.html:111
+#: .\templates\contact.html:114
 msgid "Mon to Fri 9am to 6pm"
 msgstr ""
 
-#: .\templates\contact.html:117
+#: .\templates\contact.html:120
 msgid "support@colorlib.com"
 msgstr ""
 
-#: .\templates\contact.html:118
+#: .\templates\contact.html:121
 msgid "Send us your query anytime!"
 msgstr ""
 
@@ -274,39 +272,12 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: .\templates\destination_details.html:19
-msgid ""
-"\n"
-"                        There are many variations of passages of Lorem Ipsum "
-"available, but the majority have suffered\n"
-"                        alteration in some form, by injected humour, or "
-"randomised words which don't look even slightly\n"
-"                        believable. If you are going to use a passage of "
-"Lorem Ipsum, you need to be sure there isn't\n"
-"                        anything embarrassing.\n"
-"                        "
+#: .\templates\destination_details.html:36
+msgid "Day-02"
 msgstr ""
 
-#: .\templates\destination_details.html:27
-msgid ""
-"\n"
-"                        Variations of passages of lorem Ipsum available, but "
-"the majority have suffered alteration in\n"
-"                        some form, by injected humour, or randomised words "
-"which don't look even slightly believable. If\n"
-"                        you are going to use a passage of Lorem Ipsum, you "
-"need to be sure there isn't anything\n"
-"                        embarrassing.\n"
-"                        "
-msgstr ""
-
-#: .\templates\destination_details.html:35
-msgid "Day-01"
-msgstr ""
-
-#: .\templates\destination_details.html:37
-#: .\templates\destination_details.html:46
-#: .\templates\destination_details.html:55
+#: .\templates\destination_details.html:38
+#: .\templates\destination_details.html:47
 msgid ""
 "\n"
 "                            There are many variations of passages of Lorem "
@@ -316,47 +287,43 @@ msgid ""
 "                            "
 msgstr ""
 
-#: .\templates\destination_details.html:44
-msgid "Day-02"
-msgstr ""
-
-#: .\templates\destination_details.html:53
+#: .\templates\destination_details.html:45
 msgid "Day-03"
 msgstr ""
 
-#: .\templates\destination_details.html:65
+#: .\templates\destination_details.html:57
 msgid "Apply"
 msgstr ""
 
-#: .\templates\destination_details.html:82 .\templates\index.html:126
+#: .\templates\destination_details.html:74 .\templates\index.html:126
 msgid "More Places"
 msgstr ""
 
-#: .\templates\destination_details.html:94
+#: .\templates\destination_details.html:86
 msgid "California"
 msgstr ""
 
-#: .\templates\destination_details.html:95
-#: .\templates\destination_details.html:121
-#: .\templates\destination_details.html:147
+#: .\templates\destination_details.html:87
+#: .\templates\destination_details.html:113
+#: .\templates\destination_details.html:139
 msgid "United State of America"
 msgstr ""
 
-#: .\templates\destination_details.html:107
-#: .\templates\destination_details.html:133
-#: .\templates\destination_details.html:159
+#: .\templates\destination_details.html:99
+#: .\templates\destination_details.html:125
+#: .\templates\destination_details.html:151
 msgid "5 Days"
 msgstr ""
 
-#: .\templates\destination_details.html:120
+#: .\templates\destination_details.html:112
 msgid "Korola Megna"
 msgstr ""
 
-#: .\templates\destination_details.html:146
+#: .\templates\destination_details.html:138
 msgid "London"
 msgstr ""
 
-#: .\templates\destinations.html:12 .\templates\layouts\header.html:24
+#: .\templates\destinations.html:12 .\templates\layouts\header.html:25
 msgid "Destinations"
 msgstr ""
 
@@ -368,60 +335,20 @@ msgstr ""
 msgid "Where to go?"
 msgstr ""
 
-#: .\templates\destinations.html:41 .\templates\layouts\header.html:75
+#: .\templates\destinations.html:41 .\templates\layouts\header.html:77
 msgid "Search"
 msgstr ""
 
-#: .\templates\destinations.html:58
-msgid "Filter Result"
-msgstr ""
-
-#: .\templates\destinations.html:65
-msgid "Country"
-msgstr ""
-
-#: .\templates\destinations.html:66
-msgid "Africa"
-msgstr ""
-
-#: .\templates\destinations.html:67 .\templates\layouts\footer.html:64
-msgid "Canada"
-msgstr ""
-
-#: .\templates\destinations.html:68
-msgid "USA"
-msgstr ""
-
-#: .\templates\destinations.html:73
-msgid "Travel type"
-msgstr ""
-
-#: .\templates\destinations.html:74 .\templates\destinations.html:75
-msgid "advance"
-msgstr ""
-
-#: .\templates\destinations.html:76
-msgid "premium"
-msgstr ""
-
-#: .\templates\destinations.html:80
-msgid "Prise range"
-msgstr ""
-
-#: .\templates\destinations.html:88
-msgid "Reset"
-msgstr ""
-
-#: .\templates\destinations.html:132 .\templates\index.html:251
+#: .\templates\destinations.html:97 .\templates\index.html:251
 #: .\templates\input.html:42
 msgid "Recent Trips"
 msgstr ""
 
-#: .\templates\destinations.html:144 .\templates\input.html:54
+#: .\templates\destinations.html:109 .\templates\input.html:54
 msgid "Oct 12, 2019"
 msgstr ""
 
-#: .\templates\destinations.html:147 .\templates\index.html:267
+#: .\templates\destinations.html:112 .\templates\index.html:267
 #: .\templates\input.html:57
 msgid "Journeys Are Best Measured In New Friends"
 msgstr ""
@@ -436,11 +363,11 @@ msgid "Explore Now"
 msgstr ""
 
 #: .\templates\index.html:26
-msgid "Australia"
+msgid "Maldives"
 msgstr ""
 
-#: .\templates\index.html:39 .\templates\layouts\footer.html:62
-msgid "Switzerland"
+#: .\templates\index.html:39
+msgid "Dybai"
 msgstr ""
 
 #: .\templates\index.html:60
@@ -485,7 +412,7 @@ msgstr ""
 msgid "Pricing"
 msgstr ""
 
-#: .\templates\layouts\footer.html:47 .\templates\layouts\header.html:27
+#: .\templates\layouts\footer.html:47 .\templates\layouts\header.html:28
 msgid "About"
 msgstr ""
 
@@ -505,8 +432,16 @@ msgstr ""
 msgid "India"
 msgstr ""
 
+#: .\templates\layouts\footer.html:62
+msgid "Switzerland"
+msgstr ""
+
 #: .\templates\layouts\footer.html:63
 msgid "Italy"
+msgstr ""
+
+#: .\templates\layouts\footer.html:64
+msgid "Canada"
 msgstr ""
 
 #: .\templates\layouts\footer.html:65
@@ -521,19 +456,19 @@ msgstr ""
 msgid "Instagram"
 msgstr ""
 
-#: .\templates\layouts\header.html:21
+#: .\templates\layouts\header.html:22
 msgid "Home"
 msgstr ""
 
-#: .\templates\layouts\header.html:33
+#: .\templates\layouts\header.html:34
 msgid "Contacts"
 msgstr ""
 
-#: .\templates\layouts\header.html:66
+#: .\templates\layouts\header.html:67
 msgid "Log out"
 msgstr ""
 
-#: .\templates\layouts\header.html:70
+#: .\templates\layouts\header.html:71
 msgid "Sign in"
 msgstr ""
 
@@ -541,19 +476,11 @@ msgstr ""
 msgid "Contact for join"
 msgstr ""
 
-#: .\templates\orders.html:16
-msgid "Name"
-msgstr ""
-
-#: .\templates\orders.html:21
-msgid "Phone"
-msgstr ""
-
 #: .\templates\orders.html:27
 msgid "Message"
 msgstr ""
 
-#: .\templates\orders.html:32
+#: .\templates\orders.html:33
 #: .\templates\registration\resend_activation_form.html:10
 msgid "Submit"
 msgstr ""
@@ -913,10 +840,6 @@ msgstr ""
 msgid "tour tags"
 msgstr ""
 
-#: .\tours\models.py:49
-msgid "long_description"
-msgstr ""
-
 #: .\tours\models.py:52
 msgid "discount"
 msgstr ""
@@ -929,14 +852,18 @@ msgstr ""
 msgid "tours"
 msgstr ""
 
+#: .\tours\models.py:82
+msgid "short_descriptions"
+msgstr ""
+
+#: .\tours\models.py:87
+msgid "category"
+msgstr ""
+
 #: .\travel\settings.py:97
 msgid "English"
 msgstr ""
 
 #: .\travel\settings.py:98
 msgid "Russian"
-msgstr ""
-
-#: .\travel\settings.py:99
-msgid "Uzbek"
 msgstr ""

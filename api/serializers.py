@@ -2,6 +2,7 @@ from abc import ABC
 
 from rest_framework import serializers
 
+from orders.models import ApplicationModel
 from tours.models import TourModel, TourTagModel, TourHotelModel
 
 
@@ -29,5 +30,5 @@ class TourHotelSerializer(serializers.ModelSerializer):
 
 class ApplicationSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TourHotelModel
+        model = ApplicationModel
         fields = '__all__'

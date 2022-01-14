@@ -14,105 +14,112 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
-    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
-    <link rel="stylesheet" href="{% static 'css/themify-icons.css'%}">
-    <link rel="stylesheet" href="{% static 'css/nice-select.css'%}">
-    <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
-    <link rel="stylesheet" href="{% static 'css/gijgo.css'%}">
-    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
-    <link rel="stylesheet" href="{% static 'css/slick.css'%}">
-    <link rel="stylesheet" href="{% static 'css/slicknav.css'%}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
 {% include 'layouts/header.html' %}
+{% include 'layouts/modal.html' %}
 
 {% block content %}{% endblock %}
 
 {% include 'layouts/footer.html' %}
 
 
-  <!-- Modal -->
-  <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="serch_form">
-            <input type="text" placeholder="Search" >
-            <button type="submit">search</button>
+        <div class="modal-content">
+            <div class="serch_form">
+                <input type="text" placeholder="Search">
+                <button type="submit">search</button>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-    <!-- link that opens popup -->
-<!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+</div>
+<!-- link that opens popup -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{#<!--#}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
 
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script> -->
-    <!-- JS here -->
-    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js'%}"></script>
-    <script src="{% static 'js/vendor/jquery-1.12.4.min.js'%}"></script>
-    <script src="{% static 'js/popper.min.js'%}"></script>
-    <script src="{% static 'js/bootstrap.min.js'%}"></script>
-    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
-    <script src="{% static 'js/isotope.pkgd.min.js'%}"></script>
-    <script src="{% static 'js/ajax-form.js'%}"></script>
-    <script src="{% static 'js/waypoints.min.js'%}"></script>
-    <script src="{% static 'js/jquery.counterup.min.js'%}"></script>
-    <script src="{% static 'js/imagesloaded.pkgd.min.js'%}"></script>
-    <script src="{% static 'js/scrollIt.js'%}"></script>
-    <script src="{% static 'js/jquery.scrollUp.min.js'%}"></script>
-    <script src="{% static 'js/wow.min.js'%}"></script>
-    <script src="{% static 'js/nice-select.min.js'%}"></script>
-    <script src="{% static 'js/jquery.slicknav.min.js'%}"></script>
-    <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
-    <script src="{% static 'js/plugins.js'%}"></script>
-    <script src="{% static 'js/gijgo.min.js'%}"></script>
-    <script src="{% static 'js/slick.min.js'%}"></script>
-
-
-
-    <!--contact js-->
-    <script src="{% static 'js/contact.js'%}"></script>
-    <script src="{% static 'js/jquery.ajaxchimp.min.js'%}"></script>
-    <script src="{% static 'js/jquery.form.js'%}"></script>
-    <script src="{% static 'js/jquery.validate.min.js'%}"></script>
-    <script src="{% static 'js/mail-script.js'%}"></script>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+-->
+<!-- JS here -->
+<script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+<script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/ajax-form.js' %}"></script>
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'js/scrollIt.js' %}"></script>
+<script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/nice-select.min.js' %}"></script>
+<script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/gijgo.min.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
 
 
-    <script src="{% static 'js/main.js'%}"></script>
-    <script>
-         function alertFunction(){
-             return alert("Отправлено")
-         }
-    </script>
-    <script>
-        $('button').click(function () {
-            $(this).toggleClass('clicked');
-            $('button').text(function (i, text) {
-                return text === "Отправлено!" ? "Отправлено" : "Отправлено!";
-            });
-        });
-    </script>
-    <script>
-        $('#datepicker').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
-        });
-    </script>
+<!--contact js-->
+
+<script src="{% static 'js/contact.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/jquery.form.js' %}"></script>
+<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/mail-script.js' %}"></script>
+
+
+<script src="{% static 'js/main.js' %}"></script>
+<script>
+    function alertFunction() {
+        return alert("Comment")
+    }
+</script>
+{#    <script>#}
+{#        $('button').click(function () {#}
+{#            $(this).toggleClass('clicked');#}
+{#            $('button').text(function (i, text) {#}
+{#                return text === "Отправлено!" ? "Отправлено" : "Отправлено!";#}
+{#            });#}
+{#        });#}
+{#    </script>#}
+<script>
+    $('#datepicker').datepicker({
+        iconsLibrary: 'fontawesome',
+        icons: {
+            rightIcon: '<span class="fa fa-caret-down"></span>'
+        }
+    });
+</script>
 </body>
 
 </html>

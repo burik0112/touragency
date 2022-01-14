@@ -5,4 +5,4 @@ from posts.models import PostModel
 
 @register(PostModel)
 class PostTranslationOptions(TranslationOptions):
-    fields = ('title',)
+    fields = ('title', 'short_description')

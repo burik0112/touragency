@@ -21,6 +21,7 @@ class PostModel(models.Model):
     title = models.CharField(max_length=512, verbose_name=_('title'))
     image = models.ImageField(upload_to='posts', verbose_name=_('image'))
     banner = models.ImageField(upload_to='post banners', verbose_name=_('banner'))
+    short_description = models.TextField(default=0)
 
     tags = models.ManyToManyField(PostTagModel,
                                   related_name='posts', verbose_name=_('tags'))

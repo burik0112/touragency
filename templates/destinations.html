@@ -53,47 +53,13 @@
     <div class="popular_places_area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mt-5 ">
+                <div class="col-lg- mt-5 ">
                     <div class="filter_result_wrap">
-                        <h3>{% trans 'Filter Result' %}</h3>
                         <div class="row">
-                            <div class="col-md-4 mt5">
-                                <div class="filter_bordered">
-                                    <div class="filter_inner">
-                                        <div class="single_select">
-                                            <select>
-                                                <option data-display="">{% trans 'Country' %}</option>
-                                                <option value="1">{% trans 'Africa' %}</option>
-                                                <option value="2">{% trans 'Canada' %}</option>
-                                                <option value="4">{% trans 'USA' %}</option>
-                                            </select>
-                                        </div>
-                                        <div class="single_select">
-                                            <select>
-                                                <option data-display="{% trans 'Travel type' %}">{% trans 'Travel type' %}</option>
-                                                <option value="1">{% trans 'advance' %}</option>
-                                                <option value="2">{% trans 'advance' %}</option>
-                                                <option value="4">{% trans 'premium' %}</option>
-                                            </select>
-                                        </div>
-                                        <div class="range_slider_wrap">
-                                            <span class="range">{% trans 'Prise range' %}</span>
-
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                        <div class="reset_btn">
-                                            <button class="boxed-btn4" type="submit">{% trans 'Reset' %}</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-8">
+                            <div class="col-">
                                 <div class="row">
                                     {% for tours in object_list %}
-                                        <div class="col-lg-6 col-md-6">
+                                        <div class="col-lg- col-md-4 col-6">
                                             <div class="single_place">
                                                 <div class="thumb">
                                                     <a href="{% url 'destinations:detail' tours.id %}">

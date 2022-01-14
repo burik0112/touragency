@@ -6,4 +6,4 @@ from posts.models import CommentModel
 class CommentModelForm(forms.ModelForm):
     class Meta:
         model = CommentModel
-        fields = ['post']
+        exclude = ['post', 'created_at']

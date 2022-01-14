@@ -340,7 +340,6 @@ mailChimp();
         });
 
         // prise slider 
-        
 
 
 
@@ -348,4 +347,6 @@ mailChimp();
 
 
 
-})(jQuery);	
+
+
+})(jQuery);

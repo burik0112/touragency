@@ -25,7 +25,7 @@ class PostTagModelAdmin(admin.ModelAdmin):
 
 @admin.register(PostModel)
 class PostModelAdmin(MyTranslationAdmin):
-    list_display = ['id', 'title', 'created_at']
+    list_display = ['id', 'title', 'created_at', 'short_description']
     list_filter = ['created_at', 'tags']
     autocomplete_fields = ['tags']
 

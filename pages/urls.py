@@ -1,7 +1,7 @@
 # from django.contrib.auth.views import LoginView
 from django.urls import path
 
-from pages.views import HomeView, ContactView, AboutView, LoginView, RegisterView, OrderView
+from pages.views import HomeView, ContactView, AboutView, LoginView, RegisterView, OrderView, order
 
 app_name = 'pages'
 
@@ -11,5 +11,5 @@ urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('login/', LoginView.as_view(), name='login'),
     path('register/', RegisterView.as_view(), name='register'),
-    path('order/', OrderView.as_view(), name='order'),
+    path('order/', order, name='order'),
 ]
