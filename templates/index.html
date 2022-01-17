@@ -108,7 +108,7 @@
                     </div>
 
                     <div class="place_info">
-                        <a href="destination_details.html"><h3>{{place.title}}</h3></a>
+                        <a href="{% url 'destinations:list' %}"><h3>{{place.title}}</h3></a>
                         <div class="rating_days d-flex justify-content-between">
                             <div class="days">
                                 <i class="fa fa-clock-o"></i>
