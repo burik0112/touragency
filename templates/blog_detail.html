@@ -41,10 +41,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="navigation-top">
+                    <div class="navigation-top" id="#comment">
                         <div class="d-sm-flex justify-content-between text-center">
                             <p class="like-info"><span class="align-middle"><i class="fa fa-heart"></i>
-                     </span> {% trans 'Lily and 4 people like this' %}</p>
+                            </span> {% trans 'Lily and 4 people like this' %}</p>
                             <div class="col-sm-4 text-center my-2 my-sm-0">
                                 <!-- <p class="comment-count"><span class="align-middle"><i class="fa fa-comment"></i></span> 06 Comments</p> -->
                             </div>
@@ -97,27 +97,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog-author">
-                        <div class="media align-items-center">
-                            <img src="{% static 'img/blog/author.png' %}" alt="">
-                            <div class="media-body">
-                                <a href="#">
-                                    <h4>{% trans 'Harvard milan' %}</h4>
-                                </a>
-                                <p>{% trans 'Second divided from form fish beast made. Every of seas all gathered use saying youre, heour dominion twon Second divided from' %}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comments-area">
-                        <h4 id="counter"></h4>
+                    <div class="comments-area pt-5">
+                        <h4 ></h4>
                         <div class="comment-list">
                             <div class="single-comment justify-content-between d-flex">
-                                {% for comment in object.get_comments %}
-                                    <div class="user justify-content-between d-flex">
-                                        <div class="thumb">
-                                            <img src="{% static 'img/comment/comment_1.png' %}" alt="">
-                                        </div>
-                                        <div class="desc">
+                                <div class="user justify-content-between d-flex">
+                                    <div class="desc">
+                                        {% for comment in object.get_comments %}
                                             <p class="comment">
                                                 {{ comment.comment }}
                                             </p>
@@ -128,25 +114,23 @@
                                                     </h5>
                                                     <p class="date">{{ comment.created_at|timesince }}</p>
                                                 </div>
-                                                <div class="reply-btn">
-                                                    <a href="#" class="btn-reply text-uppercase">reply</a>
-                                                </div>
+
                                             </div>
-                                        </div>
+                                        {% endfor %}
                                     </div>
-                                {% endfor %}
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="comment-form">
+                    <div class="comment-form" id="#comment">
                         <h4>{% trans 'Leave a Reply' %}</h4>
-                        <form method="POST" action="{% url 'posts:comment' pk=object.pk %}">
+                        <form method="POST" action="{% url 'posts:comment' pk=object.pk %}" >
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
                                 <textarea class="form-control" name="comment"
-                                        placeholder="{% trans 'Comment' %}"></textarea>
+                                          placeholder="{% trans 'Comment' %}"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -172,6 +156,7 @@
                                 <button onclick="alertFunction()" type="submit"
                                         class="button button-contactForm btn_1 boxed-btn">{% trans 'Send Message' %}</button>
                             </div>
+
                         </form>
                     </div>
                 </div>

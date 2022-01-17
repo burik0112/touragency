@@ -1,8 +1,21 @@
-
+{% load static %}
 {% if messages %}
-<ul class="messages">
-    {% for message in messages %}
-    <li{% if message%} class="{{ message}}"{% endif %}>{{ message }}</li>
-    {% endfor %}
-</ul>
+
+    <div class="alert alert-success" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+        {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+    </div>
 {% endif %}
+
+{% block extra_js %}
+    <script>
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+            });
+        }, 2000);
+    </script>
+{% endblock %}

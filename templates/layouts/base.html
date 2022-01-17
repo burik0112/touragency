@@ -101,7 +101,7 @@
 <script src="{% static 'js/main.js' %}"></script>
 <script>
     function alertFunction() {
-        return alert("Comment")
+        return alert("Отправлено")
     }
 </script>
 {#    <script>#}
@@ -120,6 +120,7 @@
         }
     });
 </script>
+{% block extra_js %}{% endblock %}
 </body>
 
 </html>

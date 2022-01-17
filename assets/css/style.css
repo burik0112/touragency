@@ -6192,12 +6192,6 @@ h6 {
 }
 
 /* line 1314, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
-.comments-area {
-  background: transparent;
-  border-top: 1px solid #eee;
-  padding: 45px 0;
-  margin-top: 50px;
-}
 
 @media (max-width: 414px) {
   /* line 1314, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
@@ -6220,7 +6214,7 @@ h6 {
 
 /* line 1341, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */
 .comments-area .comment-list {
-  padding-bottom: 48px;
+  padding-bottom: 8px;
 }
 
 /* line 1344, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_blog.scss */

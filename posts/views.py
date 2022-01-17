@@ -54,6 +54,14 @@ class CommentCreateView(SuccessMessageMixin, CreateView):
     def get_success_url(self):
         return reverse('posts:detail', kwargs={'pk': self.kwargs['pk']})
 
+def order(request):
+    form = CommentModelForm()
+    if request.method == "POST":
+        form = CommentModelForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.add_message(request, messages.SUCCESS, 'comment sent')
+    return render(request, "blog_details.html")
 
 # class CommentCreateView(View):
 #     def post(self, request, pk):

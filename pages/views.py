@@ -8,6 +8,7 @@ from pages.forms import ContactModelForm, OrderModelForm
 from pages.models import HomeModel, ContactModel, PlaceModel, TripModel
 from django.contrib import messages
 
+
 class HomeView(TemplateView):
     template_name = 'index.html'
 
@@ -38,6 +39,19 @@ class ContactView(CreateView):
         return reverse('pages:contact')
 
 
+def contact(request):
+    form = ContactModelForm()
+    messages.add_message(request, messages.INFO, 'uhjsdhsjdhjshd')
+
+    if request.method == "POST":
+        form = ContactModelForm(request.POST)
+        messages.add_message(request, messages.INFO, 'uhjsdhsjdhjshd')
+        if form.is_valid():
+            form.save()
+            messages.add_message(request, messages.INFO, 'uhjsdhsjdhjshd')
+    return render(request, "contact.html")
+
+
 class AboutView(TemplateView):
     template_name = 'about.html'
 
@@ -57,13 +71,14 @@ class OrderView(CreateView):
     def get_success_url(self):
         return reverse('pages:order')
 
+
 def order(request):
     form = OrderModelForm()
     if request.method == "POST":
         form = OrderModelForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.add_message(request, messages.SUCCESS, 'Comment')
+            messages.add_message(request, messages.SUCCESS, 'Отправлено')
     return render(request, "orders.html")
 
 #
