@@ -29,7 +29,7 @@ class PostModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name=_('created_at'))
 
     def get_comments(self):
-        return self.comments.order_by('created_at')
+        return self.comments.order_by('-created_at')
 
     def __str__(self):
         return self.title

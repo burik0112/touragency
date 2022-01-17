@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.urls import reverse
@@ -31,24 +31,23 @@ class HomeView(TemplateView):
         return context
 
 
-class ContactView(CreateView):
-    template_name = 'contact.html'
-    form_class = ContactModelForm
-
-    def get_success_url(self):
-        return reverse('pages:contact')
+# class ContactView(CreateView):
+#     template_name = 'contact.html'
+#     form_class = ContactModelForm
+#
+#     def get_success_url(self):
+#         return reverse('pages:contact')
 
 
 def contact(request):
-    form = ContactModelForm()
-    messages.add_message(request, messages.INFO, 'uhjsdhsjdhjshd')
-
+    form = ContactModelForm
     if request.method == "POST":
         form = ContactModelForm(request.POST)
-        messages.add_message(request, messages.INFO, 'uhjsdhsjdhjshd')
+        # messages.add_message(request, messages.INFO, 'uhjsdhsjdhjshd')
         if form.is_valid():
             form.save()
-            messages.add_message(request, messages.INFO, 'uhjsdhsjdhjshd')
+            messages.info(request, 'Отправлено')
+            return redirect('pages:contact')
     return render(request, "contact.html")
 
 

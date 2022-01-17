@@ -37,8 +37,19 @@
     your browser</a> to improve your experience and security.</p>
 <![endif]-->
 
+
 {% include 'layouts/header.html' %}
-{% include 'layouts/modal.html' %}
+{#{% if messages %}#}
+{##}
+{#    <div class="alert alert-success" role="alert">#}
+{#        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span#}
+{#                aria-hidden="true">&times;</span></button>#}
+{#        {% for message in messages %}#}
+{#            {{ message }}#}
+{#        {% endfor %}#}
+{#    </div>#}
+{#{% endif %}#}
+
 
 {% block content %}{% endblock %}
 
@@ -99,11 +110,20 @@
 
 
 <script src="{% static 'js/main.js' %}"></script>
-<script>
-    function alertFunction() {
-        return alert("Отправлено")
-    }
-</script>
+{#<script>#}
+{#    function alertFunction() {#}
+{#        return alert("Отправлено")#}
+{#    }#}
+{#</script>#}
+{% block extra_js %}
+    <script>
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+            });
+        }, 2000);
+    </script>
+{% endblock %}
 {#    <script>#}
 {#        $('button').click(function () {#}
 {#            $(this).toggleClass('clicked');#}
@@ -120,7 +140,15 @@
         }
     });
 </script>
-{% block extra_js %}{% endblock %}
+
+    <script>
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+            });
+        }, 2000);
+    </script>
+
 </body>
 
 </html>

@@ -1,7 +1,8 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
-    {% load i18n %}
+
     <!-- bradcam_area  -->
     <div class="bradcam_area bradcam_bg_4">
         <div class="container">
@@ -15,14 +16,22 @@
             </div>
         </div>
     </div>
+    <div class="container mt-3">
+            {% if messages %}
+
+                <div class="alert alert-success" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+            </div>
     <!--/ bradcam_area  -->
     <!-- ================ contact section start ================= -->
     <section class="contact-section">
-{#        <div class="alert alert-success" role="alert">#}
-{#            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span#}
-{#                    aria-hidden="true">&times;</span></button>#}
-{#            Success! You have been signed in successfully!#}
-{#        </div>#}
+
         <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">
                 <div id="map" style="height: 480px; position: relative; overflow: hidden;"></div>
@@ -62,8 +71,8 @@
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
                 </script>
-
             </div>
+
 
 
             <div class="row">
@@ -107,7 +116,7 @@
                         </div>
 
                         <div class="form-group mt-3">
-                            <button onclick="alertFunction()"
+                            <button
                                     type="submit"
                                     class="button button-contactForm boxed-btn">{% trans 'Send' %}</button>
                         </div>
